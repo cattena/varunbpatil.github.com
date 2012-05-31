@@ -1,0 +1,20 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Varun B Patil's blog</title>
+<description>Varun B Patil's blog</description>
+<link>http://varunbpatil.github.com/</link>
+{% for post in site.posts limit:20 %}
+<item>
+<title>{{ post.title | xml_escape }}</title>
+<link>{{ site.url }}{{ post.url }}</link>
+<published>{{ post.date | date_to_xmlschema }}</published>
+<guid>{{ site.url }}{{ post.url }}</guid>
+<description>{{ post.content | xml_escape }}</description>
+</item>
+{% endfor %}
+</channel>
+</rss>

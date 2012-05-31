@@ -1,0 +1,54 @@
+<!doctype html>
+
+		<meta charset="utf-8"/>
+
+		<!-- TO Fancy SEARCH ENGINE -->
+		<title>Varun B Patil | {{ page.title }}</title>
+		<meta name="description" content="Varun B Patil's blog"/>
+
+		<!-- TO FANCY GOOGLE -->
+		<meta itemprop="name" content="Varun B Patil's blog"/>
+		<meta itemprop="description" content="Varun B Patil blog"/>
+
+		<!-- TO FANCY FACEBOOK -->
+		<meta property="og:title" content="Varun B Patil's blog" />
+		<meta property="og:type" content="blog" />
+		<meta property="og:url" content="http://varunbpatil.github.com/" />
+		<meta property="og:site_name" content="Varun B Patil's blog" />
+
+		<meta name="keywords" content="Varun B Patil's blog"/>
+		<meta name="robots" content="noodp" />
+				
+		<link rel="stylesheet" media="all" href="/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        {% include analytics %} 
+
+	</head>
+	<body>
+		
+		<div id="wrapper">
+			<header id="header">
+				<div class="inner">
+					<a href="/"><hgroup><h1 id="site-name">Varun B Patil</h1></hgroup></a>	
+				<nav id="navigation">
+					  <ul class="navigation">
+                            {% for link in site.navigation %}
+                            {% assign current = nil %}
+                                {% if page.url == link.url %}
+                                    {% assign current = 'current' %}
+                                {% else %}
+                                    {% for layout in link.layouts %}
+                                        {% if page.layout == layout %}
+                                            {% assign current = 'current' %}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                                <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
+                                    <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                                </li>
+                            {% endfor %}
+                      </ul>
+				</nav>
+		        </div>
+		    </header>

@@ -1,0 +1,19 @@
+$(document).ready(function() {
+
+	$('body').append('<div id="anchorTitle"></div>');
+
+	$('a[title!=""]').each(function() {
+
+		var a = $(this);
+
+		a.data('title', a.attr('title'))
+		.removeAttr('title')
+		.hover(
+			function() { showAnchorTitle(a, a.data('title')); }, 
+			function() { hideAnchorTitle(); }
+		);
+
+	});
+
+});
+

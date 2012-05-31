@@ -1,0 +1,84 @@
+safe: true
+markdown: maruku
+permalink: /:categories/:year/:month/:day/:title 
+auto: true
+pygments: true
+
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title : Varun B Patil's blog
+tagline: Varun B Patil's blog
+author : Varun B Patil
+email : varun.basavaraj.patil@gmail.com
+
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt 
+# Most places will/should use BASE_PATH to make the urls
+#
+# If you have set a CNAME (pages.github.com) set your custom domain here.
+# Else if you are pushing to username.github.com, replace with your username.
+# Finally if you are pushing to a GitHub project page, include the project name at the end.
+#
+
+production_url : http://varunbpatil.github.com
+url: http://varunbpatil.github.com
+
+# Settings for comments helper
+# Set 'provider' to the comment provider you want to use.
+# Set 'provider' to false to turn commenting off globally.
+#
+comments :
+    provider : disqus
+    disqus :
+      short_name : varunbpatil
+    livefyre :
+      site_id : 123
+    intensedebate :
+      account : 123abc
+    facebook :
+      appid : 371315812924882
+      num_posts: 5
+      width: 750
+      colorscheme: light
+
+
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
+#        
+analytics :
+    provider : google 
+    google : 
+        tracking_id : 'UA-32267446-1'
+    getclicky :
+        site_id : 
+    mixpanel :
+        token : '_MIXPANEL_TOKEN_'
+      
+
+
+navigation:
+- text: Home
+  url: /
+  layouts:
+  - default
+- text: About
+  url: /about/
+  layouts: 
+  - portfolio
+- text: Blog
+  url: /blog/
+  layouts: 
+  - blog
+  - post
+- text: Tags
+  url: /tag/
+  layouts: 
+  - newtagpage
+  - tagpage
+  - tag
+- text: Archive
+  url: /archive/
+  layouts: 
+  - archive

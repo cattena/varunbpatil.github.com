@@ -1,0 +1,18 @@
+{% include header.html %}
+{% assign tags_list = site.tags %}
+<br />
+<br />
+<br />
+<div id="main">
+    <div class="inner">
+        <h5 class="blogpage">Search for posts by tag</h5>
+        <div class="blogpage">
+            {% include tags_list %}
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+
+
+
+

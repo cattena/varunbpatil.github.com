@@ -1,0 +1,4 @@
+---
+layout: newtagpage
+title: Tags
+---

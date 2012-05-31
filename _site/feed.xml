@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Varun B Patil's blog</title>
+<description>Varun B Patil's blog</description>
+<link>http://varunbpatil.github.com/</link>
+
+<item>
+<title>Behind the scene</title>
+<link>http://varunbpatil.github.com/2012/06/02/behind-the-scene</link>
+<published>2012-06-02T00:00:00+05:30</published>
+<guid>http://varunbpatil.github.com/2012/06/02/behind-the-scene</guid>
+<description>&lt;p&gt;In this article I would like to completely share with you the details of how I created the website you are seeing right now.&lt;/p&gt;
+
+&lt;h4 id='where_did_i_get_the_idea_and_inspiration_'&gt;Where did I get the idea and inspiration ?&lt;/h4&gt;
+
+&lt;p&gt;The first time I heard about &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt; was on the &lt;a href='http://rkrishnan.org/about.html'&gt;about page&lt;/a&gt; of my mentor Ramkrishnan. Then while I started to dig out more information about it, I learnt about its close integration with &lt;a href='https://github.com/'&gt;Github&lt;/a&gt; and &lt;a href='http://pages.github.com/'&gt;Github pages&lt;/a&gt;. Ofcourse, it had to be since Jekyll was created by a person named &lt;a href='http://tom.preston-werner.com/'&gt;Tom Preston-Werner&lt;/a&gt; from Github. I had recently used Github pages to create a simple website for my &lt;a href='http://varunbpatil.github.com/8th_sem_project_implementation_SVM'&gt;8th semester B.Tech project&lt;/a&gt; and liked the simplicity and beauty of it all. Then I happened to stumble upon a rich set of &lt;a href='https://www.google.co.in/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;ved=0CHAQ0gIoATAA&amp;amp;url=https%3A%2F%2Fgithub.com%2Fmojombo%2Fjekyll%2Fwiki%2FSites&amp;amp;ei=EG_KT_fxF4nsrAfQtOG0Dg&amp;amp;usg=AFQjCNGcwhnLKJ2b_VD5m-T6E42gVZVhvQ&amp;amp;sig2=6urBQOcD8OXhWJd5WQfkhw'&gt;sites&lt;/a&gt; implemented using jekyll and hosted on Github. I quickly stumbled through all the mentioned sites and decided to try and imitate &lt;a href='http://www.magpielab.com/'&gt;this site&lt;/a&gt;. Ofcourse, imitation is allowed since all the listed sites are free (Even my site is free to be used by anyone interested in building a quick website with no cost at all. I will tell you shortly how you can easily create your own site using my site&amp;#8217;s source code as a start point in no time at all). Quickly enough I got to work creating a rough outline for my new website. I also got a lot of implementation help about Jekyll and Liquid from &lt;a href='http://jekyllbootstrap.com/'&gt;jekyll-bootstrap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id='what_programming_languages_were_used_'&gt;What programming languages were used ?&lt;/h4&gt;
+
+&lt;p&gt;The core programming is done using HTML, CSS, &lt;a href='http://daringfireball.net/projects/markdown/basics'&gt;Markdown&lt;/a&gt; and &lt;a href='https://github.com/Shopify/liquid/wiki/Liquid-for-Designers'&gt;Liquid&lt;/a&gt;. Of course, you are free to use JavaScript, jQuery&amp;#8230; The way it is different from conventional web programming is that the entire site has to be organized in a structure that &lt;a href='https://github.com/mojombo/jekyll/wiki/usage'&gt;Jekyll&lt;/a&gt; expects to find. There are folders with pre-defined names into which you will have to put in your files so that Jekyll can locate them. Jekyll is simply a parser which takes Markdown, HTML, CSS, Liquid code and others and generates plain html files for you which you can then deploy on any web server. You can use Jekyll installed on your PC to build the site before you post it to your web-server or simply push the raw files into a repository on Github which then parses you raw code for you which means you don&amp;#8217;t have to have Jekyll on your PC. Nonetheless, it helps to have Jekyll installed on your machine to test your implementation instead of having to push your code to your Github repository every time you want to test something. Liquid allows fantastic reuse of code (templating) and also has constructs for variable assignment, looping, switch-case, conditional statements and a lot more that is not found in plain HTML. You can actually find all the help needed(all the help I used) in the links highlighted above. I will give links to a few more detailed tutorials shortly.&lt;/p&gt;
+
+&lt;h4 id='other_shiny_new_bits_not_present_in_my_old_website_'&gt;Other shiny new bits (not present in my old website) !!!&lt;/h4&gt;
+
+&lt;p&gt;I am very happy to report some exciting new features that I have succesfully integrated into this website that you can use and that were not found in my &lt;a href='http://varunpatil.xtreemhost.com/'&gt;earlier website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can now look at my posts categorized by &lt;a href='http://varunbpatil.github.com/tag/'&gt;tags&lt;/a&gt; and also view an &lt;a href='http://varunbpatil.github.com/archive/'&gt;archive&lt;/a&gt; of all my previous posts.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;You can now subscribe to my blog posts to instantly get my blog posts on your favourite reader or you can even subscribe by mail where new posts I write get delivered to your mailbox everyday. Don&amp;#8217;t worry, your email id&amp;#8217;s and other subscription details are managed by professional programs like feedburner and thus there can be no misuse. You can find the subscription buttons on the bottom of every page in my website or you can simply click on the links below. &lt;ul&gt;
+  &lt;li&gt;
+      &lt;a href='http://feeds.feedburner.com/varunbpatil'&gt;subscribe via rss reader&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+      &lt;a href='http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US'&gt;subscribe via email&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;I have also incorporated disqus comments into my blog posts where you are free to comment and provide feedback by logging into your favorite social networking site.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='superb_quick_start_links'&gt;Superb quick start links&lt;/h4&gt;
+
+&lt;p&gt;The following are some of the most useful quick start links I used to get my website up and running in no time at all.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/'&gt;Building static sites with Jekyll&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://studiomohawk.github.com/jekyll-bootstrap/lessons/2011/12/29/jekyll-introduction/'&gt;JB Jekyll Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, if there is anyway I can help you understand the technologies I have used or help you get started with your own website like mine, please to leave a comment below or better even, contact me using the links at the bottom of the page. The best way to get started is to download or fork the &lt;a href='https://github.com/varunbpatil/varunbpatil.github.com'&gt;source code&lt;/a&gt; for my website from Github and start experimenting with things. It won&amp;#8217;t take you long before you get into the groove. That&amp;#8217;s the way I learnt and that&amp;#8217;s the way I built this website, period. I hope I have aroused your interest in blogging and web designing through this short article. Any feedback regarding this site is much appreciated.&lt;/p&gt;</description>
+</item>
+
+<item>
+<title>The ultimate Vim configuration</title>
+<link>http://varunbpatil.github.com/2012/05/28/vim-config</link>
+<published>2012-05-28T00:00:00+05:30</published>
+<guid>http://varunbpatil.github.com/2012/05/28/vim-config</guid>
+<description>&lt;p&gt;Not long ago, I used notepad++ on windows and medit on Linux as my favorite text editor for hardcore programming. But then, during my brief internship at Cisco, I was coaxed into trying out vim (credits to my mentor &lt;a href='http://rkrishnan.org/'&gt;Ramkrishnan&lt;/a&gt; at Cisco). And the skills that my colleague&amp;#8217;s demonstrated while using vim further compelled me to try it out. After only about one month of forcing myself to use vim for all editing tasks, I found myself loving it more by the day. I have now reached a point where I can&amp;#8217;t live without vim.&lt;/p&gt;
+
+&lt;p&gt;And today I found out about a project on Github which aims to develop the ultimate vim config file. A vim config file is the core of your vim experience where you control how vim behaves. A good vim configuration means a good vim experience. This project known as &lt;a href='http://vim.spf13.com/'&gt;spf13-vim&lt;/a&gt; is among the top 0.5% of projects on Github and it shows in the quality of the project web page itself and of course the usability of the vim configuration.&lt;/p&gt;
+
+&lt;p&gt;Installation is as easy as downloading a single shell script and executing it (instructions are in the link above). The project has also integrated the greatest vim plugins ever that increase productivity to a great extent. Most importantly it is completely cross-platform and works the same whether you are on windows or Linux. It has all the best vim options set, provides the ability to customize the configuration, includes beautiful colorschemes, and a host of plugins like spell check and those that aid programmers like comments, directory trees, etc. With this, vim has turned into a full featured IDE much like eclipse and the like. I am simply loving it :)&lt;/p&gt;</description>
+</item>
+
+<item>
+<title>Interesting last few months</title>
+<link>http://varunbpatil.github.com/2012/05/26/last-few-months</link>
+<published>2012-05-26T00:00:00+05:30</published>
+<guid>http://varunbpatil.github.com/2012/05/26/last-few-months</guid>
+<description>&lt;p&gt;The last few months have been some of my best. Joined Cisco for an internship, immediately got the opportunity to work on Android. Completed my college project work with flying colors, won TCS best student award for topping my batch at college, enjoying a completely working ICS mod on my Motorola defy, completed the Cisco project on the last day of internship(with help ofcourse, lots of it !!!). Foolish of me to think that I can put all of it in one post, but here I am doing exactly the same.&lt;/p&gt;
+
+&lt;p&gt;At Cisco, I had the opportunity of working with my mentor &lt;a href='http://rkrishnan.org/'&gt;Ramkrishnan&lt;/a&gt;. Even though it was for just 3 months, I learnt so many things from him &amp;#8211; gathered the courage to use vi(can&amp;#8217;t live without it now !!!), became fairly good at touch-typing(close to 40 wpm !!!), learnt a lot about git(I now use it for all my projects and this website as well), and ofcourse Android, adb and things of that sort that I now use very often to play around with my phone :) And ofcourse, I was able to complete the Cisco internship project just in time with a lot of his help particularly because I was so new to &lt;a href='http://gstreamer.freedesktop.org/'&gt;Gstreamer&lt;/a&gt; and Android. More on the project in a later post. Above all, one thing that I really liked about my mentor was his down-to-earth nature and ever-smiling face :). Hope I can learn more from him in the future.&lt;/p&gt;
+
+&lt;p&gt;Even though I did not have much time to work on my college project since I was in Bangalore for 4 days a week, it really went well&amp;#8230; the presentation, demo and all. With all the heavy-lifting over, I still need to prepare some reports and formal papers on the project and I am already half way through. So no worries :-)&lt;/p&gt;
+
+&lt;p&gt;And finally CM9 ICS by &lt;a href='http://forum.xda-developers.com/showthread.php?t=1353003'&gt;epsylon3&lt;/a&gt; has become stable enough on my Motorola defy to use everyday and it is kind of invigorating to have the latest and greatest android powering your phone :)&lt;/p&gt;</description>
+</item>
+
+<item>
+<title>Tested : MIUI rom on Motorola Defy</title>
+<link>http://varunbpatil.github.com/2012/01/15/miui-motorola-defy</link>
+<published>2012-01-15T00:00:00+05:30</published>
+<guid>http://varunbpatil.github.com/2012/01/15/miui-motorola-defy</guid>
+<description>&lt;p&gt;I have been using Cyanogenmod 7 (gingerbread) on my motorola defy for two months now and there was nothing more I wanted out of my phone&amp;#8230;that is until I laid my eyes on the &lt;a href='http://en.miui.com/'&gt;MIUI rom&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I decided to give it a try especially after I read that the MIUI rom runs more smoothly that CM7 on the motorola defy. Flashing the MIUI rom follows exactly the same procedure as flashing the CM7, only easier because, you don&amp;#8217;t need to flash google apps seperately like in CM7 because it is built into the MIUI rom. The MIUI rom is also based on Android Gingerbread 2.3.7 and is developed by Chinese developers using the cyanogenmod base. True to what they claim, MIUI provides the most beautiful UI of all custom ROM&amp;#8217;s. It has some elements of the Apple&amp;#8217;s iOS(which is undoubtedly beautiful) combined with stock android and is heavily customizable&amp;#8230;even more compared to the cyanogenmod ROM. And like in the CM7, my motorola defy is now automatically overclocked to 1GHz from the stock 800MHz. There is also virtually no lag in screen transition. Moreover MIUI can boast of an incredible in-built music app and an equally incredible social app and a wide array of community and fan developed themes. The camera app packs comparably fewer features than CM7, but is livable with for most of your photo shooting activities. I only hope they release an Android ICS version soon. :)&lt;/p&gt;
+
+&lt;p&gt;The really fun thing about MIUI roms is that there are so many forks available. There is one called &lt;a href='http://miuiandroid.com/community/'&gt;MIUI Android&lt;/a&gt;, there is one called &lt;a href='http://www.miui.us/'&gt;MIUI U.S&lt;/a&gt;, then there is the MIUI Scotland or &lt;a href='http://miuiscotland.co.uk/site/'&gt;Galnet MIUI&lt;/a&gt; and many many more based on your region and language !!!&lt;/p&gt;</description>
+</item>
+
+<item>
+<title>RSA encryption using Tcl</title>
+<link>http://varunbpatil.github.com/2012/01/10/rsa-tcl</link>
+<published>2012-01-10T00:00:00+05:30</published>
+<guid>http://varunbpatil.github.com/2012/01/10/rsa-tcl</guid>
+<description>&lt;p&gt;After being placed in Cisco, I decided to learn some Tcl programming, which I heard from a couple of my friends, that it would help me in my workplace.&lt;/p&gt;
+
+&lt;p&gt;Tcl is basically a scripting language like perl or python or shell programming and it is very easy to learn and use. Its cousin, the Tk language can be used to create GUI&amp;#8217;s whereas Tcl is mainly a command line language. The reason I decided to write an RSA encryption routine in Tcl is because the program involves and tests all major Tcl constructs from accessing files to performing mathematical computations and parsing text and thus is a very good example to test your Tcl skills. Coming to RSA, it is one of the best public-key cryptosystems available. Just in case, somebody wants to encrypt simple files on their computer, they can use my encryption program to do so :P. Of course, you will need to have Tcl interpreter installed on your computer&amp;#8230;.and know how to run the Tcl script :D which is hard work, I agree and much more complicated than some free software available on the market like KeePassX which is a billion times more easy to use and gazillion times more secure than my implementation, but nonetheless, I am very happy to give you my &lt;a href='http://www.mediafire.com/?csn6nc8jwr6mr5a'&gt;Tcl RSA implementation&lt;/a&gt; :D happy encrypting !!! The following lines show you how you may use my program to encrypt or decrypt files&amp;#8230;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure you have Tcl interpreter installed. Installing it is straightforward in Linux. You can find it in the Software repository. In ubuntu you can install it by typing the following in a terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $ sudo apt-get install tcl&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;After downloading the &lt;a href='http://www.mediafire.com/?csn6nc8jwr6mr5a'&gt;Tcl script&lt;/a&gt; &amp;#8220;rsa.tcl&amp;#8221;, make sure it has execute permissions on your computer. To change the permissions in Ubuntu type the following in a terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $ cd path_to_tcl_script
+  $ chmod +x rsa.tcl&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Now you can run the script as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $ cd path_to_tcl_script
+  $ ./rsa.tcl&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Enter E(or e) to perform encryption and D(or d) to perform decryption.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;When prompted, please provide the complete(absolute) path to the file on your computer which you want to encrypt(or decrypt).&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Thats it&amp;#8230; You are done !!!. Happy Encrypting :D&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+</item>
+
+<item>
+<title>Stuxnet: the greatest, meanest computer virus ever written</title>
+<link>http://varunbpatil.github.com/2012/01/04/stuxnet</link>
+<published>2012-01-04T00:00:00+05:30</published>
+<guid>http://varunbpatil.github.com/2012/01/04/stuxnet</guid>
+<description>&lt;p&gt;Here is a detailed and &lt;a href='http://www.wired.com/threatlevel/2011/07/how-digital-detectives-deciphered-stuxnet/all/1'&gt;awe inspiring article&lt;/a&gt; by Wired news regarding the working of Stuxnet, possibly the greatest and most complex computer virus ever written. I will try to capture some of its essence in this article.&lt;/p&gt;
+
+&lt;p&gt;Stuxnet was written to spread through USB devices and its main target was Siemens Step7 controllers running Microsoft&amp;#8217;s OS. These Seimens controllers are mainly used to control mechanical devices like motors, levers, valves,etc. and these were in heavy use at Iran&amp;#8217;s uranium enrichment facilities. Stuxnet is said to have infected over 50% of computers at these location before anyone knew something was wrong, and as a result Iran&amp;#8217;s nuclear weapon development program is claimed to have been setback by about 10 years. What is surprising is that Stuxnet is actually a very large program(about 5GB) as opposed to normal viruses which stretch into kilobytes, and the USA was the least affected by this virus even though the US is usually the most hit in other virus attacks. The Stuxnet virus was so organised that its developers could easily swap certain functions as required and update the malicious code easily. Whats more, it never stored Windwows API files(.dll) files in the hard disk as do conventional viruses, so that Anti virus softwares could never detect them. Stuxnet is of the &amp;#8216;zero-day&amp;#8217; variety, the most advanced of all viruses. Whats is more interesting is that Stuxnet never used the internet to infect in large numbers like a conventional virus. It was more content on spreading through local area networks which again showcase its single minded purpose of destabilizing Iran&amp;#8217;s nuclear project.&lt;/p&gt;
+
+&lt;p&gt;Stuxnet gathered all working data from the Seimens controllers and passed it on to the attackers. The malicious .dll files would take the place of the good ones from microsoft and then intercept commands from the Siemens Step7 controller. It would then manipulate these commands before being sent to the controllers for the motors and valves controlling the centrifuge&amp;#8217;s used in the nuclear plant thus wrecking absolute havoc. Developing the Stuxnet code required knowledge of the Siemens Step7 Programmable logic controller which is infact proprietary information that only government agencies know further fueling the speculation that USA and its allies like Israel were behind the development of the super-virus.&lt;/p&gt;
+
+&lt;p&gt;Symantec, the Antivirus giant usually spends not more than a couple of days deciphering conventional malware, but as the wired article expatiates, even after a month they had not been able to completely decipher Stuxnet&amp;#8217;s code. Malware writers usually modify registry values so that the malware they write does not infect their own machines. When the malware sees such values in the registry, it simply shuts down. One such registry value in Stuxnet resembled an important date in jewish history when a jewish business man was shot dead by the firing squad in Iran which served to add to the speculation that Israel might have been involved in Stuxnet&amp;#8217;s development. Infact, two Iranian nuclear scientists who disclosed some information about the damage that Stuxnet had caused were assasinated a few days after their disclosure. This article is the most fascinating read I have had in a long time. I hope you like it too.&lt;/p&gt;</description>
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
+  <url>
+    <loc>http://varunbpatil.github.com/</loc>
+    <lastmod>2012-06-03T22:39:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://varunbpatil.github.com/about/</loc>
+    <lastmod>2012-06-03T22:39:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://varunbpatil.github.com/archive/</loc>
+    <lastmod>2012-06-03T22:39:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://varunbpatil.github.com/blog/</loc>
+    <lastmod>2012-06-03T22:39:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://varunbpatil.github.com/2012/06/02/behind-the-scene/</loc>
+    <lastmod>2012-06-02T00:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://varunbpatil.github.com/2012/05/28/vim-config/</loc>
+    <lastmod>2012-05-28T00:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://varunbpatil.github.com/2012/05/26/last-few-months/</loc>
+    <lastmod>2012-05-26T00:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://varunbpatil.github.com/2012/01/15/miui-motorola-defy/</loc>
+    <lastmod>2012-01-15T00:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://varunbpatil.github.com/2012/01/10/rsa-tcl/</loc>
+    <lastmod>2012-01-10T00:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://varunbpatil.github.com/2012/01/04/stuxnet/</loc>
+    <lastmod>2012-01-04T00:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+</urlset>
