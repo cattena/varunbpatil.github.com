@@ -18,7 +18,7 @@ The core programming is done using HTML, CSS, [Markdown](http://daringfireball.n
 
 I am very happy to report some exciting new features that I have succesfully integrated into this website that you can use and that were not found in my [earlier website](http://varunpatil.xtreemhost.com/).
 
-* You can now look at my posts categorized by [tags](http://varunbpatil.github.com/tag/) and also view an [archive](http://varunbpatil.github.com/archive/) of all my previous posts.
+* You can now look at my posts categorized by [tags](http://varunbpatil.github.com/tag/) and also view an archive of all my previous posts.
 
 * You can now subscribe to my blog posts to instantly get my blog posts on your favourite reader or you can even subscribe by mail where new posts I write get delivered to your mailbox everyday. Don't worry, your email id's and other subscription details are managed by professional programs like feedburner and thus there can be no misuse. You can find the subscription buttons on the bottom of every page in my website or you can simply click on the links below.
 <ul>

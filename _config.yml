@@ -78,7 +78,3 @@ navigation:
   - newtagpage
   - tagpage
   - tag
-- text: Archive
-  url: /archive/
-  layouts: 
-  - archive
