@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Beautiful duckling : Duck Duck Go"
+tags:
+- websites
+- web
+---
+
+It is no illusion that we are all religious followers of the ultimate search engine in the world, Google, and for good reason. Google boasts of some of the most advanced search algorithms that make your life easy. But I beg to differ. Google is not the only one with state-of-the-art search algorithms and addons that make searching easy. There is a new kid... err... duckling on the block with only one thing on mind - to depose Google as the ultimate search provider. Its name... [Duck Duck Go](http://www.duckduckgo.com/) !!!
+
+Think the name sounds too funny and silly to challenge google in its own game ? Wait till you visit [Duck Duck Go](https://www.duckduckgo.com/). Immediately you are greeted with a super simple and beautiful search page. One thing you have probably noticed by now is the "https" in the url. Thats right... Duck Duck Go provides secure search much like google, although it did so at a time when Google used to put a "Beta" on its secure search page.
+
+Immediately there are a few similarities. Duck Duck Go marks important events on their logo much like Google. The interface is super simple like Google. Thats it. The similarities are only skin deep. If you see the bottom left of the web page, you will read that Duck Duck Go does not track or bubble you. This is by far the greatest selling point of this search engine. They promise not to track any user, while google does not make such a promise. As explained by the inventors of Duck Duck Go, other search engines tailor their search results especially for you by tracking your browsing history, facebook like history, your location, etc. But Duck Duck Go believes that you are missing on important information by filtering your results.
+
+Then we get to the thick of things where Duck Duck Go really starts to make a difference. While Google's search results are bland, Duck Duck go's search results are beautiful as well just like anywhere else on the site. One thing I particularly like about Duck Duck go is that it stores all your search preferences on the cloud instead of in your browser as cookies like Google does. This way, your search preferences remain in place(you only have to enter your passphrase) even if you decide to clear cookies on your browser.
+
+UI customizations are a dime-a-dozen. You can customize the colors in the results page, or simply select a color theme. Request WOT(web of trust) ratings for the website in the search. You can tell it to auto-load more search results as you scroll down the page, tell it whether your search should be passed using a GET request or a POST request !!!, change the widht of the search result display area, change fonts and font sizes, stop all ads from displaying in your result page, the list goes on and on...
+
+If these customizations are not enough to get you interested, check out their [search goodies](https://duckduckgo.com/goodies.html) page. Duck Duck go's search box allows you to do all sorts of mathematical calculations like finding the perimeter of triangles to unit conversions. You can also get the date of important events and find information about new movies. You can also find all sorts of recipes and geographical information about your location like time, weather. All this right from the search bar !!!. I am aware Google also provides such facilities for its users, but the good thing about Duck Duck go is that it allows commoners like you and me to suggest new features and if possible provide help implementing those. All these features are simply plugins that anyone can develop and submit to Duck Duck go.
+
+If this is not sufficient news for all you tech geeks out there, check out the mind blowing options on their [tech goodies](https://duckduckgo.com/tech.html) page. You can generate super strong passwords, perform all sorts of mathematical calculations, find out rgb color codes, perform IP address calculations, get math formulae, find the hash codes of messages using hash algorithms like MD5, SHA.
+
+Perhaps the best features of all these is the !bang search syntax. It allows you to search directly from a websites internal search engine. For example, I find myself constantly searching 4shared for the latest paid android apps(actually their apk's) that I can download for free. With Duck Duck go, all I have to enter is "!4shared swiftkeyx apk" and I am taken directly to the search results on 4shared. There are a whole lot of sites(actually a gazillion more) for which this search technique can be applied and the entire list can be found [here](https://duckduckgo.com/bang.html).
+
+I am terribly impressed by this new duckling and has already made it to my browser's home page. I hope it does the same on your's too, because, Duck Duck Go, unlike Google is completely open source, and as always open source things rock !!! :). If you find Duck Duck Go impressive, and want to report some features I might have missed out(in the jubilation of completing the last exam of B.E !!!), please feel free to leave a comment below. :)
