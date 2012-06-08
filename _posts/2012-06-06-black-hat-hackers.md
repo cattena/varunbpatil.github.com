@@ -36,6 +36,6 @@ Nahshon Even-Chaim ,aka Phoenix, was the first major computer hacker to be convi
 
 He shot to fame by breaking into major companies like New York Times, Microsoft Corporation by using internet connections at coffee shops and libraries to infiltrate these systems, which earned him the nickname of the "homeless hacker". His other hits include Yahoo!, Bank of America, Citigroup and Cingular. He used to inform the respective companies of the security flaws in their systems after breaking into and exploiting them, but since he was not hired by any of these companies as penetration testers, what he did was illegal. After serving nearly 2 years, Adrian now works as an award-winning journalist and public speaker.
 
-<img src="/Lamo-Mitnick-Poulsen.png" width="750px" />
+<img src="/images/Lamo-Mitnick-Poulsen.png" width="750px" />
 
 Adrian Lamo, Kevin-Mitnick and Kevin Poulsen in reformed times :)

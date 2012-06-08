@@ -1,3 +1,6 @@
+p {
+font-family: 'Advent Pro', sans-serif;
+}
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
@@ -19,8 +22,6 @@ a img
 {border:0}
 html
 {font-size:100.01%}
-body
-{font-size:75%;color:#222;background-color:#F6F6F6;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif}
 h1,h2,h3,h4,h5,h6
 {font-weight:normal;color:#111}
 h1
@@ -76,10 +77,10 @@ margin:0;
 ul,ol
 {margin:0 1.5em 1.5em 0;padding-left:1.5em}
 ul.custom_bullet {
-list-style-image: url('/add.png');
+list-style-image: url('/images/add.png');
 }
 div.post ul {
-list-style-image: url('/add.png');
+list-style-image: url('/images/add.png');
 }
 dl
 {margin:0 0 1.5em 0}
@@ -138,9 +139,9 @@ html
 #header .inner
 {height:60px;overflow:hidden}
 #header .inner #site-name
-{padding-bottom:0;color:#d4d4d4;font-size:34px;letter-spacing:1px;line-height:36px;float:left;position:absolute;left:48px;top:13px}
+{font-family: 'Port Lligat Sans', sans-serif; padding-bottom:0;color:#d4d4d4;font-size:38px;letter-spacing:1px;line-height:36px;float:left;position:absolute;left:48px;top:13px}
 #header .inner #navigation
-{font-family: Comic Sans MS; font-size: 20px;position:absolute;left:310px;top:18px}
+{font-family: 'Shadows Into Light', cursive; font-size: 30px;position:absolute;left:310px;top:18px}
 #header .inner #navigation ul
 {margin:0;padding:0}
 #header .inner #navigation li
@@ -150,7 +151,7 @@ html
 #header .inner #navigation li a:hover
 {color:#fff}
 #header .inner #navigation li a.current
-{background-color:#292b2f;color:#fff;border-radius:5px}
+{background-color:#292b2f;color:#fff;border-radius:0px}
 #header .inner #navigation li.facebook
 {left:220px}
 #header .inner #navigation li.twitter
@@ -243,6 +244,8 @@ p
 {margin-left:-1px}
 .typekit-badge
 {display:none!important}
+
+
 @media only screen and (min-width:768px) and (max-width:991px)
 {.inner{margin:0 auto;width:712px;padding:0 28px}#header .inner #site-name{letter-spacing:-1px;padding-bottom:20px;left:28px}#header .inner #navigation{position:absolute;left:200px;top:20px}#header .inner #navigation.facebook{left:140px}#header .inner #navigation.twitter{left:160px}#banner{padding:100px 0 50px 0}#banner .darker{font-size:72px;line-height:72px}#banner .attract{font-size:62px;line-height:62px}#banner .actions{font-size:18px;line-height:36px}.post{width:100%;margin:0 auto}}
 @media only screen and (max-width:767px)
@@ -251,6 +254,8 @@ p
 {.inner{margin:0 auto;width:436px;padding:0 22px}#header .inner #site-name{left:22px}#header .inner #navigation{top:10px;left:150px}#banner{padding:100px 0 50px}#banner .inner{padding:0}#banner .inner .attract{font-size:46px;line-height:36px}#banner .inner .attract span{font-size:52px;line-height:52px}#banner .inner .actions{font-size:18px}.modal{position:fixed;top:50%;left:50%;z-index:1050;width:436px;margin:-250px 0 0 -200px}}
 @media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2)
 {.spread-love{display:none}}
+
+
 a.social
 {padding-left: 12px;padding-right: 12px;text-decoration: none;}
 a.social:hover {text-decoration: underline}
