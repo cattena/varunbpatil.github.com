@@ -6,6 +6,142 @@
 <link>http://varunbpatil.github.com/</link>
 
 <item>
+<title>ADBing into your android phone</title>
+<link>http://varunbpatil.github.com/2012/06/18/adb</link>
+<published>2012-06-18T00:00:00+05:30</published>
+<guid>http://varunbpatil.github.com/2012/06/18/adb</guid>
+<description>&lt;p&gt;I write this article to explain some cool things you can do with your android phone(any android phone) using ADB. ADB(or Android Debugging Bridge) is a tool used to connect and sends commands to your android phone from a computer. In this article I will be explaining with examples what you can accomplish on your android phone using ADB.&lt;/p&gt;
+
+&lt;p&gt;The caveat here is that, the ADB examples that I give you here assume that your phone is rooted. Rooting a phone simply means that you are granted superuser priveleges to your phone. It should however be noted that rooting your phone may void warranty. The procedure for rooting varies from phone to phone. The specific procedure for your phone can easily be found on the internet, so I won&amp;#8217;t be concentrating on that here. I will assume that your phone is rooted. I will also assume some degree of familiarity with basic linux commands.&lt;/p&gt;
+
+&lt;h4 id='installing_the_adb_tool__method_1'&gt;Installing the ADB tool &amp;#8211; Method 1&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ADB is available on the &lt;a href='http://developer.android.com/sdk/index.html'&gt;Android Software Development kit&lt;/a&gt;. Download the package for your platform and install(.exe on windows) or extract to your favorite location on linux.&lt;/li&gt;
+
+&lt;li&gt;Once installed or extracted, cd to the installation directory and launch &lt;em&gt;SDK Manager&lt;/em&gt;.&lt;/li&gt;
+
+&lt;li&gt;Check the platform tools option and uncheck all other options, unless you are developing apps on android.&lt;/li&gt;
+
+&lt;li&gt;The platform tools including adb will be downloaded and installed.&lt;/li&gt;
+
+&lt;li&gt;Once installed, the adb tool is available in the &lt;em&gt;platform-tools/&lt;/em&gt; directory inside the android SDK directory. Make sure to add this to the PATH on linux or windows. On linux, you can modify your &lt;em&gt;~/.bashrc&lt;/em&gt; to contain the line &lt;em&gt;PATH=$PATH:/path/to/android/sdk/platform-tools/&lt;/em&gt;. On windows you can edit the Path system environment variable by searching for &amp;#8220;system environment variable&amp;#8221; in the windows start menu and appending the corresponding path of platform-tools/ to it.&lt;/li&gt;
+
+&lt;li&gt;To bring the PATH to immediate effect in linux, run &lt;em&gt;$ source ~/.bashrc&lt;/em&gt; from a terminal.&lt;/li&gt;
+
+&lt;li&gt;That&amp;#8217;s it. You are now ready to run the adb tool !!!.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='installing_the_adb_tool__method_2'&gt;Installing the ADB tool &amp;#8211; Method 2&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you are not interested in any android development and do not want anything to do with the Android Software Development kit, you can just download the adb tool as a standalone tool. This ofcourse, is not official.&lt;/li&gt;
+
+&lt;li&gt;Download a &lt;a href='http://dottech.org/downloads/adb_fastboot_and_other_tools.zip'&gt;zip file&lt;/a&gt; containing some important adb tools.&lt;/li&gt;
+
+&lt;li&gt;Extract the contents to any place you wish.&lt;/li&gt;
+
+&lt;li&gt;Then similar to the Method 1 above, add that directory to which you extracted the contents of the .zip into the PATH environment variable, and you are done!!!.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once ADB is installed, connect your phone via USB cable to your computer. Make sure, android debugging is enabled on your phone and make sure you have enabled installing of apps from third party sources on your phone.&lt;/p&gt;
+
+&lt;h4 id='testing_adb_in_linux'&gt;Testing adb in linux&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;fire up a terminal and type in the following commands in that sequence.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $ sudo -s
+  $ adb kill-server
+  $ adb root
+  $ adb devices&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should now be able to see your phone listed under the &lt;em&gt;list of devices attached&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;You can now access your phone&amp;#8217;s file system as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $ adb shell
+  # ls&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice that when you are inside the adb shell, you have a hash prompt as opposed to a dollar prompt when you are not. You should now be able to see the root directory of your phone. You can now use several standard linux commands to play around with the files on your phone. You can run pretty much every linux file management command when you are at the hash prompt. Once you are done, you can drop out from the ADB shell by pressing CTRL-D on linux. You will be taken back to the dollar prompt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For most of the following examples, you will need your phone&amp;#8217;s file system to be in R/W mode. So, do that now:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb remount&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now that we have adb tool running, let us look at some cool things you can do with it. At least, this is what I do on my rooted phone using ADB :)&lt;/p&gt;
+
+&lt;h4 id='using_adb_to_do_cool_things'&gt;Using ADB to do &lt;em&gt;cool&lt;/em&gt; things&lt;/h4&gt;
+
+&lt;h5 id='changing_the_boot_animation_of_your_rooted_android_phone'&gt;Changing the boot animation of your rooted android phone&lt;/h5&gt;
+
+&lt;p&gt;Several beautiful boot animations are available &lt;a href='http://forum.xda-developers.com/showthread.php?t=1559132'&gt;here&lt;/a&gt;. Of course, there are many others available freely on the internet. As a matter of fact, it is not very hard to create one yourself. To put simply, the boot animations consists of several individual image files and another text file that tells in what order to display these images and the delay between them. Thats it!!!.&lt;/p&gt;
+
+&lt;p&gt;Once you have downloaded the zip file of the boot animation corresponding to your devices&amp;#8217; resolution, make sure you rename it as &lt;em&gt;bootanimation.zip&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose you have saved the zip as ~/bootanimation.zip. Type in the following commands at the terminal to set your new bootanimation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb push ~/bootanimation.zip /system/media/
+    $ adb reboot&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;#8217;s it!!!. Your phone will now reboot, and you should be able to see the new boot animation in action.&lt;/p&gt;
+
+&lt;h5 id='push_files_into_or_pull_files_from_your_android_phonealso_applies_to_directories'&gt;Push files into or pull files from your android phone(also applies to directories)&lt;/h5&gt;
+
+&lt;p&gt;You can pull files from your android phone to your computer using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb pull &amp;lt;src path on phone&amp;gt; &amp;lt;dst path on computer&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or you can push any file from your computer into your android phone as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb push &amp;lt;src path on computer&amp;gt; &amp;lt;dst path on phone&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example if you want to push ringtones from ~/Ringtones/ on your computer into your android phone, just do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb push ~/Ringtones/ /system/media/audio/Ringtones/&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Similarly, you can push Alarms and Notification sounds to /system/media/audio/Alarms/ and /system/media/audio/Notifications/ directories on your phone respectively.&lt;/p&gt;
+
+&lt;p&gt;You may be wondering what is it that ADB can do that many android file manager apps like Astro file manager cannot do. The answer is ADB allows you to modify system files as well(those that reside in /system/).&lt;/p&gt;
+
+&lt;p&gt;You can also push(or pull) any files into your sdcard as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb push ~/names.txt /sdcard/
+    $ adb pull /sdcard/songs/abc.mp3 ~/Desktop/&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id='disable_the_annoying_camera_shutter_sounds'&gt;Disable the annoying camera shutter sounds&lt;/h5&gt;
+
+&lt;p&gt;This feature is not available in the camera app for ICS roms currently, and the only way to accomplishFor this, is to modify a single system sound file, which is as easy as shown below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb shell
+    # cd /system/media/audio/ui
+    # mv &amp;lt;shutter_sound_file&amp;gt; &amp;lt;shutter_sound_file&amp;gt;.old&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;By renaming the corresponding file, android can no longer find the sound files for the camera shutter and as a result, won&amp;#8217;t play the sound. Press CTRL-D to return to dollar prompt.&lt;/p&gt;
+
+&lt;h5 id='install_paid_android_apps_for_free'&gt;Install paid android apps for free&lt;/h5&gt;
+
+&lt;p&gt;Although this is illegal, I use ADB quite exclusively for this purpose!!!. I have identified two superb sources for downloading paid android apps for free. One is &lt;a href='http://www.4shared.com/'&gt;4shared&lt;/a&gt; and the other is &lt;a href='http://www.filecrop.com/'&gt;Filecrop&lt;/a&gt;. Search for the name of the app as present in the android market and then download the latest version of the android app. It is usually a file with the extension &lt;em&gt;.apk&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose you have downloaded the apk file to ~/Desktop/test.apk you can install it on your phone in one step as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb install test.apk&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Voila!!!. You have just installed a paid android app for free!!!.&lt;/p&gt;
+
+&lt;p&gt;Similarly you can very easily unistall apps from your android phone using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ adb uninstall &amp;lt;package name&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In short, you can run pretty much every linux command that you use on your computer&amp;#8217;s linux file system, to manage files on your android phone which can be very powerful when managing large number of files using regular expressions, which is just not possible on your native android file manager app. If you have any trouble at all using adb with your phone, feel free to leave a comment below. I will try my best to sort things out for you. :)&lt;/p&gt;</description>
+</item>
+
+<item>
 <title>Beautiful duckling : Duck Duck Go</title>
 <link>http://varunbpatil.github.com/2012/06/07/duck-duck-go</link>
 <published>2012-06-07T00:00:00+05:30</published>
@@ -63,7 +199,7 @@
 &lt;h4 id='adrian_lamo'&gt;Adrian Lamo&lt;/h4&gt;
 
 &lt;p&gt;He shot to fame by breaking into major companies like New York Times, Microsoft Corporation by using internet connections at coffee shops and libraries to infiltrate these systems, which earned him the nickname of the &amp;#8220;homeless hacker&amp;#8221;. His other hits include Yahoo!, Bank of America, Citigroup and Cingular. He used to inform the respective companies of the security flaws in their systems after breaking into and exploiting them, but since he was not hired by any of these companies as penetration testers, what he did was illegal. After serving nearly 2 years, Adrian now works as an award-winning journalist and public speaker.&lt;/p&gt;
-&lt;img src='/images/Lamo-Mitnick-Poulsen.png' width='750px' /&gt;
+&lt;img width='750px' src='/images/Lamo-Mitnick-Poulsen.png' /&gt;
 &lt;p&gt;Adrian Lamo, Kevin-Mitnick and Kevin Poulsen in reformed times :)&lt;/p&gt;</description>
 </item>
 
