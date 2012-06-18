@@ -1,0 +1,31 @@
+{% comment %}<!--
+The tags_list include is a listing helper for tags.
+Usage:
+  1) assign the 'tags_list' variable to a valid array of tags.
+  2) include tags_list
+  example:
+    <ul>
+  	  {% assign tags_list = site.tags %}  
+  	  {% include tags_list %}
+  	</ul>
+  
+  Notes: 
+    Tags can be either a Hash of tag objects (hashes) or an Array of tag-names (strings).
+    The encapsulating 'if' statement checks whether tags_list is a Hash or Array.
+    site.tags is a Hash while page.tags is an array.
+    
+-->{% endcomment %}
+
+<ul class="custom_bullet">
+{% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+    	<p class="blogpage"><li><a href="/tags/{{ tag }}">{{ tag }}</a></li></p>
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %} 
+    	<p class="blogpage"><li><a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a></li></p>
+    {% endfor %}
+{% endif %}
+</ul>
+
+{% assign tags_list = nil %}
