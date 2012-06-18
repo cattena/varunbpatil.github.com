@@ -335,10 +335,10 @@ margin-bottom: 25px;
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
+/* only for old disqus comments; new 2012 disqus comments does not require this css
 #disqus_thread {
 width: 750px !important; 
 }
-
 #dsq-content h3 {
 font-size: 0.8em !important;
 }
@@ -351,18 +351,17 @@ font-size: 0.8em !important;
 a.dsq-subscribe-rss {
 font-size: 0.8em !important;
 }
-
-img.portfolio {
-border: 4px solid gray;
-margin: 5px 0 20px 50px;        
-width: 240px;        
-}
-
 div#dsq-subscribe {
 visibility: hidden;
 }
 a.dsq-brlink {
 visibility: hidden;
+}*/
+
+img.portfolio {
+border: 4px solid gray;
+margin: 5px 0 20px 50px;        
+width: 240px;        
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
