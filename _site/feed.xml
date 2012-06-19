@@ -17,19 +17,39 @@
 &lt;h4 id='installing_the_adb_tool__method_1'&gt;Installing the ADB tool &amp;#8211; Method 1&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;ADB is available on the &lt;a href='http://developer.android.com/sdk/index.html'&gt;Android Software Development kit&lt;/a&gt;. Download the package for your platform and install(.exe on windows) or extract to your favorite location on linux.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ADB is available on the &lt;a href='http://developer.android.com/sdk/index.html'&gt;Android Software Development kit&lt;/a&gt;. Download the package for your platform and install(.exe on windows) or extract to your favorite location on linux.&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;Once installed or extracted, cd to the installation directory and launch &lt;em&gt;SDK Manager&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once installed or extracted, cd to the installation directory and launch &lt;em&gt;SDK Manager&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;Check the platform tools option and uncheck all other options, unless you are developing apps on android.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check the platform tools option and uncheck all other options, unless you are developing apps on android.&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;The platform tools including adb will be downloaded and installed.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The platform tools including adb will be downloaded and installed.&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;Once installed, the adb tool is available in the &lt;em&gt;platform-tools/&lt;/em&gt; directory inside the android SDK directory. Make sure to add this to the PATH on linux or windows. On linux, you can modify your &lt;em&gt;~/.bashrc&lt;/em&gt; to contain the line &lt;em&gt;PATH=$PATH:/path/to/android/sdk/platform-tools/&lt;/em&gt;. On windows you can edit the Path system environment variable by searching for &amp;#8220;system environment variable&amp;#8221; in the windows start menu and appending the corresponding path of platform-tools/ to it.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once installed, the adb tool is available in the &lt;em&gt;platform-tools/&lt;/em&gt; directory inside the android SDK directory. Make sure to add this to the PATH on linux or windows. On linux, you can modify your &lt;strong&gt;~/.bashrc&lt;/strong&gt; to contain the following line&lt;/p&gt;
 
-&lt;li&gt;To bring the PATH to immediate effect in linux, run &lt;em&gt;$ source ~/.bashrc&lt;/em&gt; from a terminal.&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;  PATH=$PATH:/path/to/android/sdk/platform-tools/ &lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;That&amp;#8217;s it. You are now ready to run the adb tool !!!.&lt;/li&gt;
+&lt;p&gt;On windows you can edit the Path system environment variable by searching for &amp;#8220;system environment variable&amp;#8221; in the windows start menu and appending the corresponding path of platform-tools/ to it.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;To bring the PATH to immediate effect in linux, run the following command from a terminal(or log-out and log back in).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $ source ~/.bashrc&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;That&amp;#8217;s it. You are now ready to run the adb tool !!!.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id='installing_the_adb_tool__method_2'&gt;Installing the ADB tool &amp;#8211; Method 2&lt;/h4&gt;
@@ -50,7 +70,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;fire up a terminal and type in the following commands in that sequence.&lt;/p&gt;
+&lt;p&gt;Fire up a terminal and type in the following commands in that sequence.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  $ sudo -s
   $ adb kill-server
@@ -84,7 +104,7 @@
 
 &lt;p&gt;Once you have downloaded the zip file of the boot animation corresponding to your devices&amp;#8217; resolution, make sure you rename it as &lt;em&gt;bootanimation.zip&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Suppose you have saved the zip as ~/bootanimation.zip. Type in the following commands at the terminal to set your new bootanimation.&lt;/p&gt;
+&lt;p&gt;Suppose you have saved the zip as &lt;em&gt;~/bootanimation.zip&lt;/em&gt;. Type in the following commands at the terminal to set your new bootanimation.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    $ adb push ~/bootanimation.zip /system/media/
     $ adb reboot&lt;/code&gt;&lt;/pre&gt;
@@ -199,7 +219,7 @@
 &lt;h4 id='adrian_lamo'&gt;Adrian Lamo&lt;/h4&gt;
 
 &lt;p&gt;He shot to fame by breaking into major companies like New York Times, Microsoft Corporation by using internet connections at coffee shops and libraries to infiltrate these systems, which earned him the nickname of the &amp;#8220;homeless hacker&amp;#8221;. His other hits include Yahoo!, Bank of America, Citigroup and Cingular. He used to inform the respective companies of the security flaws in their systems after breaking into and exploiting them, but since he was not hired by any of these companies as penetration testers, what he did was illegal. After serving nearly 2 years, Adrian now works as an award-winning journalist and public speaker.&lt;/p&gt;
-&lt;img width='750px' src='/images/Lamo-Mitnick-Poulsen.png' /&gt;
+&lt;img src='/images/Lamo-Mitnick-Poulsen.png' width='750px' /&gt;
 &lt;p&gt;Adrian Lamo, Kevin-Mitnick and Kevin Poulsen in reformed times :)&lt;/p&gt;</description>
 </item>
 

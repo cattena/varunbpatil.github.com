@@ -23,9 +23,9 @@
 		<link rel="stylesheet" media="all" href="/style.css"/>
 		<link rel="stylesheet" media="all" href="/style_accordion.css"/>
         <link href='http://fonts.googleapis.com/css?family=Port+Lligat+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Advent+Pro:500' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
         
 
@@ -141,19 +141,39 @@
 <h4 id='installing_the_adb_tool__method_1'>Installing the ADB tool &#8211; Method 1</h4>
 
 <ul>
-<li>ADB is available on the <a href='http://developer.android.com/sdk/index.html'>Android Software Development kit</a>. Download the package for your platform and install(.exe on windows) or extract to your favorite location on linux.</li>
+<li>
+<p>ADB is available on the <a href='http://developer.android.com/sdk/index.html'>Android Software Development kit</a>. Download the package for your platform and install(.exe on windows) or extract to your favorite location on linux.</p>
+</li>
 
-<li>Once installed or extracted, cd to the installation directory and launch <em>SDK Manager</em>.</li>
+<li>
+<p>Once installed or extracted, cd to the installation directory and launch <em>SDK Manager</em>.</p>
+</li>
 
-<li>Check the platform tools option and uncheck all other options, unless you are developing apps on android.</li>
+<li>
+<p>Check the platform tools option and uncheck all other options, unless you are developing apps on android.</p>
+</li>
 
-<li>The platform tools including adb will be downloaded and installed.</li>
+<li>
+<p>The platform tools including adb will be downloaded and installed.</p>
+</li>
 
-<li>Once installed, the adb tool is available in the <em>platform-tools/</em> directory inside the android SDK directory. Make sure to add this to the PATH on linux or windows. On linux, you can modify your <em>~/.bashrc</em> to contain the line <em>PATH=$PATH:/path/to/android/sdk/platform-tools/</em>. On windows you can edit the Path system environment variable by searching for &#8220;system environment variable&#8221; in the windows start menu and appending the corresponding path of platform-tools/ to it.</li>
+<li>
+<p>Once installed, the adb tool is available in the <em>platform-tools/</em> directory inside the android SDK directory. Make sure to add this to the PATH on linux or windows. On linux, you can modify your <strong>~/.bashrc</strong> to contain the following line</p>
 
-<li>To bring the PATH to immediate effect in linux, run <em>$ source ~/.bashrc</em> from a terminal.</li>
+<pre><code>  PATH=$PATH:/path/to/android/sdk/platform-tools/ </code></pre>
 
-<li>That&#8217;s it. You are now ready to run the adb tool !!!.</li>
+<p>On windows you can edit the Path system environment variable by searching for &#8220;system environment variable&#8221; in the windows start menu and appending the corresponding path of platform-tools/ to it.</p>
+</li>
+
+<li>
+<p>To bring the PATH to immediate effect in linux, run the following command from a terminal(or log-out and log back in).</p>
+
+<pre><code>  $ source ~/.bashrc</code></pre>
+</li>
+
+<li>
+<p>That&#8217;s it. You are now ready to run the adb tool !!!.</p>
+</li>
 </ul>
 
 <h4 id='installing_the_adb_tool__method_2'>Installing the ADB tool &#8211; Method 2</h4>
@@ -174,7 +194,7 @@
 
 <ul>
 <li>
-<p>fire up a terminal and type in the following commands in that sequence.</p>
+<p>Fire up a terminal and type in the following commands in that sequence.</p>
 
 <pre><code>  $ sudo -s
   $ adb kill-server
@@ -208,7 +228,7 @@
 
 <p>Once you have downloaded the zip file of the boot animation corresponding to your devices&#8217; resolution, make sure you rename it as <em>bootanimation.zip</em></p>
 
-<p>Suppose you have saved the zip as ~/bootanimation.zip. Type in the following commands at the terminal to set your new bootanimation.</p>
+<p>Suppose you have saved the zip as <em>~/bootanimation.zip</em>. Type in the following commands at the terminal to set your new bootanimation.</p>
 
 <pre><code>    $ adb push ~/bootanimation.zip /system/media/
     $ adb reboot</code></pre>

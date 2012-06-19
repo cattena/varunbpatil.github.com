@@ -23,9 +23,9 @@ padding: 4px 0 4px 0;
 font-weight: bold;         
 }
 
-.accordion a.main:hover {
+/*.accordion a.main:hover {
 color: #08088A;
-}
+}*/
 
 .accordion li a, .accordion li a:hover{
 display: block;

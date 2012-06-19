@@ -1,6 +1,7 @@
-p {
-font-family: 'Advent Pro', sans-serif;
+p, div.post li, ul.custom_bullet li {
+font-family: 'Gentium Basic', serif;
 }
+
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
@@ -141,7 +142,7 @@ html
 #header .inner #site-name
 {font-family: 'Port Lligat Sans', sans-serif; padding-bottom:0;color:#d4d4d4;font-size:38px;letter-spacing:1px;line-height:36px;float:left;position:absolute;left:48px;top:13px}
 #header .inner #navigation
-{font-family: 'Shadows Into Light', cursive; font-size: 30px;position:absolute;left:310px;top:18px}
+{font-family: 'Swanky and Moo Moo', cursive; font-size: 32px;position:absolute;left:310px;top:18px;}
 #header .inner #navigation ul
 {margin:0;padding:0}
 #header .inner #navigation li
