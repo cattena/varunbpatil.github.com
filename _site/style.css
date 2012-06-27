@@ -1,5 +1,7 @@
 p, div.post li, ul.custom_bullet li {
-font-family: 'Gentium Basic', serif;
+/*font-family: 'Gentium Basic', serif;*/
+font-family: 'Yanone Kaffeesatz', sans-serif;
+letter-spacing: 1px;
 }
 
 button::-moz-focus-inner,

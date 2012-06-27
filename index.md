@@ -4,7 +4,7 @@ title: Home
 ---
 <section id="banner" class="section">
     <div class="inner">
-	    <p class="attract"><span class="darker">Welcome</span><br />&nbsp;&nbsp;&nbsp;&nbsp;to a whole new world.</p>
+	    <p class="attract"><span class="darker">Welcome</span><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to a whole new world.</p>
 	</div>
 </section>
 <br /> <br /><br /><br />
