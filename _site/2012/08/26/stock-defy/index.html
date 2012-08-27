@@ -4,7 +4,7 @@
         <meta http-equiv="pragma" content="no-cache">
 
 		<!-- TO Fancy SEARCH ENGINE -->
-		<title>Varun B Patil | Black hat Hall Of Fame</title>
+		<title>Varun B Patil | How to go back to stock rom on Motorola Defy</title>
 		<meta name="description" content="Varun B Patil's blog"/>
 
 		<!-- TO FANCY GOOGLE -->
@@ -121,53 +121,81 @@
 <br />
 <article class="post">
     <header class="post-header">
-        <h1 class="post-title">Black hat Hall Of Fame</h1>
+        <h1 class="post-title">How to go back to stock rom on Motorola Defy</h1>
     </header><!-- post-title -->
     <div class="post-meta">
-        <time class="date" datetime="2012-06-06T00:00:00+05:30">06 June 2012</time>
+        <time class="date" datetime="2012-08-26T00:00:00+05:30">26 August 2012</time>
         <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
         
     </div><!-- .post-meta -->
     <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
     
-        <a class="tag" href="/tags/computers/">computers</a> &nbsp;
-    
-        <a class="tag" href="/tags/web/">web</a> &nbsp;
+        <a class="tag" href="/tags/android/">android</a> &nbsp;
     
     </p>
     <br />
     <div class="post">
-        <p>In this article I will be writing about few of the most notorious Black Hat hackers in the world. For those who don&#8217;t know what Black Hat hackers means, they are those hackers with malicious intent as against White Hat hackers who hack mainly to expose security flaws to the developers. Here goes a list of the in-famous!!!</p>
+        <p>I have always loved custom ROM&#8217;s like the Cyanogenmod and MIUI. I like to be on the bleeding edge. Once I got my hands at the ICS and JB rom&#8217;s by Cyanogenmod, I never thought I&#8217;d look back. I never thought I&#8217;d have to ever again go back to stock Motorola defy Froyo ROM. But, I was wrong. Recently, on one of my regular Cyanogenmod JB nightly(Quarx&#8217;s build) updates, my phone restarted in the middle of the update and that was it&#8230; GONE !!!. The phone did not boot and when I tried clearing the cache, I got some weird errors. I couldn&#8217;t get access to the SDcard on the phone&#8230; Even wiping data and clearing dalvik cache did not help&#8230; I really thought I had bricked my phone, but then after some frantic google searches on the XDA developers forum, I learnt that bricking a motorola defy is really hard, thanks to the locked bootloader on the motorola defy.</p>
 
-<h4 id='jonathan_james'>Jonathan James</h4>
+<p>Then I heard several such cache errors being reported and several solution to the same, the most recommended of which was to go back to stock ROM by using a tool called RSDLite and without a doubt, it worked flawlessly and the procedure couldn&#8217;t have been easier. Here are all the steps you need to go back to stock ROM on motorola defy(if you have had any cache errors and unable to boot up). I have even given the steps to once again flash your favourite custom ROM after re-rooting your defy, if you are one of those people who cannot live without the custom ROM, but only need the stock ROM as a way to recover from the horrifying errors.</p>
 
-<p>This person tops the list of in-famous black hat hackers hands down. James was sent to juvenile prison at the age of 16 for installing backdoors on DoD(US dept. of defense) computers and stealing highly sensitive information regarding national security. James also cracked into NASA computers, stealing software worth approximately $1.7 million that included softwares critical to the operation of the ISS(international space station). In 2007, several high profile companies claimed that their networks were compromised and the police knew where to look for. James denied any involvement in these incidents, but his notoriety was such that he knew he would be convicted for crimes he did not commit and thus tragically took his own life in 2008. Sad ending to a computer wizard who at such a young age knew more than any of us could ever have known in our entire lives. :(</p>
+<h4 id='what_you_will_need_before_you_start'>What you will need before you start</h4>
 
-<h4 id='kevin_mitnick'>Kevin Mitnick</h4>
+<ul>
+<li>Download <strong>RSDLite</strong> from <a href='http://forum.xda-developers.com/attachment.php?attachmentid=835334&amp;d=1325246927'>here</a>.</li>
 
-<p>The most wanted computer criminal in United States&#8217; history and the storyline behind two hollywood movies &#8220;Freedom Downtime&#8221; and &#8220;Takedown&#8221;. Mitnick currently owns and operates a computer security consulting agency called Mitnick Security Consulting, but not all was well before. He was sent to prison for hacking into DEC(Digital Equipment Corporation)&#8217;s network. After release from prison, he went into hiding and went on a hacking spree that involved compromising the national defense warning system&#8217;s and stealing corporate secrets. He ended up spending close to 5 years in solitary confinement. He later decided to mend his ways and use his expert skills for something more constructive, the result of which is quite evident today.</p>
+<li>Make sure your computer can recognize your defy&#8230; make sure you have the <strong>motorola defy drivers</strong> installed on your windows system. You can download the drivers <a href='http://forum.xda-developers.com/attachment.php?attachmentid=525694&amp;d=1298502477'>here</a>.</li>
 
-<h4 id='albert_gonzalez'>Albert Gonzalez</h4>
+<li>Download the correct <strong>&#8220;.sbf&#8221; file</strong> for your motorola defy from <a href='http://forum.xda-developers.com/showthread.php?t=966537'>here</a>. This is the most overwhelming aspect of it all, with so many .sbf file versions out there for the taking and warnings everywhere regarding the consequences of flashing a wrong sbf file. At this point it pays to remember which version of Android your phone had when you bought it and whether it came loaded with Motoblur or not. I had bought my Motorola defy in India and had come with Froyo and without motoblur&#8230; So the sbf file I downloaded is <a href='JRDNEM_U3_3.4.2_179-002_DEBLUR_SIGN_SIGNED_UCAJRDNEMARAB1B80AA03A.0R_PDS03C_USAJRDNFRYORTCEE_P016_A016_HWp3_Service1FF.sbf'>here</a>.</li>
 
-<p>He entered the black hat hall of fame by stealing close to 170 million credit card details over a period of two years. He was also involved in fabrication of fraudulent passwords, health insurance cards and birth certificates for identity thefts that amounted to a staggering $4.3 million in stolen data. In 2010, he was sentenced to 20 years in prison.</p>
+<li>If you want to re-root your phone and flash a Custom ROM again!!!, you will need <a href='http://depositfiles.com/files/n0dcxce3t'>SuperOneClick</a> and <a href='http://www.4shared.com/file/PbVxYsPx/sndinitdefy__23_.html'>SndInitDefy</a>.</li>
+</ul>
 
-<h4 id='kevin_poulsen'>Kevin Poulsen</h4>
+<h4 id='procedure_to_go_back_to_stock_on_motorola_defy'>Procedure to go back to stock on Motorola defy</h4>
 
-<p>Currently a top-notch journalist and a senior editor at Wired News, Kevin shot to fame by using his in-depth knowledge of telephone systems to hack into the telephone lines of LA radio(a popular radio station) and position himself as a winning caller in a competetion that won him a spanking new Porsche. In effect he had taken over all the telephone lines to the radio station to put himself into the hot seat. He then took his place on the FBI&#8217;s most wanted list when he hacked into federal systems and stole wiretap information. After serving more than 5 years for his crimes, he decided to mend his ways much like Kevin Mitnick(even their names start with Kevin!!!. What a coincidence!!!). At one point in his reformed life, he even helped authorities nab 744 sex offenders just with their MySpace profiles. Not a bad ending after all. :)</p>
+<ul>
+<li><strong>Power off</strong> your phone.</li>
 
-<h4 id='robert_tappan_morris'>Robert Tappan Morris</h4>
+<li><strong>Press and hold the volume down</strong> button while booting. You will see a triangle with an exclamation mark on the screen.</li>
 
-<p>Does the name sound familiar. It does indeed. He was the person who created the Morris worm, the first computer virus to be unleashed on the internet for which he became the first person to be prosecuted under the 1986 Computer Fraud and Abuse Act. What is unbelievable is that, he is the son of a NSA(National Security Agency) scientist Robert Morris. Even more unbelievable, Morris wrote the code for the worm while at Cornell University. The worm ultimately spread so far and wide and slowed down computers until they were unusable. But, Morris claimed that he only wanted to see how wide the internet was. He spent about 3 years in prison for this, but like a few others on this Hall of Fame, he decided use his talent towards something less incendiary. Morris is currently working as a professor at the MIT Computer Science and Artificial Intelligence Laboratory.</p>
+<li>Now press both the volume up and volume down buttons <strong>simultaneously</strong>.</li>
 
-<h4 id='nashon_evenchaim'>Nashon Even-Chaim</h4>
+<li>At the screen that comes up, <strong>wipe cache and wipe data</strong> and factory reset. Don&#8217;t worry if you get cache errors here.</li>
 
-<p>Nahshon Even-Chaim ,aka Phoenix, was the first major computer hacker to be convicted in Australia. He was one of the most highly-skilled members of a computer hacking group called The Realm, based in Melbourne, Australia, from the late 1980s until his arrest by the Australian Federal Police in early 1990. His targets centred on defence and nuclear weapons research networks including NASA. He developed a reputation within The Realm, his computer hacking group, for skill and arrogance. The AFP(Australian Federal Police) installed wiretaps on his phone and modems. The data taps revealed Even-Chaim spent marathon sessions at his computer, working at a rapid pace to enter and tamper with computer systems. It was the first time in the world a remote data intercept had been used to gain evidence for a computer crime prosecution.</p>
+<li><strong>Reboot</strong> the phone once again, this time while keeping the <strong>volume up button depressed</strong>.</li>
 
-<h4 id='adrian_lamo'>Adrian Lamo</h4>
+<li>You will enter a screen with white text on a black background, saying something like, USB connection or something.</li>
 
-<p>He shot to fame by breaking into major companies like New York Times, Microsoft Corporation by using internet connections at coffee shops and libraries to infiltrate these systems, which earned him the nickname of the &#8220;homeless hacker&#8221;. His other hits include Yahoo!, Bank of America, Citigroup and Cingular. He used to inform the respective companies of the security flaws in their systems after breaking into and exploiting them, but since he was not hired by any of these companies as penetration testers, what he did was illegal. After serving nearly 2 years, Adrian now works as an award-winning journalist and public speaker.</p>
-<img src='/images/Lamo-Mitnick-Poulsen.png' width='750px' />
-<p>Adrian Lamo, Kevin-Mitnick and Kevin Poulsen in reformed times :)</p>
+<li>Now connect your phone to the computer via the USB cable, and you should see a change in the text displayed&#8230; something like USB connected.</li>
+
+<li>This means that your phone has been detected by the computer and you have the right motorola drivers for your phone.</li>
+
+<li>Now <strong>launch RSDLite</strong> (you will have to install it first on your computer). There should be one line in the progress display area that shows some info about the current status of your phone. If this line is not there, it means your device is not detected by the computer. Try reinstalling the defy drivers.</li>
+
+<li>Now it is time to <strong>select the .sbf file</strong> that you downloaded earlier. To do this, click on the &#8221;&#8230;&#8221; button in RSDLite and select the .sdf file from your computer&#8217;s filesystem.</li>
+
+<li>Now <strong>click on start</strong>. The process of flashing the stock ROM will begin. The progress display area will show the percentage completion of the process.</li>
+
+<li>Sit back and relax. Your phone will be alright afterall. Wait till it says &#8220;executed : 100%&#8221;, but do not disconnect the phone or exit the program.</li>
+
+<li>Now the phone will automatically reboot and continue the process of flashing.</li>
+
+<li>Wait till the whole process completes and you see a <strong>&#8220;Finished&#8221; and &#8220;Pass&#8221;</strong> in the results area.</li>
+
+<li>That was it&#8230; Congratulations!!! You now have stock defy ROM on your phone. Now you can heave a sigh of relief knowing that you have not bricked your phone.</li>
+</ul>
+
+<h4 id='rerooting_and_reinstalling_your_favorite_custom_rom'>Re-rooting and re-installing your favorite custom ROM</h4>
+
+<p>This is for all those impatient people who want to get back to their favorite Custom ROM and only needed the stock ROM flashing to get rid of those terrifying cache errors. As usual, it is very simple, so read on&#8230;</p>
+
+<ul>
+<li>The program I use to root my Motorola defy is <strong>SuperOneClick</strong>, which you would have downloaded from the pre-requisites section above. Make sure you have <strong>enabled USB Debugging on your phone</strong> after you have flashed the Stock Motorola defy ROM following the steps above. Launch the SuperOneClick program, connect your phone to the computer via USB and <strong>click on the &#8220;ROOT&#8221;</strong> button at the top left corner of the SuperOneClick program. The rooting process will start. At some point, it will prompt you whether you would like to install BusyBox on your phone. Click on YES. The phone will reboot a couple of times during the process&#8230; Nothing to worry there. At the end of the rooting procedure you will be prompted whether you would like to test the root&#8230; Click on YES. That&#8217;s it&#8230; Your phone is rooted. You can close the SuperOneClick program.</li>
+
+<li>Now that you have root on your phone, you have to <strong>install 2ndinit and recovery</strong> which will allow you to flash any custom ROM, that you so loved before you were brought down to your knees by the cache errors!!!.</li>
+
+<li>Transfer the SndInitDefy.apk file that you downloaded earlier to your phone&#8217;s sdcard and install it like any other android app using the native file manager or any other file manager like ASTRO or ES File Explorer from the android market. To do this, however you will have to <strong>enable installing 3rd party apps</strong>. This option is available in the Developer&#8217;s section in the settings screen. If you are feeling very geeky, you can as well use ADB to install the app with the command &#8220;adb install SndInitDefy.apk&#8221;. Now that you have installed the SndInitDefy app, launch it from your phone and select to <strong>download and install recovery</strong>. That&#8217;s it&#8230; You can now boot into recovery and flash your favorite Custom ROM just like you have done a gazillion times before :)</li>
+</ul>
     </div>
     <br />
     <br />
