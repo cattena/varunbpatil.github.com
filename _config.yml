@@ -59,20 +59,20 @@ analytics :
 
 
 navigation:
-- text: Home
+- text: HOME
   url: /
   layouts:
   - default
-- text: About
+- text: ABOUT
   url: /about/
   layouts: 
   - portfolio
-- text: Blog
+- text: BLOG
   url: /blog/
   layouts: 
   - blog
   - post
-- text: Tags
+- text: TAGS
   url: /tag/
   layouts: 
   - newtagpage

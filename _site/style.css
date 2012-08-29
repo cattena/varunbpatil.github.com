@@ -143,21 +143,17 @@ html
 #header .inner #site-name
 {font-family: 'Port Lligat Sans', sans-serif; padding-bottom:0;color:#d4d4d4;font-size:38px;letter-spacing:1px;line-height:36px;float:left;position:absolute;left:48px;top:13px}
 #header .inner #navigation
-{font-family: 'Swanky and Moo Moo', cursive; font-size: 32px;position:absolute;left:310px;top:18px;}
+{font-family:"Verdana";font-size:14px;position:absolute;left:330px;top:18px;}
 #header .inner #navigation ul
 {margin:0;padding:0}
 #header .inner #navigation li
-{list-style-type:none;float:left;display:inline;margin:0 10px 0 0;position:relative;font-weight:normal}
-#header .inner #navigation li a
-{color:#959b9d;text-decoration:none;padding:6px 10px}
-#header .inner #navigation li a:hover
+{list-style-type:none;float:left;display:inline;padding:0 14px 0 14px;position:relative;font-weight:normal}
+#header .inner #navigation li span a
+{color:#959b9d;text-decoration:none;padding:0px 0px 0px 0px;} 
+#header .inner #navigation li span a:hover
 {color:#fff}
-#header .inner #navigation li a.current
-{background-color:#292b2f;color:#fff;border-radius:0px}
-#header .inner #navigation li.facebook
-{left:220px}
-#header .inner #navigation li.twitter
-{left:225px}
+#header .inner #navigation li span.current
+{border-bottom:solid 3px yellow;padding-bottom:2px;}
 #banner
 {padding:100px 0 50px 0}
 #banner .darker
