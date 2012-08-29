@@ -153,7 +153,7 @@ html
 #header .inner #navigation li span a:hover
 {color:#fff}
 #header .inner #navigation li span.current
-{border-bottom:solid 3px yellow;padding-bottom:2px;}
+{border-bottom:dotted 1px yellow;padding-bottom:2px;}
 #banner
 {padding:100px 0 50px 0}
 #banner .darker

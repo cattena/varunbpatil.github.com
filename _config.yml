@@ -78,3 +78,5 @@ navigation:
   - newtagpage
   - tagpage
   - tag
+- text: RESUME
+  url: /resume.pdf
