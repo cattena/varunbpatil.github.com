@@ -2,19 +2,26 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
   <url>
     <loc>http://varunbpatil.github.com/</loc>
-    <lastmod>2012-08-30T20:53:20+05:30</lastmod>
+    <lastmod>2012-09-20T13:28:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://varunbpatil.github.com/about/</loc>
-    <lastmod>2012-08-30T20:53:20+05:30</lastmod>
+    <lastmod>2012-09-20T13:28:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://varunbpatil.github.com/blog/</loc>
-    <lastmod>2012-08-30T20:53:20+05:30</lastmod>
+    <lastmod>2012-09-20T13:28:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://varunbpatil.github.com/2012/09/19/linux-tricks/</loc>
+    <lastmod>2012-09-19T00:00:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -105,7 +112,7 @@
   
 	<url>
     <loc>http://varunbpatil.github.com/resume.pdf/</loc>
-    <lastmod>2012-08-30T20:53:20+05:30</lastmod>
+    <lastmod>2012-09-20T13:28:34+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
