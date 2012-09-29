@@ -653,7 +653,7 @@
 
 &lt;pre&gt;&lt;code&gt;    $ cat originalfile.txt | pv &amp;gt; newfile.txt&lt;/code&gt;&lt;/pre&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-&lt;p&gt;Wuff&amp;#8230; this is one huge article, but one which I enjoyed writing and one I hope you will enjoy executing. I have at some point used all of these commands in my day to day work. It is very likely that you may get errors saying command not found while executing some of these commands, because you don&amp;#8217;t have the necessary packages installed. You can always install them and continue playing or you can leave a comment below and I will help you get it working. Enjoy Linux :) :) and stay tuned for more comprehensive articles on specific Linux tools like vim, ssh, scp, rsync and more in the future.&lt;/p&gt;
+&lt;p&gt;Wuff&amp;#8230; this is one huge article, but one which I enjoyed writing and one I hope you will enjoy executing. I have at some point used all of these commands in my day to day work. It is very likely that you may get errors saying command not found while executing some of these commands, because you don&amp;#8217;t have the necessary packages installed. You can always install them and continue playing or you can leave a comment below and I will help you get it working. Enjoy Linux :) :) and stay tuned for more comprehensive articles on specific Linux tools like vim, ssh, scp, rsync, git version control system and more in the future.&lt;/p&gt;
 
 &lt;p&gt;Once again I sincerely thank &lt;a href='http://chandrashekar.info/'&gt;Mr. Chandrashekar Babu&lt;/a&gt; for his superb linux training classes at Cisco and for enlightening us about some of the above Linux command line tricks.&lt;/p&gt;</description>
 </item>
@@ -996,7 +996,7 @@
 &lt;h4 id='adrian_lamo'&gt;Adrian Lamo&lt;/h4&gt;
 
 &lt;p&gt;He shot to fame by breaking into major companies like New York Times, Microsoft Corporation by using internet connections at coffee shops and libraries to infiltrate these systems, which earned him the nickname of the &amp;#8220;homeless hacker&amp;#8221;. His other hits include Yahoo!, Bank of America, Citigroup and Cingular. He used to inform the respective companies of the security flaws in their systems after breaking into and exploiting them, but since he was not hired by any of these companies as penetration testers, what he did was illegal. After serving nearly 2 years, Adrian now works as an award-winning journalist and public speaker.&lt;/p&gt;
-&lt;img width='750px' src='/images/Lamo-Mitnick-Poulsen.png' /&gt;
+&lt;img src='/images/Lamo-Mitnick-Poulsen.png' width='750px' /&gt;
 &lt;p&gt;Adrian Lamo, Kevin-Mitnick and Kevin Poulsen in reformed times :)&lt;/p&gt;</description>
 </item>
 
