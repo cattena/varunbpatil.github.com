@@ -22,9 +22,10 @@
 				
 		<link rel="stylesheet" media="all" href="/style.css"/>
 		<link rel="stylesheet" media="all" href="/style_accordion.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Port+Lligat+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'> 
-        <link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -57,7 +58,7 @@
                                 {% endif %}
                                 <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
                                     <span class="{{ current }}">
-																			<a class="{{ current }}" href="{{ link.url }}" target="{% if link.url == "/resume.html" %}_blank{% endif %}">{{ link.text }}</a>
+																			<a class="{{ current }}" href="{{ link.url }}" target="{% if link.url == "/resume.pdf" %}_blank{% endif %}">{{ link.text }}</a>
 																		</span>
                                 </li>
                             {% endfor %}

@@ -1,6 +1,5 @@
 p, div.post li, ul.custom_bullet li {
-font-family: 'Gentium Basic', serif;
-/*letter-spacing: -1px;*/
+font-family: 'PT Sans Narrow', sans-serif;    
 }
 
 button::-moz-focus-inner,
@@ -141,19 +140,19 @@ html
 #header .inner
 {height:60px;overflow:hidden}
 #header .inner #site-name
-{font-family: 'Port Lligat Sans', sans-serif; padding-bottom:0;color:#d4d4d4;font-size:38px;letter-spacing:1px;line-height:36px;float:left;position:absolute;left:48px;top:13px}
+{font-family: 'Trade Winds', cursive;padding-bottom:0;color:#d4d4d4;font-size:38px;letter-spacing:0.4px;line-height:36px;float:left;position:absolute;left:48px;top:13px}
 #header .inner #navigation
-{font-family:"Verdana";font-size:14px;position:absolute;left:330px;top:18px;}
+{font-family:"Verdana";font-size:14px;position:absolute;left:370px;top:18px;}
 #header .inner #navigation ul
 {margin:0;padding:0}
 #header .inner #navigation li
-{list-style-type:none;float:left;display:inline;padding:0 14px 0 14px;position:relative;font-weight:normal}
+{font-family: 'Quantico', sans-serif;font-size:16px;list-style-type:none;float:left;display:inline;padding:0 14px 0 14px;position:relative;font-weight:normal}
 #header .inner #navigation li span a
 {color:#959b9d;text-decoration:none;padding:0px 0px 0px 0px;} 
 #header .inner #navigation li span a:hover
 {color:#fff}
 #header .inner #navigation li span.current
-{border-bottom:dotted 1px yellow;padding-bottom:2px;}
+{border-bottom:solid 2px yellow;padding-bottom:2px;}
 #banner
 {padding:100px 0 50px 0}
 #banner .darker
