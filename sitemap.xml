@@ -10,7 +10,7 @@ layout: nil
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://varunbpatil.github.com/about/</loc>
+    <loc>http://varunbpatil.github.com/profile/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>

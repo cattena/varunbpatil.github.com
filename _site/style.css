@@ -50,9 +50,9 @@ p .left
 p .right
 {margin:1.5em 0 1.5em 1.5em;padding:0}
 a:focus,a:hover
-{color:#4183C4;text-decoration: underline}
+{background-color:#E0F2F7}
 a
-{color:#4183C4;text-decoration:none;}
+{color:#4183C4;text-decoration:none;border-bottom:1px dotted}
 blockquote
 {margin:1.5em;color:#666;font-style:italic}
 strong,dfn
@@ -148,17 +148,17 @@ html
 #header .inner #navigation li
 {font-family: 'Quantico', sans-serif;font-size:16px;list-style-type:none;float:left;display:inline;padding:0 14px 0 14px;position:relative;font-weight:normal}
 #header .inner #navigation li span a
-{color:#959b9d;text-decoration:none;padding:0px 0px 0px 0px;} 
+{color:#959b9d;text-decoration:none;padding:0px 0px 0px 0px;border-bottom:0px;background-color:transparent}
 #header .inner #navigation li span a:hover
-{color:#fff}
-#header .inner #navigation li span.current
-{border-bottom:solid 2px yellow;padding-bottom:2px;}
+{color:#fff;background-color:transparent}
+#header .inner #navigation li a.current
+{color:#2E9AFE}
 #banner
 {padding:100px 0 50px 0}
 #banner .darker
 {font-size:92px;line-height:92px;color:#33383d;font-weight:900}
 #banner .attract
-{font-size:82px;line-height:82px;color:#999;font-weight:400}
+{font-size:82px;line-height:82px;color:#999;font-weight:400;font-family: 'Autour One', cursive;letter-spacing:-8px;}
 #banner .actions
 {font-size:24px;line-height:36px;color:#666}
 #main
@@ -254,11 +254,15 @@ p
 
 
 a.social
-{padding-left: 12px;padding-right: 12px;text-decoration: none;}
-a.social:hover {text-decoration: underline}
-a.social img{
-vertical-align: middle;
-}
+{padding-left:12px;padding-right:12px;background-color:transparent;border-bottom:0px}
+a.social:hover 
+{text-decoration:none;background-color:transparent;text-decoration:none;border-bottom:0px}
+a.social img
+{vertical-align:middle;background-color:transparent;text-decoration:none;border-bottom:0px}
+a.social span
+{border-bottom:1px dotted}
+a.social span:hover
+{background-color:#E0F2F7;text-decoration:none;border-bottom:1px dotted}
 
 /*---------------------------------------------------------------------------------------------------------------*/
 
@@ -314,11 +318,12 @@ color: gray;
 /*-----------------------------------------------------------------------------------------------------------*/
 a.tag{
 color: gray;
-text-decoration: underline;       
+text-decoration: none;       
 }
 a.tag:hover{
 color: black;
-text-decoration: underline;       
+text-decoration: none;       
+background-color:#EFEFEF;
 }
 /*------------------------------------------------------------------------------------------------------------*/
 

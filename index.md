@@ -6,7 +6,7 @@ title: Home
     <div class="inner">
 	    <p class="attract">
             <span class="darker">Welcome</span>
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
             to a whole new world.
         </p>
 	</div>

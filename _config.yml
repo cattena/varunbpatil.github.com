@@ -63,8 +63,8 @@ navigation:
   url: /
   layouts:
   - default
-- text: ABOUT
-  url: /about/
+- text: PROFILE
+  url: /profile/
   layouts: 
   - portfolio
 - text: BLOG

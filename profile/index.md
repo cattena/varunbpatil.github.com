@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: About
+title: Profile
 ---
 <br />
 <br />
