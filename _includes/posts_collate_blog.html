@@ -32,7 +32,7 @@ Usage:
     <div class="blogpage"><p class="blogpage"><li><span>{{ post.date | date_to_string }}</span> &raquo;&nbsp;&nbsp;&nbsp; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><br />
         <p class="blogpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
         {% for tag in post.tags %}
-            <a class="tag" href="/tags/{{ tag }}/">{{ tag }}</a> &nbsp;
+            <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a> &nbsp;
         {% endfor %}
         </p>
     </li></p></div><br />
