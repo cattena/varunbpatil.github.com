@@ -1,5 +1,5 @@
 p, div.post li, ul.custom_bullet li {
-font-family: 'PT Sans Narrow', sans-serif;    
+font-family: 'PT Sans Narrow', sans-serif;
 }
 
 button::-moz-focus-inner,
@@ -78,10 +78,10 @@ margin:0;
 ul,ol
 {margin:0 1.5em 1.5em 0;padding-left:1.5em}
 ul.custom_bullet {
-list-style-image: url('/images/add.png');
+list-style-image: url('/images/arrow-medium.png');
 }
 div.post ul {
-list-style-image: url('/images/add.png');
+list-style-image: url('/images/arrow-medium.png');
 }
 dl
 {margin:0 0 1.5em 0}
@@ -142,7 +142,7 @@ html
 #header .inner #site-name
 {font-family: 'Trade Winds', cursive;padding-bottom:0;color:#d4d4d4;font-size:38px;letter-spacing:0.4px;line-height:36px;float:left;position:absolute;left:48px;top:13px}
 #header .inner #navigation
-{font-family:"Verdana";font-size:14px;position:absolute;left:370px;top:19px;}
+{font-family:"Verdana";font-size:14px;position:absolute;left:370px;top:19.5px;}
 #header .inner #navigation ul
 {margin:0;padding:0}
 #header .inner #navigation li

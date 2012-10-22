@@ -1,6 +1,6 @@
 safe: true
 markdown: maruku
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title
 auto: true
 pygments: true
 
@@ -46,16 +46,15 @@ comments :
 # Settings for analytics helper
 # Set 'provider' to the analytics provider you want to use.
 # Set 'provider' to false to turn analytics off globally.
-#        
+#
 analytics :
-    provider : google 
-    google : 
-        tracking_id : 'UA-32267446-1'
+    provider : google
+    google :
+      tracking_id : 'UA-32267446-1'
     getclicky :
-        site_id : 
+      site_id :
     mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-      
+      token : '_MIXPANEL_TOKEN_'
 
 
 navigation:
@@ -65,16 +64,16 @@ navigation:
   - default
 - text: PROFILE
   url: /profile/
-  layouts: 
+  layouts:
   - portfolio
 - text: BLOG
   url: /blog/
-  layouts: 
+  layouts:
   - blog
   - post
 - text: TAGS
   url: /tag/
-  layouts: 
+  layouts:
   - newtagpage
   - tagpage
   - tag
