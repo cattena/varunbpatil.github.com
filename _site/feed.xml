@@ -1135,14 +1135,15 @@
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;You can now subscribe to my blog posts to instantly get my blog posts on your favourite reader or you can even subscribe by mail where new posts I write get delivered to your mailbox everyday. Don&amp;#8217;t worry, your email id&amp;#8217;s and other subscription details are managed by professional programs like feedburner and thus there can be no misuse. You can find the subscription buttons on the bottom of every page in my website or you can simply click on the links below. &lt;ul&gt;
-  &lt;li&gt;
-      &lt;a href='http://feeds.feedburner.com/varunbpatil'&gt;subscribe via rss reader&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-      &lt;a href='http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US'&gt;subscribe via email&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;You can now subscribe to my blog posts to instantly get my blog posts on your favourite reader or you can even subscribe by mail where new posts I write get delivered to your mailbox everyday. Don&amp;#8217;t worry, your email id&amp;#8217;s and other subscription details are managed by professional programs like feedburner and thus there can be no misuse. You can find the subscription buttons on the bottom of every page in my website or you can simply click on the links below. &lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;http://feeds.feedburner.com/varunbpatil&amp;quot;&amp;gt;subscribe via rss reader&amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;amp;loc=en_US&amp;quot;&amp;gt;subscribe via email&amp;lt;/a&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;&lt;/pre&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
