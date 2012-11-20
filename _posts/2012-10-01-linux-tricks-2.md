@@ -109,6 +109,22 @@ As in the screen-casts command that you saw previously :0.0 refers to your displ
 
 Simple, and guaranteed way to take a screen-shot no matter which linux box you are using.
 
+#### Executing a command continuosly
+
+Have you encountered a situation where you are copying gigabytes of data and you don't know how much has been copied to the destination yet? The following command will help you out.
+
+        $ sudo watch du -sh /path/to/destination_dir
+
+The above command will show how many megabytes(M) or gigabytes(G) of data are being copied to the destination and the information is updated every two seconds. You can ofcourse change the interval at which the command is repeated by using the -n switch as follows
+
+        $ sudo watch -n 10 du -sh /path/to/destination_dir
+
+This command is the same as the previous one except that the du command is executed at 10sec intervals rather than the default 2sec intervals.
+
+In fact you can pass as argument to watch any command that you want to execute repeatedly. Here, the du command was only used as an example. 
+
+You can exit the command by pressing Ctrl+C.
+
 <br />
 <br />
 <br />
