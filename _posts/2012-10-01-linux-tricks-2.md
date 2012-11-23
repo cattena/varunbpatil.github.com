@@ -125,6 +125,39 @@ In fact you can pass as argument to watch any command that you want to execute r
 
 You can exit the command by pressing Ctrl+C.
 
+#### Gstreamer fun - Capture webcam video from command line and save to file
+
+Gstreamer is a media framework which means it allows you to form codecs (which are called plugins in gstreamer parlance) into a pipeline which allows you to do really interesting things with your media. The following is one very simple example.
+
+The following Gstreamer pipeline allows you to run the webcam on your laptop using just the command line...
+
+        $ gst-launch v4l2src device=/dev/video0 ! \
+          "video/x-raw-yuv, width=640, height=480, framerate=30/1" ! \
+          xvimagesink
+
+gst-launch is the command to create a gstreamer pipeline. A gstreamer pipeline is nothing but a collection of the appropriate codecs in the proper order. Each component (or plugin) of the pipeline is seperated by a bang(!). The first plugin, v4l2src identifies the source of the input, which in our case is the webcam. In Linux, everything is a file and the file that represents the webcam is /dev/video0... how convenient... Linux rocks !!! The next component within the quotes are called the filter caps... Do not bother much about what it does, but it is used to negotiate some parameters between adjacent plugins. The final component is a sink, which in this case refers to the screen where the video captured from the webcam is displayed. 
+
+If you want to record the webcam video to a file, then all you need is a minor modification to the above command...
+
+        $ gst-launch v4l2src device=/dev/video0 ! \
+          "video/x-raw-yuv, widht=640, height=480, framerate=30/1" ! \
+          x264enc ! mpegtsmux ! filesink location=webcam.h264
+
+The Gstreamer pipeline in this case is essentially the same as the previous, the only difference being that the sink in this case is a file rather than the screen, as a result of which the video captured from the webcam is saved to the specified file.          
+
+Now, you can play the recorded webcam video from the command line as follows
+
+        $ vlc webcam.h264
+
+#### More Gstreamer fun - Extract mp3 from mp4 video in command line        
+
+We can do some really cool things with a Gstreamer pipeline. Here is just one more example. Have you every searched the farthest reaches of the internet to convert a mp4 music video that you downloaded off youtube to a mp3 so you could play it on your mp3 player.  The task couldn't have been more easier.
+
+        $ gst-launch filesrc location=<mp4 file> ! decodebin2 ! \
+          audioconvert ! lame quality=0 ! filesink location=<mp3 file>
+
+Let us understand this simple Gstreamer pipeline. The first plugin gives us the source(or input) which is a mp4 file on your computer. The second component "decodebin2" is a sort of universal decoder in Gstreamer. It does all the hard work like identifying the type of input stream(in this case mpeg4), calling the appropriate decoder to decode this stream, etc on your behalf so you don't have to worry about all the minute details. The third plugin "audioconvert" is responsible for converting the decoded stream into raw audio. But this raw audio is just bits and bytes which cannot be played by your favorite mp3 player, because your player cannot identify this raw data as mp3. So, there needs to be some metadata (like headers) to identify this file as mp3 and this is the work of the "lame" plugin, which is a mp3 encoder(it encodes the raw audio into an mp3 stream). The "quality=0" is nothing but one of the parameters of the lame encoder which tells it to use the best quality algorithm to encode the mp3 file(higher quality means slower encoding). And finally the stream is written to a sink, which in this case is a file on your computer.
+
 <br />
 <br />
 <br />
