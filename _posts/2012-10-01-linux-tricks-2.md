@@ -158,6 +158,22 @@ We can do some really cool things with a Gstreamer pipeline. Here is just one mo
 
 Let us understand this simple Gstreamer pipeline. The first plugin gives us the source(or input) which is a mp4 file on your computer. The second component "decodebin2" is a sort of universal decoder in Gstreamer. It does all the hard work like identifying the type of input stream(in this case mpeg4), calling the appropriate decoder to decode this stream, etc on your behalf so you don't have to worry about all the minute details. The third plugin "audioconvert" is responsible for converting the decoded stream into raw audio. But this raw audio is just bits and bytes which cannot be played by your favorite mp3 player, because your player cannot identify this raw data as mp3. So, there needs to be some metadata (like headers) to identify this file as mp3 and this is the work of the "lame" plugin, which is a mp3 encoder(it encodes the raw audio into an mp3 stream). The "quality=0" is nothing but one of the parameters of the lame encoder which tells it to use the best quality algorithm to encode the mp3 file(higher quality means slower encoding). And finally the stream is written to a sink, which in this case is a file on your computer.
 
+#### Safe reboot (Linux SysRq magic)
+
+Whenever you find yourself holding down the power button to force shutdown your linux box, you are at risk of losing important data and corrupt existing data on disk because the disks have not been synced yet, which will happen only when you end a process(like say a text editor) correctly.There is however a neat method that linux provides to safely reboot your linux box, when you cannot work with the GUI or cannot open a console.
+
+To use it, you will need to enable SysRq(System Request) on your linux machine, which is disabled by default. You can enable it by
+
+	$ sudo echo "kernel.sysrq = 1" >> /etc/sysctl.conf
+
+Now, reboot your system to make sysrq available.
+
+If you haven't already noticed, every modern keyboard has a dedicated sysrq key which is mostly the same as the Print Screen key. Ha!!! noticed it now. Good for you. To send Sysrq messages to the kernel, you will have to use the key combination "Alt+PrintScr"
+
+So, the next time you are left looking for the power button to hard-reboot your system, spare your computer hard-disks some trouble and use the key sequence --- "Alt+PrintScr+sub" (i.e, press 's' followed by 'u' followed by 'b' while keeping the Alt and PrintScr keys depressed the whole time). Each of these keys sends a special signal as interrupts to the kernel which you can be sure the kernel will service even though nothing on the outside seems to be working for you(although the only thing that isn't working mostly is the Xwindows system).
+
+To put is plainly, pressing "Alt+PrintScr+s", forces data in buffers to be synced to the disks, so you don't lose data that you haven't saved yet. "Alt+PrintScr+u" unmounts any filesystems that have been mounted. "Alt+PrintScr+b" tells the kernel to reboot the system. There you go, a safe reboot :)
+
 <br />
 <br />
 <br />
