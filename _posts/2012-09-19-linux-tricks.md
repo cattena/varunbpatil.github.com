@@ -15,11 +15,11 @@ There is a command by the name "locate" in Linux that is much faster the super-u
 
 * First index the files on your computer
 
-        $ sudo updatedb
+		$ sudo updatedb
 
 * Then, search for a file
 
-        $ locate -ie <filename>
+		$ locate -ie <filename>
 
 
 #### Downloading files using "wget"
@@ -28,23 +28,23 @@ There is a command by the name "locate" in Linux that is much faster the super-u
 
 * Download file from a single url with
 
-        $ wget <url>
+		$ wget <url>
 
 * Download only a certain type of files from an URL(say mp3's)
 
-        $ wget -r -A.mp3 <url>
+		$ wget -r -A.mp3 <url>
 
 * You can as well store multiple url's to download from in a file(one URL in each line) and give the filename as input to wget
 
-        $ wget -i <filename>
+		$ wget -i <filename>
 
 * The best feature is that you can resume interrupted downloads by simply using the switch -c with any wget command above        
 
-        $ wget -c <url>
+		$ wget -c <url>
 
 * You can also mirror an entire website for offline viewing using the following command
 
-        $ wget -rpk <url>
+		$ wget -rpk <url>
 
 
 #### An alternative to "wget" -- "curl"
@@ -53,19 +53,19 @@ There is a command by the name "locate" in Linux that is much faster the super-u
 
 * Download file from a single url with
 
-        $ curl <url>
+		$ curl <url>
 
 * Download from multiple URL's with
 
-        $ curl -O <URL1> -O <URL2>
+		$ curl -O <URL1> -O <URL2>
 
 * Resume an interrupted download
 
-        $ curl -C <url>
+		$ curl -C <url>
 
 * And lastly, find the definition of a word with
     
-        $ curl dict://dict.org/d:<word_to_search_for>
+		$ curl dict://dict.org/d:<word_to_search_for>
 
 
 #### Observing the differences between two files in a very colorful way
@@ -85,7 +85,7 @@ We all at some point have had to deal with transferring large files across compu
 
 * First of all, create a zip archive using
 
-        $ zip -re <compressed_file_name.zip> <file1> <dir1>
+		$ zip -re <compressed_file_name.zip> <file1> <dir1>
 
   The -r switch allows you to add directories to the archive.
 
@@ -93,7 +93,7 @@ We all at some point have had to deal with transferring large files across compu
 
 * Now split the archive into multiple parts with
 
-        $ split --bytes=1K <compressed_file_name.zip> <PREFIX>
+		$ split --bytes=1K <compressed_file_name.zip> <PREFIX>
 
   Here, - -bytes=1K specifies that we want parts that are at most 1K bytes in size.
 
@@ -101,21 +101,21 @@ We all at some point have had to deal with transferring large files across compu
 
 * On the receiving side, you can extract the multipart zip archive with
 
-        $ cat split_* > my_compressed_file.zip
+		$ cat split_* > my_compressed_file.zip
 
   Where, "split_" was the PREFIX that the person who created the archive specified.
 
   Then, extract the whole zip file as follows.
 
-        $ unzip my_compressed_file.zip
+		$ unzip my_compressed_file.zip
 
 
 #### Encrypting a single file using "openssl" for secure local storage
 
 * Encrypt a particular input file with
 
-        $ openssl enc -aes-256-cbc -e -in <plain_text_file_name> \
-          -out <encrypted_file_name>
+		$ openssl enc -aes-256-cbc -e -in <plain_text_file_name> \
+		  -out <encrypted_file_name>
 
   You will be prompted to enter your password.
 
@@ -125,8 +125,8 @@ We all at some point have had to deal with transferring large files across compu
 
 * To decrypt a file which was encrypted using openssl use
 
-        $ openssl enc -aes-256-cbc -d -in <encrypted_file_name> \
-          -out <plain_text_file_name>
+		$ openssl enc -aes-256-cbc -d -in <encrypted_file_name> \
+		  -out <plain_text_file_name>
 
   The -d switch stands for decryption.        
 
@@ -137,7 +137,7 @@ The program used to perform a very basic spell check from the command line is ca
 
 * Run spell check on a given file with
 
-        $ ispell <file_name>
+		$ ispell <file_name>
 
   Now, you have several actions that you can take on misspelled words in the file
 
@@ -156,7 +156,7 @@ The program used to perform a very basic spell check from the command line is ca
 
 This is useful in cases where your DNS server is unable to resolve the website name into its public IP. This could happen because your ISP which also provides you with the DNS service has blocked that website. I used this technique recently when all Indian ISP's where asked to block peer-to-peer sharing sites by the Indian Government. Most of these ISP's simply configure their DNS server's so as to not resolve the website names of such websites into public IP's and thus make them inaccesible, but you can always access such sites using their IP addresses. You could have obtained the IP address of such a site before hand using the following command
 
-        $ host <site_url>
+	$ host <site_url>
 
 Or, you could even possibly change the DNS server settings manually by setting it to the address of DNS servers provided by google which is 8.8.8.8. Since Google does not block these file sharing websites, you will be able to get the domain resolved successfully, unless your ISP is really intelligent and is blocking all traffic to such sites.        
 
@@ -165,13 +165,13 @@ Or, you could even possibly change the DNS server settings manually by setting i
 
 This is one of my favorite command line tricks. It allows you to put the CPU to 100% usage. This way you can see how long your laptop battery lasts in the worst case, under heavy load.
 
-        $ cat /dev/urandom > /dev/null
+	$ cat /dev/urandom > /dev/null
 
 There is something very interesting going on here. /dev/urandom is a file which continuously generated random data. And keep in mind this is not just pseudo random data, it is pure random data, because the way /dev/urandom gets these input is from interrupts in the system like mouse movements, key presses on the keyboard, signals sent to the display, packets arriving over the network and a whole lot of other places which are truly unpredictable by any means.
 
 This capability gives rise to an other super-cool feature. You can use this file to generate random passwords that are severely hard to crack as follows:
 
-        $ egrep -ioam1 '[a-zA-Z0-9!@#$%^&*()_+-=]{8}' /dev/urandom
+	$ egrep -ioam1 '[a-zA-Z0-9!@#$%^&*()_+-=]{8}' /dev/urandom
 
 This command generates a random password of 8 characters length. Ofcourse, you can change the number 8 in the regular expression to a larger value to generate longer passwords.        
 
@@ -186,15 +186,15 @@ But, you should also notice that, even when you put all cores to 100% usage by r
 
 Here is another way to use Linux's super high precision calculator tool "bc" to put your CPU to 100% usage. All you need to do is run the command
 
-        $ echo "scale=10000;4*a(1)" | bc -l -q
+	$ echo "scale=10000;4*a(1)" | bc -l -q
 
 All this command is doing is computing the value of PI to 10000 decimal places and dumping it to the standard output. If you don't want your standard output clobbered with numbers you won't be using anytime in your life, you can redirect the standard output as follows
 
-        $ echo "scale=10000;4*a(1)" | bc -l -q > /dev/null
+	$ echo "scale=10000;4*a(1)" | bc -l -q > /dev/null
 
 This command gives rise to another very interesting command. You can compare the speeds of your computer and a friends computer and then boast that yours is faster or get a new computer after being humiliated, by running the same command as above, only this time, with the prefix time.
 
-        $ time echo "scale=10000;4*a(1)" | bc -l -q > /dev/null
+	$ time echo "scale=10000;4*a(1)" | bc -l -q > /dev/null
 
 You can compare how many seconds (CPU time) the two computers took to calculate the value of PI to 10000 decimal places, which I can promise you is a heck of a lot of time even on my quad core second generation i5 laptop.        
 
@@ -203,7 +203,7 @@ You can compare how many seconds (CPU time) the two computers took to calculate 
 
 We usually download .iso images of popular linux distros for installation or as live media, but end up using a GUI cd burning tool to create a bootable cdrom. But, if your feeling a bit geeky, you could try doing so from the command line with 
 
-        $ cdrecord -v speed=0 driveopts=burnfree -eject dev=1,0,0 <src_iso_file>
+	$ cdrecord -v speed=0 driveopts=burnfree -eject dev=1,0,0 <src_iso_file>
 
 speed=0 tells the program to write the disk at the lowest possible drive speed, which is good considering the shitty quality of cdroms that we get in India. But, if you are in a hurry, you can try speed=1 or speed=2. Keep in mind that these are relative speeds.        
 
@@ -211,13 +211,13 @@ speed=0 tells the program to write the disk at the lowest possible drive speed, 
 
 Now, the most important part... specifying the device id. It is absolutely important that you specify the device id of your cd rom drive correctly or you may end up writing the iso to some other place on disk and corrupting your entire hard disk. To find out the device id of your cd-rom drive, just run this command prior to running the first command:
 
-        $ cdrecord -scanbus
+	$ cdrecord -scanbus
 
 Your cd-roms device id should look something like 1,0,0 but need not be exactly the same on your system.        
 
 Also, note that, you cannot create a bootable dvd disk using this command for distros like openSUSE or Fedora or Ubuntu or Slackware which come as dvd iso's. But, do not be disheartened, there is another more simpler command to burn a bootable dvd
 
-        $ growisofs -dvd-compat -speed=0 -Z /dev/dvd=myfile.iso
+	$ growisofs -dvd-compat -speed=0 -Z /dev/dvd=myfile.iso
 
 Here, /dev/dvd is the device file that represents your dvd rom. It is quite likely to be the same on your system as well.
 
@@ -228,19 +228,19 @@ Donot use growisofs to burn a cdrom. The beauty of linux is that a single comman
 
 Now, that you know how to create a bootable cdrom, you have to admit, it is a bit of a pain to buy and burn a cdrom every time you want to try a new linux distro and then wait forever until the OS is installed from the super-slow cd rom. The solution is to create a bootable usb disk and the procedure to create one, assuming you already have a partitioned and formatted pendrive, couldn't have been more easier. All you have to do is
 
-        $ dd if=mylinux.iso of=/dev/sdb bs=20M
+	$ dd if=mylinux.iso of=/dev/sdb bs=20M
 
 Here if stands for input file, of for output file and bs for block-size.        
 
 After this, make sure you flush the write buffers to disk by issuing the command
 
-        $ sync
+	$ sync
 
 Here /dev/sdb is the device file that represents your usb pendrive. It may be different on your system. But it is always something like sdb or sdc. To find out exactly, plug in your usb disk and then run '$ sudo fdisk -l'. You should be able to see a partition table for your pendrive at the bottom and also atleast one partition which would be something like sdb1 or sdc1. However, if you haven't formatted your pendrive before and want to learn how to do it from the command line, then read the next section.
 
 If you haven't already realized, you can do amazing things with the dd command. You can create a backup of an entire hard disk partition by
 
-        $ dd if=/dev/sda1 of=/dev/sda2
+	$ dd if=/dev/sda1 of=/dev/sda2
 
 This command copied the entire partition sda1 on your hard disk to partition sda2. You can restore the partition simply by interchanging the if and of attributes. However, exercise extreme caution while using the dd command as you can completely mess up your hard drive and lose all data if you specify the if and of attributes wrongly.        
 
@@ -249,11 +249,11 @@ This command copied the entire partition sda1 on your hard disk to partition sda
 
 I have to admit partitioning and formatting a USB key from the command line is not as easy as right clicking and selecting format. But, I also have to tell you that the command line tool called "fdisk" provides unprecedented control over the process, and shouldn't be very difficult to get a hang of. First of all, plug in your pendrive and run
 
-        $ sudo fdisk -l
+	$ sudo fdisk -l
 
 Note down the device file for your pendrive. It should be something like /dev/sdb or /dev/sdc. Assuming yours is /dev/sdb, run
 
-        $ sudo fdisk /dev/sdb
+	$ sudo fdisk /dev/sdb
 
 You are now into the fdisk program. You can press 'm' to see a list of all possible commands allowed.        
 
@@ -265,13 +265,13 @@ You now have to tell, what type of file system you would like to have on the new
 
 Note that fdisk will not write the partition table to disk until you explicitly tell it to do so. So, go ahead and enter 'w' to write the partition table to disk. You can quit the program without saving any changes to disk by pressing 'q' before you press 'w'. At this point, you have created a raw partition with no filesystem on it. As such, the pendrive is useless. Run
 
-        $ sudo eject /dev/sdb
+	$ sudo eject /dev/sdb
 
 Now, unplug the drive and plug it in again. If your linux box supports automounting, you should get an error saying unable to read the disk. This is simply because you have not created any filesystem on the disk. Put in simple words, the disk is not formatted yet. So go ahead and eject the drive using the same command as above.
 
 Now, format the pendrive as FAT using the command
 
-        $ sudo mkfs.vfat /dev/sdb1
+	$ sudo mkfs.vfat /dev/sdb1
 
 Note that the above command takes the specific partition to be formatted like sdb1 or sdc1, so different partitions on the disk may be formatted as different file systems. That's it, you are now ready to create your bootable USB disk using the commands in the previous section.
 
@@ -280,7 +280,7 @@ Note that the above command takes the specific partition to be formatted like sd
 
 Sometimes, you need to return a dvd to a friend and you do not have enough time to burn a copy of the dvd or donot have an extra dvd drive that can do the job. Moreover, your USB drive read is much slower that read from disk. So, why not make an exact copy of the entire cd or dvd to your disk which you can view anytime later or burn it to a dvd later. All you have to do is enter the following command
 
-        $ dd if=/dev/dvd of=myfile.iso bs=2048
+	$ dd if=/dev/dvd of=myfile.iso bs=2048
 
 Here, if stands for input file. As you already know, every device is a file in Linux. Hence, the dvd drive is represented by /dev/dvd and the cdrom drive most likely by /dev/cdrom. Use the one appropriate for your case.        
 
@@ -288,11 +288,9 @@ As you guessed, of stands for output file which is an exact mirror image of the 
 
 Now, that you have an iso file on your disk, you cannot simply view it anytime you want. To access the contents of the iso file, you will need to mount it at a particular mount point. So, go ahead and create a mount point 
 
-        $ sudo mkdir /tmp/myfiles
-
-        $ sudo mount -o ro,loop -t iso9660 myfile.iso /tmp/myfiles
-
-        $ cd /tmp/myfiles
+	$ sudo mkdir /tmp/myfiles
+	$ sudo mount -o ro,loop -t iso9660 myfile.iso /tmp/myfiles
+	$ cd /tmp/myfiles
 
 Thats it... you can now access the files as though you were accessing them from the dvd or cd only much faster. You have to keep in mind that you will not be able to write anything directly into /tmp/myfiles just as you would simply not be able to write into a dvd or cd. Thats the reason, the iso file is mounted as read-only.
         
@@ -305,11 +303,11 @@ This is one severely cool trick which allows you to hide any file or directory w
 
 * Now, the file or directory you wish to hide has to be compressed into a zip archive.
 
-        $ zip -r <compressed.zip> <file1> <dir1>
+		$ zip -r <compressed.zip> <file1> <dir1>
 
 * Now, cat the image you downloaded with the compressed file you created above
     
-        $ cat image.png compressed.zip > secret.png
+		$ cat image.png compressed.zip > secret.png
 
   NOTE: do not change the ordering of the image and the compressed file. The image always has to always come first in the cat command.        
 
@@ -319,18 +317,18 @@ Thats it... You now have a file by the name "secret.png" which if you open, will
 
 Now, all you have to do to get back your secret files and directories is
     
-        $ unzip secret.png
+	$ unzip secret.png
 
 Don't worry if you get some weird warnings or errors when you run the command regarding some invalid content in the header. Thats the whole point you see !!! When we catted the image file at the start of the zip file, we inadvertently modified the header of secret.png, and hence the warnings and errors. Nonetheless, you should now see the compressed.zip file in the directory. Just extract its secret contents with
 
-        $ unzip compressed.zip
+	$ unzip compressed.zip
         
 
 #### How to completely paralyze any Linux system which is using the bash shell        
 
 Most linux distros that you use today come preloaded with the bash shell as default, so you wouldn't need to worry much to completely wreck your college linux server box or your best friends laptop in a matter of seconds. Just type in the following command, sit back and relax while the system starts to choke itself.
 
-        $ :(){ :|:& };:
+	$ :(){ :|:& };:
 
 This is one of the most cryptic commands you have probably ever seen and also one of the shortest ones considering the amount of carnage you are about to cause as soon as you press the enter key. But the command is really very simple to understand. So, here is the breakup of the command.
 
@@ -350,47 +348,47 @@ This goes without saying that "With great power comes great responsibility" :P
 
 * A stopwatch on the terminal
 
-        $ time read
+		$ time read
 
   This will start a stopwatch on your terminal. Simply press Ctrl+D to stop the timer and see the elapsed time.        
 
 * How to know how many CPU cores are there on the computer ?
 
-        $ sudo cat /proc/cpuinfo | grep processor | wc -l
+		$ sudo cat /proc/cpuinfo | grep processor | wc -l
 
   Infact, you can see a lot of info about each of these cores with the command
     
-        $ sudo cat /proc/cpuinfo
+		$ sudo cat /proc/cpuinfo
 
 * Finding the name of the linux distro running on the computer
 
-        $ sudo cat /etc/issue
+		$ sudo cat /etc/issue
 
 * How to know whether you have a 32bit or 64bit OS running on your computer ?
 
-        $ sudo getconf LONG_BIT
+		$ sudo getconf LONG_BIT
 
-* Killing a process that has locked a particular file, when you know the file name that is locked, but don't know which process is locking it.        
+* Killing a process that has locked a particular file, when you know the file name that is locked, but don't know which process is locking it.
 
-        $ sudo fuser -k <file_name>
+		$ sudo fuser -k <file_name>
 
   This is useful when you get an error saying this particular file is locked by another process. This happens many times when you are updating your linux installation and the process got terminated leaving the /var/lib/dpkg/cache file locked. You get an error when you try to re-start the system update again. You can use this command in such situations.
 
 * Easiest way to re-run the previous command with superuser permissions
 
-        $ sudo !!
+		$ sudo !!
 
 This saves you from pressing up arrow and then home key and then typing sudo.        
 
 * Easily doing a reverse search for a command you entered previously. In bash, simply press Ctrl+R and then start typing the part of the comamnd you remember. Hit enter when you find the command you were looking for. This command gives rise to another neat trick. Suppose you use a lengthy command very frequently during the session. The first time you run the long command, run it as follows
 
-        $ <command> #my_label
+		$ <command> #my_label
 
   The next time you want to run the same command, all you have to do is press Ctrl+R to start reverse-search and then enter "my_label" followed by enter key... How cool is that !!!.        
 
 * How to get vi stlye editing commands working in bash
 
-        $ echo "set editing-mode vi" > ~/.inputrc
+		$ echo "set editing-mode vi" > ~/.inputrc
 
 * some super useful bash command editing keys
 
@@ -406,68 +404,68 @@ This saves you from pressing up arrow and then home key and then typing sudo.
 
 * How to display a popup notification when a command completes ( requires libnotify to be installed )
 
-        $ wget <URL> ; notify-send "wget" "your download is complete"
+		$ wget <URL> ; notify-send "wget" "your download is complete"
 
   The above command displays a popup notification once wget finishes downloading the file. wget can be replaced by any command actually. The first argument to the notify-send command is the "title" and the second argument is the "body" of the popup notification. You can change it to whatever you like.
 
 * Turning of the monitor to save power when there is no hardware key available to do so(say, on a laptop)
 
-        $ xset dpms force off
+		$ xset dpms force off
 
 * How to copy the output of any command directly to the system clipboard
 
-        $ <command> | xsel --clipboard
+		$ <command> | xsel --clipboard
 
 * How to open an file from the command line using the default application for that file
 
-        $ xdg-open <file_name>
+		$ xdg-open <file_name>
 
 * How to save the output of any command as an image file
 
-        $ <command> | convert label:@- <image_name.png>
+		$ <command> | convert label:@- <image_name.png>
 
 * How to convert an entire man page into pdf format for later viewing        
 
-        $ man -t <command_name> | ps2pdf - <command_name.pdf>
+		$ man -t <command_name> | ps2pdf - <command_name.pdf>
 
 * Installing the same packages and software you already have on a fully configured linux system, on another freshly installed linux system in a single command
 
   First, run this command on the fully configured linux box
 
-        $ sudo dpkg --get-selections > my_linux_software
+		$ sudo dpkg --get-selections > my_linux_software
 
   Then, transfer this file to the freshly installed linux box an enter the following command        
 
-        $ cat may_linux_software | sudo dpkg --set-selections && sudo dselect install
+		$ cat may_linux_software|sudo dpkg --set-selections && sudo dselect install
 
   Ofcourse, you will need network connection on your freshly installed linux box, but you will be saved from laboriously selecting all your favorite software from the software management tool.        
 
 * Deleting a particular line number from a given file without opening it in any editor
 
-        $ sed -i 8d <file_name>
+		$ sed -i 8d <file_name>
 
   This command deletes the 8th line from the specified file.
 
 * Running a command at a specified time
 
-        $ echo "command you want to run | at 01:00
+		$ echo "command you want to run | at 01:00
 
   Note that the time is in 24hr format.        
 
 * How to create a pencil sketch out of any image file  
 
-        $ convert <input_image> -colorspace gray \( +clone -blur 0x2 \) \
-          +swap -compose divide -composite -linear-stretch 5%x0% <output_image>
+		$ convert <input_image> -colorspace gray \( +clone -blur 0x2 \) \
+		  +swap -compose divide -composite -linear-stretch 5%x0% <output_image>
 
   You can ofcourse add an alias or better still, a bash function for such long commands in your ~/.bashrc to make your life easier.
 
 * How to check unread mail from your gmail inbox from the command line
 
-        $ curl -u your_email@gmail.com:your_password --silent \
-          "https://mail.google.com/mail/feed/atom" | tr -d '\n' | \
-          awk -F '<entry>' '{for (i=2; i<=NF; i++) {print $i}}' | \
-          sed -n "s/<title>\(.*\)<\/title><summary>\(.*\)<\/summary.*name>\
-          \(.*\)<\/name><email>\(.*\)<\/email>.*/\n\3\(\4\) - \1 - \2\n/p"
+		$ curl -u your_email@gmail.com:your_password --silent \
+		  "https://mail.google.com/mail/feed/atom" | tr -d '\n' | \
+		  awk -F '<entry>' '{for (i=2; i<=NF; i++) {print $i}}' | \
+		  sed -n "s/<title>\(.*\)<\/title><summary>\(.*\)<\/summary.*name>\
+		  \(.*\)<\/name><email>\(.*\)<\/email>.*/\n\3\(\4\) - \1 - \2\n/p"
 
   This command might look like too much to handle, but it is really extremely simple. All it is doing is reading from your gmail account's atom feed and formatting the output using awk and sed. As before, you are better of creating an alias(or a bash function) in your ~/.bashrc for this command.
 
@@ -478,13 +476,13 @@ You will need to install "netcat" on your linux box for this to work.
 
 * Open a terminal on Computer A and type in
 
-        $ nc -l 12345
+		$ nc -l 12345
 
 * Also note down the IP addr of Computer A by running the "ifconfig" command. Let us say, the IP addr of Computer A is a.b.c.d
 
 * Now, open a terminal on another Computer B which also has "netcat" installed and type in
 
-        $ nc a.b.c.d 12345
+		$ nc a.b.c.d 12345
 
 Here, 12345 is simply a port number. You can specify anything you want as long as it is not already in use.        
 
@@ -497,13 +495,13 @@ You will need "netcat" installed for this to work.
 
 * On Computer A with ip addr a.b.c.d, run the command
 
-        $ tar -cf - /path/to/dir | \
-          pv -s $(du -sb /path/to/dir | awk '{print $1}') | \
-          nc -l 12345
+		$ tar -cf - /path/to/dir | \
+		  pv -s $(du -sb /path/to/dir | awk '{print $1}') | \
+		  nc -l 12345
 
 * On computer B, run
 
-        $ nc a.b.c.d 12345 | pv |tar -xf -
+		$ nc a.b.c.d 12345 | pv | tar -xf -
 
 All we are doing here is tarring the directory we want to transfer and then using netcat to transfer the file over the network. Note that there are actually no intermediate archives that are created either on Computer A or Computer B.
 
@@ -513,11 +511,11 @@ You may be wondering why do we need to perform a tar when we are simply transfer
 
 * On Computer A you will run
 
-        $ cat /path/to/file | nc -l 12345
+		$ cat /path/to/file | nc -l 12345
 
 * To receive the file on Computer B, you would run,
 
-        $ nc a.b.c.d 12345 > myfile
+		$ nc a.b.c.d 12345 > myfile
 
 As simple as that!!!.        
 
@@ -528,7 +526,7 @@ A word of caution. On some computers with different version of netcat installed,
 
 Normally cp command does not give you any output while you are copying files. You have no idea how much copying is left to be done. However you can use a slightly different command to copy large with a progress bar shown. As you might have guessed, the solution is to use "pv" command described in the previous section.
 
-        $ cat originalfile.txt | pv > newfile.txt
+	$ cat originalfile.txt | pv > newfile.txt
 
 <br />
 <br />

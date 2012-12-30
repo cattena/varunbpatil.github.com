@@ -68,9 +68,9 @@ address
 del
 {color:#666}
 pre
-{margin:1.5em 0;white-space:pre}
-pre,code,tt
-{font:1em 'andale mono','lucida console',monospace;line-height:1.5}
+{margin:1.5em 0;white-space:pre;padding:2px;background-color:#E0EAFF;-moz-border-radius:5px;border-radius:5px}
+code,tt
+{font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;font-size:15px}
 ul li,ol li {
 padding-left: 10px;
 margin:0;

@@ -20,15 +20,7 @@ I am very happy to report some exciting new features that I have succesfully int
 
 * You can now look at my posts categorized by [tags](http://varunbpatil.github.com/tag/) and also view an archive of all my previous posts.
 
-* You can now subscribe to my blog posts to instantly get my blog posts on your favourite reader or you can even subscribe by mail where new posts I write get delivered to your mailbox everyday. Don't worry, your email id's and other subscription details are managed by professional programs like feedburner and thus there can be no misuse. You can find the subscription buttons on the bottom of every page in my website or you can simply click on the links below.
-<ul>
-    <li>
-        <a href="http://feeds.feedburner.com/varunbpatil">subscribe via rss reader</a>
-    </li>
-    <li>
-        <a href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&loc=en_US">subscribe via email</a>
-    </li>
-</ul>
+* You can now subscribe to my blog posts to instantly get my blog posts on your favourite reader or you can even subscribe by mail where new posts I write get delivered to your mailbox everyday. Don't worry, your email id's and other subscription details are managed by professional programs like feedburner and thus there can be no misuse. You can find the subscription buttons on the bottom of every page in my website.
 
 * I have also incorporated disqus comments into my blog posts where you are free to comment and provide feedback by logging into your favorite social networking site.
 
