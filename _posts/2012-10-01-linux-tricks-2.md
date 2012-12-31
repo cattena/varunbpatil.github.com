@@ -174,6 +174,13 @@ So, the next time you are left looking for the power button to hard-reboot your 
 
 To put is plainly, pressing "Alt+PrintScr+s", forces data in buffers to be synced to the disks, so you don't lose data that you haven't saved yet. "Alt+PrintScr+u" unmounts any filesystems that have been mounted. "Alt+PrintScr+b" tells the kernel to reboot the system. There you go, a safe reboot :)
 
+#### Faster keyboard cursor movement in Linux
+Have you found yourself wishing that the keyboard cursor moved a bit faster while working on the terminal or in an editor like vim or emacs. The solution is a one-liner as below
+
+	$ xset r rate 200 60
+
+What is this command doing? It is basically decreasing the keypress interval delay to 200(from the default 250 or something) and increasing the rate of keypress to 60(from the default 30). Be sure to add the command to your bashrc. Feel free to change the numerics according to your needs, I found the above settings quite comfortable. For faster cursor movement, decrease the first value and increase the second value in the command.
+
 <br />
 <br />
 <br />
