@@ -6,7 +6,7 @@
     <div class="inner">
         <h5 class="blogpage">Posts tagged {{ page.name }}</h5>
         <div class="blogpage">
-            <ul class="custom_bullet">
+            <ul class="custom_bullet_tags_page">
                 {% for post in site.posts %}
                     {% for tag in post.tags %}
                         {% if tag == page.name %}

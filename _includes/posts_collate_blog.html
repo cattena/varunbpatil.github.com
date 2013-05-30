@@ -41,10 +41,10 @@ Usage:
       </ul>
     {% else %}
       {% if this_year != next_year %}
-        <br /><br /><br /><br />
         </ul>
+        <br /><br /><br /><br />
         <h2>{{next_year}}</h2>
-       <h4 id="{{ next_year }}{{ next_month }}">{{next_month}}</h4>
+        <h4 id="{{ next_year }}{{ next_month }}">{{next_month}}</h4>
         <ul class="custom_bullet">
       {% else %}    
         {% if this_month != next_month %}

@@ -1,4 +1,4 @@
-p, div.post li, ul.custom_bullet li {
+p, div.post li, ul.custom_bullet li, ul.custom_bullet_tags_page li {
 font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -78,7 +78,16 @@ margin:0;
 ul,ol
 {margin:0 1.5em 1.5em 0;padding-left:1.5em}
 ul.custom_bullet {
-list-style-image: url('/images/arrow-medium.png');
+    list-style-image: url('/images/arrow-medium.png');
+    background-color: white;
+    box-shadow: 7px 7px 7px #888888;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: -12px;
+}
+ul.custom_bullet_tags_page {
+    list-style-image: url('/images/arrow-medium.png');
 }
 div.post ul {
 list-style-image: url('/images/arrow-medium.png');
@@ -302,7 +311,8 @@ padding-left: 80px;
 
 /*-----------------------------------------------------------------------------------------------------------*/
 div.blogpage{
-margin-left: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 p.blogpage{
 margin-top: 10px;

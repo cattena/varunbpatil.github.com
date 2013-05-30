@@ -16,7 +16,7 @@ Usage:
     
 -->{% endcomment %}
 
-<ul class="custom_bullet">
+<ul class="custom_bullet_tags_page">
 {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
     	<p class="blogpage"><li><a href="/tags/{{ tag }}">{{ tag }}</a></li></p>
