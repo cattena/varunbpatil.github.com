@@ -320,6 +320,12 @@ margin-top: 10px;
 font-size: 14px;
 color: gray;
 }
+p.tags_list{
+margin-top: 10px;
+font-size: 18px;
+color: gray;
+line-height: 250%;
+}
 p.postpage{
 margin-top: 2px;
 font-size: 14px;

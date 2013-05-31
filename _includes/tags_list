@@ -16,16 +16,16 @@ Usage:
     
 -->{% endcomment %}
 
-<ul class="custom_bullet_tags_page">
+<p class="tags_list">
 {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
-    	<p class="blogpage"><li><a href="/tags/{{ tag }}">{{ tag }}</a></li></p>
+       <a href="/tags/{{ tag }}">{{ tag }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {% endfor %}
-  {% else %}
+{% else %}
     {% for tag in tags_list %} 
-    	<p class="blogpage"><li><a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a></li></p>
+       <a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {% endfor %}
 {% endif %}
-</ul>
+</p>
 
 {% assign tags_list = nil %}
