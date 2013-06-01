@@ -17,7 +17,7 @@ Usage:
         
 -->{% endcomment %}
 
-   {% for post in posts_collate  %}
+  {% for post in posts_collate  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
@@ -46,12 +46,13 @@ Usage:
         <h2>{{next_year}}</h2>
         <h4 id="{{ next_year }}{{ next_month }}">{{next_month}}</h4>
         <ul class="custom_bullet">
-      {% else %}    
-        {% if this_month != next_month %}
-          </ul>
-          <h4 id="{{ this_year }}{{ next_month }}">{{next_month}}</h4>
-          <ul class="custom_bullet">
-        {% endif %}
+      {% elsif this_month != next_month %}
+        </ul>
+        <h4 id="{{ this_year }}{{ next_month }}">{{next_month}}</h4>
+        <ul class="custom_bullet">
+      {% else %}
+        </ul>
+        <ul class="custom_bullet">
       {% endif %}
     {% endif %}
   {% endfor %}
