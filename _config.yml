@@ -4,7 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 auto: true
 pygments: true
 
-# Themes are encouraged to use these universal variables 
+# Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title : Varun B Patil's blog
@@ -13,7 +13,7 @@ author : Varun B Patil
 email : varun.basavaraj.patil@gmail.com
 
 # The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
+# such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
 #
 # If you have set a CNAME (pages.github.com) set your custom domain here.
@@ -77,5 +77,5 @@ navigation:
   - newtagpage
   - tagpage
   - tag
-- text: RESUME
-  url: /resume.pdf
+#- text: RESUME
+#  url: /resume.pdf
