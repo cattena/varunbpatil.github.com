@@ -9,7 +9,7 @@
     <div class="post-meta">
         <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
         <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
-        
+
     </div><!-- .post-meta -->
     <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
     {% for tag in page.tags %}
@@ -18,7 +18,10 @@
     </p>
     <br />
     <div class="post">
-        {{ content }}
+      {{ content }}
+      <br /><br /><br /><br /><br />
+      <b>Other articles you might like</b><br /><br />
+      {% include more_posts_like_this %}
     </div>
     <br />
     <br />
