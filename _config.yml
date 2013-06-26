@@ -1,7 +1,7 @@
-safe: true
+#safe: true
 markdown: maruku
 permalink: /:categories/:year/:month/:day/:title
-auto: true
+#auto: true
 pygments: true
 
 # Themes are encouraged to use these universal variables
