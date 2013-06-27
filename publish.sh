@@ -20,6 +20,8 @@ if [ $? -eq 0 ]; then
     git commit -m "updated site ${publish_date}"
     git remote add origin git@github.com:varunbpatil/varunbpatil.github.com.git
     git push origin master --force
+
+    echo "Successfully built and published to github..."
 else
     echo "Jekyll build failed... not publishing to github"
 fi
