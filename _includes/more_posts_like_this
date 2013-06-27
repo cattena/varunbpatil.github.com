@@ -2,7 +2,7 @@
     {% assign post_printed = false %}
     {% for post_tag in post.tags %}
         {% if page.tags contains post_tag and post_printed == false and page.url != post.url %}
-            <li style="list-style:none;">
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
                 <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
             {% assign post_printed = true %}
