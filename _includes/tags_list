@@ -5,27 +5,23 @@ Usage:
   2) include tags_list
   example:
     <ul>
-  	  {% assign tags_list = site.tags %}  
+  	  {% assign tags_list = site.tags %}
   	  {% include tags_list %}
   	</ul>
-  
-  Notes: 
+
+  Notes:
     Tags can be either a Hash of tag objects (hashes) or an Array of tag-names (strings).
     The encapsulating 'if' statement checks whether tags_list is a Hash or Array.
     site.tags is a Hash while page.tags is an array.
-    
+
 -->{% endcomment %}
 
 <p class="tags_list">
-{% if tags_list.first[0] == null %}
-    {% for tag in tags_list %} 
-       <a href="/tags/{{ tag }}">{{ tag }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    {% for tag in site.tags %}
+       <a style="font-size: {{ tag | last | size | times: 200 | divided_by: site.tags.size | plus: 70 }}%"
+          href="/tags/{{ tag | first }}">{{ tag | first }}</a>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {% endfor %}
-{% else %}
-    {% for tag in tags_list %} 
-       <a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    {% endfor %}
-{% endif %}
 </p>
 
 {% assign tags_list = nil %}
