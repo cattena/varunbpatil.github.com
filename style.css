@@ -394,3 +394,18 @@ color: #0B0B61;
 div.post li {
 margin-top: 1.2em;
 }
+
+a.prev_next, a.prev_next:active, a.prev_next:focus, a.prev_next:visited {
+    color: #355C7D;
+    border: 2px dotted #355C7D;
+    border-radius: 5px;
+    font-size: medium;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: transparent;
+}
+a.prev_next:hover {
+    border: 2px solid #355C7D;
+}

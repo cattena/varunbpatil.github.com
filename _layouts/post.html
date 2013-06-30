@@ -19,8 +19,16 @@
     <br />
     <div class="post">
       {{ content }}
-      <br /><br /><br /><br /><br />
-      <b>&raquo; other articles you might like &laquo;</b><br /><br />
+      <br />
+      {% if page.previous.url %}
+        <a class="prev_next" href="{{page.previous.url}}">older posts</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      {% endif %}
+      {% if page.next.url %}
+        <a class="prev_next" href="{{page.next.url}}">newer posts</a>
+      {% endif %}
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
       {% include more_posts_like_this %}
     </div>
     <br />
