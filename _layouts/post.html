@@ -21,11 +21,10 @@
       {{ content }}
       <br />
       {% if page.previous.url %}
-        <a class="prev_next" href="{{page.previous.url}}">older posts</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="prev_next" style="float: left;" href="{{page.previous.url}}">&laquo;&nbsp;older posts</a>
       {% endif %}
       {% if page.next.url %}
-        <a class="prev_next" href="{{page.next.url}}">newer posts</a>
+        <a class="prev_next" style="float: right;" href="{{page.next.url}}">newer posts&nbsp;&raquo;</a>
       {% endif %}
       <br /><br /><br /><br />
       <b>other articles you might like</b><br />
