@@ -1,98 +1,98 @@
-<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
 
-		<meta charset="utf-8"/>
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | {{ page.title }}</title>
+    <meta name="description" content="Varun B Patil's blog"/>
 
-		<!-- TO Fancy SEARCH ENGINE -->
-		<title>Varun B Patil | {{ page.title }}</title>
-		<meta name="description" content="Varun B Patil's blog"/>
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
 
-		<!-- TO FANCY GOOGLE -->
-		<meta itemprop="name" content="Varun B Patil's blog"/>
-		<meta itemprop="description" content="Varun B Patil blog"/>
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
 
-		<!-- TO FANCY FACEBOOK -->
-		<meta property="og:title" content="Varun B Patil's blog" />
-		<meta property="og:type" content="blog" />
-		<meta property="og:url" content="http://varunbpatil.github.com/" />
-		<meta property="og:site_name" content="Varun B Patil's blog" />
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
 
-		<meta name="keywords" content="Varun B Patil's blog"/>
-		<meta name="robots" content="noodp" />
-				
-		<link rel="stylesheet" media="all" href="/style.css"/>
-		<link rel="stylesheet" media="all" href="/style_accordion.css"/>
-        <link rel="shortcut icon" href="/favicon.ico"/> 
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
 
-        <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        {% include analytics %} 
+    {% include analytics %}
 
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../js/custom.js"></script>
-        <script type="text/javascript" src="../js/smoothscroll.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
 
-	</head>
-	<body>
-		
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
-		(function (d, w, c) {
-		    (w[c] = w[c] || []).push(function() {
-		        try {
-		            w.yaCounter21595372 = new Ya.Metrika({id:21595372,
-		                    webvisor:true,
-		                    clickmap:true,
-		                    trackLinks:true,
-		                    accurateTrackBounce:true,
-		                    trackHash:true});
-		        } catch(e) { }
-		    });
+</head>
+<body>
 
-		    var n = d.getElementsByTagName("script")[0],
-		        s = d.createElement("script"),
-		        f = function () { n.parentNode.insertBefore(s, n); };
-		    s.type = "text/javascript";
-		    s.async = true;
-		    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
 
-		    if (w.opera == "[object Opera]") {
-		        d.addEventListener("DOMContentLoaded", f, false);
-		    } else { f(); }
-		})(document, window, "yandex_metrika_callbacks");
-		</script>
-		<!-- /Yandex.Metrika counter -->
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-		<div id="wrapper">
-			<header id="header">
-				<div class="inner">
-					<a href="/"><hgroup><h1 id="site-name">Varun B Patil</h1></hgroup></a>	
-				<nav id="navigation">
-					  <ul class="navigation">
-                            {% for link in site.navigation %}
-                            {% assign current = nil %}
-                                {% if page.url == link.url %}
-                                    {% assign current = 'current' %}
-                                {% else %}
-                                    {% for layout in link.layouts %}
-                                        {% if page.layout == layout %}
-                                            {% assign current = 'current' %}
-                                        {% endif %}
-                                    {% endfor %}
-                                {% endif %}
-                                <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
-                                    <span class="{{ current }}">
-																			<a class="{{ current }}" href="{{ link.url }}" target="{% if link.url == "/resume.pdf" %}_blank{% endif %}">{{ link.text }}</a>
-																		</span>
-                                </li>
-                            {% endfor %}
-                      </ul>
-				</nav>
-		        </div>
-		    </header>
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                {% for link in site.navigation %}
+                    {% assign current = nil %}
+                    {% if page.url == link.url %}
+                        {% assign current = 'current' %}
+                    {% else %}
+                        {% for layout in link.layouts %}
+                            {% if page.layout == layout %}
+                                {% assign current = 'current' %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    <li>
+                    <span class="{{ current }}">
+                    <a class="{{ current }}" href="{{ link.url }}" target="{% if link.url == "/resume.pdf" %}_blank{% endif %}">{{ link.text }}</a>
+                    </span>
+                    </li>
+                {% endfor %}
+                </ul>
+                </nav>
+            </div>
+        </header>

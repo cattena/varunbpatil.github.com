@@ -59,20 +59,20 @@ analytics :
 
 navigation:
 - text: HOME
-  url: /
+  url: /index.html
   layouts:
   - default
 - text: PROFILE
-  url: /profile/
+  url: /profile/index.html
   layouts:
   - portfolio
 - text: BLOG
-  url: /blog/
+  url: /blog/index.html
   layouts:
   - blog
   - post
 - text: TAGS
-  url: /tag/
+  url: /tag/index.html
   layouts:
   - newtagpage
   - tagpage
