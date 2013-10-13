@@ -50,7 +50,7 @@ margin:0;
 ul,ol
 {margin:0 1.5em 1.5em 0;padding-left:1.5em}
 ul.custom_bullet {
-    list-style-image: url('/images/arrow-medium.png');
+    list-style-image: url('/PNGs/arrow-medium.png');
     background-color: white;
     padding-top: 12px;
     padding-bottom: -12px;
@@ -60,10 +60,10 @@ ul.custom_bullet {
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 ul.custom_bullet_tags_page {
-    list-style-image: url('/images/arrow-medium.png');
+    list-style-image: url('/PNGs/arrow-medium.png');
 }
 div.post ul {
-list-style-image: url('/images/arrow-medium.png');
+list-style-image: url('/PNGs/arrow-medium.png');
 }
 body
 {background-color:#F6F6F6;color:#3c3c3c;-webkit-text-size-adjust:100%;font:18px/24px "Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}
