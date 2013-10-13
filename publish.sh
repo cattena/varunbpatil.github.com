@@ -21,9 +21,9 @@ if [ $? -eq 0 ]; then
     git remote add origin git@github.com:varunbpatil/varunbpatil.github.com.git
     git push origin master --force
 
-    echo "Successfully built and published to github..."
+    echo "$(tput setaf 2)Successfully built and published to github...$(tput sgr0)"
 else
-    echo "Jekyll build failed... not publishing to github"
+    echo "$(tput setaf 1)Jekyll build failed... not publishing to github$(tput sgr0)"
 fi
 
 # cleanup
