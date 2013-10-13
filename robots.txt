@@ -9,4 +9,5 @@ disallow: /*.txt
 disallow: /*.ico
 disallow: /*.png
 disallow: /*.jpg
+disallow: /*.pdf
 Sitemap: http://varunbpatil.github.com/sitemap.xml
