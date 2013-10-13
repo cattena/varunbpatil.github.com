@@ -11,7 +11,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 a, a:active, a:focus, a:hover, a:visited {outline: none; -moz-outline-style: none}
 
-
 html{
 overflow-y: scroll;  /*forcing a scrollbar so that centered text does not shift*/
 }
@@ -26,22 +25,20 @@ h1
 h2
 {font-size:2em;margin-bottom:.75em}
 h3
-{font-size:1.5em;line-height:1;margin-bottom:1em}
+{font-size:1.5em;line-height:1;color:#00b6de;margin-bottom:.25em}
 h4
 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em}
 h5
 {font-size:1em;font-weight:bold;margin-bottom:1.5em}
 h6
 {font-size:1em;font-weight:bold}
-h1 img,h2 img,h3 img,h4 img,h5 img,h6 img
-{margin:0}
 a:focus,a:hover
 {background-color:#E0F2F7;color:#27408B}
 a
 {color:#4183C4;text-decoration:none;border-bottom:1px dotted}
 pre
 {margin:1.5em 0;white-space:pre;padding:2px;background-color:#E0EAFF;-moz-border-radius:5px;border-radius:5px}
-code,tt
+code
 {font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;font-size:15px}
 ul li,ol li {
 padding-left: 10px;
@@ -95,36 +92,6 @@ html
 {font-size:92px;line-height:92px;color:#33383d;font-weight:900}
 #banner .attract
 {font-size:82px;line-height:82px;color:#999;font-weight:400;font-family: 'Autour One', cursive;letter-spacing:-8px;}
-#banner .actions
-{font-size:24px;line-height:36px;color:#666}
-#main
-{padding:20px 0 40px 0}
-#main .maincontent
-{float:left;width:600px}
-#main #primary .page .page-header,#main #primary .archive .page-header,#main #primary .page .archive-header,#main #primary .archive .archive-header
-{clear:both;display:block}
-#main #primary .page .page-header .page-title,#main #primary .archive .page-header .page-title,#main #primary .page .archive-header .page-title,#main #primary .archive .archive-header .page-title,#main #primary .page .page-header .archive-title,#main #primary .archive .page-header .archive-title,#main #primary .page .archive-header .archive-title,#main #primary .archive .archive-header .archive-title
-{font-size:64px;line-height:72px;color:#33383d;margin-bottom:.25em;font-weight:bold}
-#main #primary .page .page-header .page-intro,#main #primary .archive .page-header .page-intro,#main #primary .page .archive-header .page-intro,#main #primary .archive .archive-header .page-intro
-{font-size:24px;line-height:36px;color:#999}
-#main #primary .comments
-{width:620px;margin:0 auto}
-#main #primary .pagenation
-{clear:both;display:block}
-#main #primary .pagenation ul li
-{list-style-type:none;margin:0;padding:0}
-#main #primary .pagenation ul li a
-{text-decoration:none}
-#main #secondery
-{display:block;background-color:#DDD;margin:20px 0 50px;background:#e3e3e0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
-#main #secondery .social-links ul
-{margin:0;padding:0}
-#main #secondery .social-links li
-{float:left;width:33%;list-style-type:none;text-align:center}
-#main #secondery .social-links a
-{display:block}
-h3
-{color:#00b6de;margin-bottom:.25em}
 p
 {margin-bottom:20px;text-overflow:ellipsis}
 .post
@@ -133,14 +100,6 @@ p
 {font-size:36px;line-height:48px;color:#00b6de}
 .post-meta
 {color:#999}
-.section
-{clear:both;display:block;min-height:150px}
-.brands
-{margin:0;padding:0;display:block;clear:both;height:70px}
-.brands li
-{margin:0;padding:0;list-style-type:none;float:left}
-.brands li+li
-{margin-left:20px}
 #footer
 {padding-top:40px;color:#888;background-color:#fff;text-align:center;font-size:16px;border-top-style:dotted;border-top-color:#BDBDBD;border-top-width:1px;}
 a.social
@@ -153,33 +112,8 @@ a.social span
 {border-bottom:1px dotted}
 a.social span:hover
 {background-color:#E0F2F7;text-decoration:none;border-bottom:1px dotted}
-.image{
-width: 215px;
-height: 360px;
-border: 2px solid grey;
-}
-h1.heading{
-font-family: trebuchet ms;
-}
-p.header{
-font-family: comic sans ms;
-font-size: 1.5em;
--webkit-transform: translate(60px,-50px);
--moz-transform: translate(60px,-50px);
--o-transform: translate(60px,-50px);
-transform: translate(60px,-50px);
-}
-p.pf_content
-{
-font-family: trebuchet ms;
-text-align: justify;
-line-height: 1.5;
-}
 div.portfolio
 {width:1000px;margin:0 auto;padding:0 48px 0;position:relative}
-td.portfolio_content{
-padding-left: 80px;
-}
 div.blogpage{
     margin-left: 30px;
     margin-right: 20px;
