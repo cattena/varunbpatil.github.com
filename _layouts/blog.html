@@ -3,19 +3,20 @@
 <br />
 <br />
 <div id="main">
-    <div class="inner" style="float: left; padding-left: 184px; width: 700px;">
+  <div class="inner">
+    <div style="width:700px;display:inline;float:left;">
             {% assign posts_collate = site.posts %}
             {% include posts_collate_blog.html %}
             <br /><br /><br /><br />
     </div>
 
-    <div style="float: left; position: fixed; left: 920px;">
+    <div style="display:inline;float:right">
             <center><img src="/PNGs/archive.png" /></center>
             <br />
             {% assign posts_collate = site.posts %}
             {% include posts_collate_archive.html %}
     </div>
-
+  </div>
 </div>
 
 {% include footer.html %}
