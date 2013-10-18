@@ -13,6 +13,8 @@ a, a:active, a:focus, a:hover, a:visited {outline: none; -moz-outline-style: non
 
 html{
 overflow-y: scroll;  /*forcing a scrollbar so that centered text does not shift*/
+font-size: 100.01%;
+background-color: #fff;
 }
 *
 {margin:0;padding:0;border:0;}
@@ -66,8 +68,6 @@ body
 {background-color:#F6F6F6;color:#3c3c3c;-webkit-text-size-adjust:100%;font:18px/24px "Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}
 .inner
 {width:896px;margin:0 auto;padding:0 48px 0;position:relative}
-html
-{background-color:#fff}
 #header
 {background-color:#33363b;width:100%}
 #header .inner
