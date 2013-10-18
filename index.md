@@ -11,7 +11,6 @@ title: Home
         </p>
 	</div>
 </section>
-&#x20;<br /><br /><br /><br />
 
 <div id="main">
     <div class="inner">
