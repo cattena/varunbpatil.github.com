@@ -1,5 +1,5 @@
 #safe: true
-markdown: maruku
+markdown: redcarpet
 permalink: /:categories/:year/:month/:day/:title
 #auto: true
 pygments: true
