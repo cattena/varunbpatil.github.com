@@ -39,9 +39,9 @@ a:hover
 a
 {color:#4183C4;text-decoration:none;border-bottom:1px dotted}
 pre
-{margin:1.5em 0;white-space:pre;padding:2px;background-color:#E0EAFF;-moz-border-radius:5px;border-radius:5px}
+{padding-left:3px;padding-top:3px;background-color:#E0EAFF;-moz-border-radius:5px;border-radius:5px}
 code
-{font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;font-size:15px}
+{font-family:Liberation Mono;font-size:15px;}
 ul li,ol li {
 padding-left: 10px;
 margin:0;
