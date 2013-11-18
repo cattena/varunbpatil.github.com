@@ -2,6 +2,16 @@
 #
 # script to build website and push it to github
 
+# signal handler
+function cleanup
+{
+    rm -rf /tmp/jekyll_build
+    rm -rf /tmp/varunbpatil.github.com
+    exit 0
+}
+
+trap cleanup SIGHUP SIGINT SIGTERM
+
 # verify number of arguments
 if [ $# -gt 1 ]; then
     echo "$(tput setaf 1)Incorrect command usage. Usage : $0 <optional_commit_sha1>$(tput sgr0)"
@@ -14,7 +24,8 @@ if [ $# -eq 1 ]; then
 else
     SHA1="HEAD"
 fi
-echo "$(tput setaf 2)Going to publish commit ${SHA1}$(tput sgr0)"
+echo "$(tput setaf 2)Going to publish commit ${SHA1}. Press any key to continue.$(tput sgr0)"
+read
 
 # create a tmp dir into which jekyll will build the html source
 if [ -d "/tmp/jekyll_build" ]; then
