@@ -53,3 +53,18 @@ Especially useful when you are running lightweight window managers like [DWM]() 
     $ sudo iwconfig wlan0 essid "actual essid" # select network
 
 Again, this is useful if you do not have or do not want a tray applet to control networks (like nm-applet).
+
+####Multiple commands in the background, Important distinction
+
+    $ (command1; command2; command3) &
+
+Here, commands are executed sequentially but all of them are executed in the background.
+
+    $ (command1 & command2) &
+
+Here, command1 is started in the background followed immediately by command2 i.e, command2 does not wait for command1 to complete. Both the commands are still executed in the background. Note that & also performs the function of ; in that it seperates the two commands. Here, $! returns the pid of the process group and not the pid of either command1 or command2.
+
+    $ (command1; command2) &
+    $ wait $!
+
+This is how you wait for the group of background tasks to complete in a script.
