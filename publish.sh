@@ -58,5 +58,4 @@ else
 fi
 
 # cleanup
-rm -rf /tmp/jekyll_build
-rm -rf /tmp/varunbpatil.github.com
+cleanup
