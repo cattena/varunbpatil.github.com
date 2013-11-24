@@ -39,7 +39,7 @@ a:hover
 a
 {color:#4183C4;text-decoration:none;border-bottom:1px dotted}
 pre
-{padding-left:3px;padding-top:3px;background-color:#E0EAFF;-moz-border-radius:5px;border-radius:5px}
+{padding-left:3px;padding-top:3px;background-color:#E0EAFF;-moz-border-radius:5px;border-radius:5px;margin-bottom:20px;}
 code
 {font-family:Liberation Mono;font-size:15px;}
 ul li,ol li {
