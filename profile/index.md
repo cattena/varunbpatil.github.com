@@ -22,5 +22,11 @@ title: Profile
        <p style="text-align: justify">
        This website is my latest effort at creating a static website using <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>, markdown and <a href="https://github.com/Shopify/liquid" target="_blank">Liquid</a>. I learnt about these new technologies while trying to find out more about git and immediately got working on it. Through this website I wish to communicate my thoughts and feelings regarding the latest technologies, gadgets, news and also elicit constructive responses from my blog readers. I blog about latest technologies, gadgets, softwares, cars, car shows, free online courses, and just plain interesting news !!!. I also wish to share all of my projects with my readers and also encourage their responses for improvements.
        </p>
+       <a id="bitcoin"></a>
+       <br /><br />
+       <p align="justify" style="font-weight:bold"> If you like this blog and the articles I write, consider donating some bitcoins to the following address.</p>
+       <p align="justify" style="font-weight:bold;display:inline">1GYmR5bZaHqy3zNcYLBjeLtEe6dm9KohvT</p>
+       <img style="padding-left:100px;vertical-align:middle" src="/1GYmR5bZaHqy3zNcYLBjeLtEe6dm9KohvT.png" />
+       <br /><br /><br /><br /><br />
     </div>
 </div>
