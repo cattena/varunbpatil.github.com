@@ -33,13 +33,13 @@ We all know what USB tethering is in android -- enabling internet connectivity o
 
   Note down the network interface on your android phone. Mine was __rndis0__.
 
-        $ adb shell ifconfig rndis0 10.42.0.2 netmask 255.255.255.0
+    $ adb shell ifconfig rndis0 10.42.0.2 netmask 255.255.255.0
 
-        $ adb shell route add default gw 10.42.0.1 dev rndis0
+    $ adb shell route add default gw 10.42.0.1 dev rndis0
 
   Verify internet connectivity on your phone with
 
-        $ adb shell ping 8.8.8.8
+    $ adb shell ping 8.8.8.8
 
 
 That's it. You now have internet connectivity on your android phone.

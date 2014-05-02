@@ -27,7 +27,7 @@ You should now have a new repository on your GitHub page with the words "forked 
 
   Your repository is not automatically kept to date with the original project repo. You have to do it manually. So, first set the upstream repo like so.
 
-        $ git remote add upstream git@github.com:cisco/openh264.git
+    $ git remote add upstream git@github.com:cisco/openh264.git
 
 - To update your local repo to match the original project repo (also called upstream), do
 
@@ -49,7 +49,7 @@ You should now have a new repository on your GitHub page with the words "forked 
 
   You will notice that after the above command you are automatically put on the my\_new\_feature\_1 branch and not the master branch of your repo. Confirm this by typing
 
-        $ git branch
+    $ git branch
 
   You should see a * (asterisk) next to the branch my\_new\_feature\_1.
 
@@ -75,7 +75,7 @@ You should now have a new repository on your GitHub page with the words "forked 
 
   Sure, no problem. Continue to make commits to the my\_new\_feature\_1 branch of your repository and push them to your repository.
 
-        $ git push origin my_new_feature_1
+    $ git push origin my_new_feature_1
 
   You __don't__ need to issue another pull request for the new commit. These new commits are automatically added to the pull request you made earlier provided that you committed to the same branch (my\_new\_feature\_1). GitHub's policy is __one pull request per branch__.
 
@@ -96,13 +96,13 @@ You should now have a new repository on your GitHub page with the words "forked 
 
   I won't go into details of the exact git commands that you need to use to rewrite commit history, but the following are probably the ones you are looking for (not in any order).
 
-        $ git reset --soft # remove commit, but keep changes
-        $ git rebase -i # reorder commits, squash commits, split commits
-        $ git commit --amend # change commit message
+    $ git reset --soft # remove commit, but keep changes
+    $ git rebase -i # reorder commits, squash commits, split commits
+    $ git commit --amend # change commit message
 
   Once you are done with the changes, make them visible to the project's maintainers.
 
-        $ git push origin my_new_feature_1 -f # forcefully change commit history
+    $ git push origin my_new_feature_1 -f # forcefully change commit history
 
  Your pull request will automatically be changed to reflect your newly modified commits. There is __no need__ to issue another pull request.
 
@@ -110,9 +110,9 @@ You should now have a new repository on your GitHub page with the words "forked 
 
  Delete the branch that the pull request corresponds to on your cloned copy as well as on your GitHub repo.
 
-        $ git checkout master
-        $ git branch -d my_new_feature_1 # deletes local branch
-        $ git push origin :my_new_feature_1 # deletes remote branch
+    $ git checkout master
+    $ git branch -d my_new_feature_1 # deletes local branch
+    $ git push origin :my_new_feature_1 # deletes remote branch
 
   Note that the colon in the last command above is intentional.
 
@@ -120,9 +120,9 @@ You should now have a new repository on your GitHub page with the words "forked 
 
   Verify that your contributions have indeed been merged into the original project repo.
 
-        $ git pull upstream master
-        $ git log # should see your commits here
-        $ git push origin master
+    $ git pull upstream master
+    $ git log # should see your commits here
+    $ git push origin master
 
 ####Miscellaneous
 
