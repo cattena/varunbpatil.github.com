@@ -1,5 +1,6 @@
 p,div.post li,ul.custom_bullet li,ul.custom_bullet_tags_page li {
-font-family:'PT Sans Narrow', sans-serif;
+font-family: "Arial Black", sans-serif;
+font-size: 16px;
 }
 
 button::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=button]::-moz-focus-inner,input[type=submit]::-moz-focus-inner,input[type=file] > input[type=button]::-moz-focus-inner {
@@ -142,13 +143,13 @@ overflow:hidden;
 }
 
 #header .inner #site-name {
-font-family:'Trade Winds', cursive;
+font-family: "Times New Roman", Times, serif;
 color:#d4d4d4;
-font-size:38px;
-letter-spacing:.4px;
+font-size:40px;
+letter-spacing: 2px;
 line-height:36px;
 position:absolute;
-top:13px;
+top:12px;
 padding:0;
 }
 
@@ -166,7 +167,7 @@ padding:0;
 }
 
 #header .inner #navigation li {
-font-family:Quantico, sans-serif;
+font-family: "Arial Black", sans-serif;
 font-size:16px;
 list-style-type:none;
 float:left;
@@ -209,8 +210,8 @@ font-size:82px;
 line-height:82px;
 color:#999;
 font-weight:400;
-font-family:'Autour One', cursive;
-letter-spacing:-8px;
+font-family: "Arial Black", sans-serif;
+letter-spacing:-4px;
 margin-top:90px;
 }
 
