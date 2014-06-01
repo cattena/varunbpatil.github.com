@@ -2,7 +2,6 @@
 layout: post
 title: "Connecting to wired/wireless networks via command line"
 tags:
-- android
 - linux
 ---
 
