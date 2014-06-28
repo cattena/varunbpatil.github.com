@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: computers
-title: Computers
+title: computers
 ---

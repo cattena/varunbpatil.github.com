@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: android
-title: Android
+title: android
 ---

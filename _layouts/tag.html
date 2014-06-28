@@ -4,12 +4,12 @@
 <br />
 <div id="main">
     <div class="inner">
-        <h5 class="blogpage">Posts tagged {{ page.name }}</h5>
+        <h5 class="blogpage">Posts tagged {{ page.title }}</h5>
         <div class="blogpage">
             <ul class="custom_bullet_tags_page">
                 {% for post in site.posts %}
                     {% for tag in post.tags %}
-                        {% if tag == page.name %}
+                        {% if tag == page.title %}
                             <p>
                             <li>
                                 <span>{{ post.date | date_to_string }}</span> &raquo;&nbsp;&nbsp;&nbsp; <a href="{{ post.url }}">{{ post.title }}</a>

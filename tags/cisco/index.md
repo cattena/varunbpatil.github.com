@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: cisco
-title: Cisco
+title: cisco
 ---

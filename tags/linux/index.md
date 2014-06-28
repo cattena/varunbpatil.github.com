@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: linux
-title: Linux
+title: linux
 ---

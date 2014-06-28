@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: git
-title: Git
+title: git
 ---

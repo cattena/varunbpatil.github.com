@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: funny
-title: Funny
+title: funny
 ---

@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: jekyll
-title: Jekyll
+title: jekyll
 ---

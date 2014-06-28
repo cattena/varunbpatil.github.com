@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: miui
-title: MIUI
+title: miui
 ---

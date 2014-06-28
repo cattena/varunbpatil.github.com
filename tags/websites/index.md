@@ -1,5 +1,4 @@
 ---
 layout: tag
-name: websites
-title: Websites
+title: websites
 ---
