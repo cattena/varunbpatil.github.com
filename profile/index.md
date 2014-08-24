@@ -11,7 +11,7 @@ title: Profile
        <h3>Me</h3><br />
        <p style="text-align: justify;">
        <img class="portfolio" src="portfolio.jpg" align="right" />
-       Hi there. I'm Varun B Patil. I work as a Software Engineer for Cisco Systems in Banglore, Karnataka, India. My new passion and hobby is web designing and in the last couple of years have been experimenting with different web technologies. I also like to code and most importantly love to experiment with new technologies. I like to be aware of all the latest technology and gadgets and I wish to make others aware as well through my blog. I am also a huge automotive technology fan even though I am not from a mechanical background. I like to learn new and interesting things in life especially in the technological sphere. Most importantly, I absolutely love to write.
+       Hi there. I'm Varun B Patil. I work as a Software Engineer for NetApp in Banglore, Karnataka, India. My new passion and hobby is web designing and in the last couple of years have been experimenting with different web technologies. I also like to code and most importantly love to experiment with new technologies. I like to be aware of all the latest technology and gadgets and I wish to make others aware as well through my blog. I am also a huge automotive technology fan even though I am not from a mechanical background. I like to learn new and interesting things in life especially in the technological sphere. Most importantly, I absolutely love to write.
        </p>
        <br /><br />
        <h3>Skills</h3><br />
