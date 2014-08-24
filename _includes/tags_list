@@ -18,7 +18,7 @@ Usage:
 
 <p class="tags_list">
     {% for tag in site.tags %}
-       <a style="font-size: {{ tag | last | size | times: 200 | divided_by: site.tags.size | plus: 70 }}%"
+       <a style="font-size: {{ tag | last | size | times: 10 | plus: 80 }}%"
           href="/tags/{{ tag | first }}">{{ tag | first }}</a>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {% endfor %}
