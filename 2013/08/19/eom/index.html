@@ -1,0 +1,842 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2013-08-19T00:00:00+05:30">19 August 2013</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+        <a class="tag" href="/tags/emacs/">emacs</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>Here is how to install and configure emacs + offlineimap + mu4e for a complete email client (including instructions for multiple accounts).</p>
+
+<h4>What do each of them do ?</h4>
+
+<ul>
+<li><strong>offlineimap</strong>, as the name implies, is used to fetch mail from the mail server into a local folder.</li>
+<li><strong>mu4e</strong>, is an emacs package that is built over &quot;mu&quot;, and is used to index emails already downloaded using offlineimap, for quick searching.</li>
+<li><strong>Emacs</strong> is obviously where mu4e can be used.</li>
+</ul>
+
+<h4>Fetching email using offlineimap</h4>
+
+<p>Let us first install offlineimap as below</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git clone git://github.com/OfflineIMAP/offlineimap.git
+$ cd offlineimap
+$ make
+$ sudo python setup.py install
+</code></pre></div>
+<p>Installation should be very quick. Let us now configure offlineimap for use with gmail(multiple accounts are discussed later).</p>
+
+<p>Create the file ~/.offlineimaprc with the following contents.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[general]
+accounts = Gmail
+maxsyncaccounts = 3
+
+[Account Gmail]
+localrepository = GmailLocal
+remoterepository = GmailRemote
+
+[Repository GmailLocal]
+type = Maildir
+localfolders = ~/Maildir/Gmail
+
+[Repository GmailRemote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = youremail@gmail.com
+remotepass = yourpassword
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+maxconnections = 1
+realdelete = yes
+</code></pre></div>
+<p>Replace youremail and yourpassword with your actual gmail userid and password. Next create a directory to store your emails locally.</p>
+
+<p>Needless to say, make ~/.offlineimaprc readable by only you (chmod go-rwx ~/.offlineimaprc) since it contains plain-text password.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir -p ~/Maildir/Gmail
+</code></pre></div>
+<p>That is it. You are ready to fetch email. Run</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd ~ &amp;&amp; offlineimap
+</code></pre></div>
+<p>The first time is going to take long depending on the number of emails you have on the server. Subsequent times are much quicker fetching incrementally.</p>
+
+<h4>Installing mu4e</h4>
+
+<p>On Ubuntu based distros, mu4e along with the base &quot;mu&quot; program can be installed with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install mu4e
+</code></pre></div>
+<p>Let us now go ahead and index the emails for fast searching.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mu index --maildir=~/Maildir
+</code></pre></div>
+<p>The above command is not actually required to be run standalone. mu4e does it for you within emacs when you ask it to refresh emails. Anyway lets do it to confirm that things are working as intended.</p>
+
+<h4>Setting up emacs as an email client</h4>
+
+<p>Finally, we need to setup emacs as an email client that uses mu4e. But first, let us install a few other programs that emacs needs for rendering emails and sending emails.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install gnutls-bin html2text
+</code></pre></div>
+<p>Now, let us configure emacs. Add the following to your emacs init file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">(require &#39;mu4e)
+(require &#39;smtpmail)
+
+(setq mu4e-drafts-folder &quot;/Gmail/[Gmail].Drafts&quot;
+      mu4e-sent-folder   &quot;/Gmail/[Gmail].Sent Mail&quot;
+      mu4e-trash-folder  &quot;/Gmail/[Gmail].Trash&quot;
+      mu4e-sent-messages-behavior &#39;delete
+      mu4e-get-mail-command &quot;offlineimap&quot;
+      mu4e-update-interval 60
+      user-mail-address &quot;youremail@gmail.com&quot;
+      user-full-name  &quot;yourname&quot;
+      mu4e-maildir-shortcuts
+            &#39;( (&quot;/Gmail/INBOX&quot;               . ?i)
+               (&quot;/Gmail/[Gmail].Sent Mail&quot;   . ?s)
+               (&quot;/Gmail/[Gmail].Trash&quot;       . ?t)
+               (&quot;/Gmail/[Gmail].All Mail&quot;    . ?a))
+
+     message-send-mail-function &#39;smtpmail-send-it
+     smtpmail-stream-type &#39;starttls
+     smtpmail-default-smtp-server &quot;smtp.gmail.com&quot;
+     smtpmail-smtp-server &quot;smtp.gmail.com&quot;
+     smtpmail-smtp-service 587
+     message-kill-buffer-on-exit t)
+
+(setq mu4e-view-show-images t)
+(when (fboundp &#39;imagemagick-register-types)
+  (imagemagick-register-types))
+(setq mu4e-view-prefer-html t)
+(setq mu4e-html2text-command &quot;html2text -utf8 -width 72&quot;)
+(setq mail-user-agent &#39;mu4e-user-agent)
+</code></pre></div>
+<p>That is it. Reload your emacs config. Launch mu4e from Alt-x list. You will be presented with the mu4e main view which shows the key bindings for some of the most used operations, which I have listed below for the sake of completion.</p>
+
+<h4>Some imp key bindings</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">j&lt;char&gt; - jump to a particular folder within Maildir
+jo      - ask for which directory within Maildir to enter
+U       - refresh emails
+C       - Compose email
+s       - search
+bu      - view unread messages
+q       - quit any view
+</code></pre></div>
+<p>In the headers view (view which lists all your emails inside a particular folder), the following key bindings are useful.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">n       - next email
+p       - prev email
+y       - toggle between headers view and the message view
+          (which shows the email contents)
+d       - mark email for moving to trash
+D       - mark email for deleting permanently
+!       - mark email as read
+?       - mark email as unread
++,-     - star an email
+t       - only mark current thread
+T       - mark whole thread
+x       - apply all marked actions
+e       - extract attachments(saved to ~/ by default)
+R       - reply to email
+C-S-u   - refresh email
+</code></pre></div>
+<p>Now that we have a single account setup and running like charm, let us add another account to the mix.</p>
+
+<h4>Managing multiple accounts</h4>
+
+<p>Modify your ~/.offlineimaprc as below, to include Account2.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[general]
+accounts = Gmail, Account2
+maxsyncaccounts = 3
+
+[Account Gmail]
+localrepository = GmailLocal
+remoterepository = GmailRemote
+
+[Repository GmailLocal]
+type = Maildir
+localfolders = ~/Maildir/Gmail
+
+[Repository GmailRemote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = youremail
+remotepass = yourpassword
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+maxconnections = 1
+realdelete = yes
+
+[Account Account2]
+localrepository = Account2Local
+remoterepository = Account2Remote
+
+[Repository Account2Local]
+type = Maildir
+localfolders = ~/Maildir/Account2
+
+[Repository Account2Remote]
+type = IMAP
+remotehost = mail.xyz.com
+remoteuser = youremail
+remotepass = yourpassword
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+maxconnections = 1
+realdelete = yes
+</code></pre></div>
+<p>Fetch your emails.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir -p ~/Maildir/Account2
+$ cd ~ &amp;&amp; offlineimap
+</code></pre></div>
+<p>Index them (not compulsory)</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mu index --maildir=~/Maildir
+</code></pre></div>
+<p>Modify your emacs init file as below to include the second account.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">(require &#39;mu4e)
+(require &#39;smtpmail)
+
+(setq mu4e-drafts-folder &quot;/Gmail/[Gmail].Drafts&quot;
+      mu4e-sent-folder   &quot;/Gmail/[Gmail].Sent Mail&quot;
+      mu4e-trash-folder  &quot;/Gmail/[Gmail].Trash&quot;
+      mu4e-sent-messages-behavior &#39;delete
+      mu4e-get-mail-command &quot;offlineimap&quot;
+      mu4e-update-interval 60
+      user-mail-address &quot;youremail@gmail.com&quot;
+      user-full-name  &quot;yourname&quot;
+      mu4e-maildir-shortcuts
+            &#39;( (&quot;/Gmail/INBOX&quot;               . ?i)
+               (&quot;/Gmail/[Gmail].Sent Mail&quot;   . ?s)
+               (&quot;/Gmail/[Gmail].Trash&quot;       . ?t)
+               (&quot;/Gmail/[Gmail].All Mail&quot;    . ?a)
+               (&quot;/Account2/INBOX&quot;            . ?k)
+               (&quot;/Account2/Sent Items&quot;       . ?x)
+               (&quot;/Account2/Trash&quot;            . ?f))
+
+     message-send-mail-function &#39;smtpmail-send-it
+     smtpmail-stream-type &#39;starttls
+     smtpmail-default-smtp-server &quot;smtp.gmail.com&quot;
+     smtpmail-smtp-server &quot;smtp.gmail.com&quot;
+     smtpmail-smtp-service 587
+     message-kill-buffer-on-exit t)
+
+;; define only variables that differ for the two accounts
+(defvar my-mu4e-account-alist
+  &#39;((&quot;Gmail&quot;
+     (mu4e-drafts-folder &quot;/Gmail/[Gmail].Drafts&quot;)
+     (mu4e-sent-folder   &quot;/Gmail/[Gmail].Sent Mail&quot;)
+     (mu4e-trash-folder  &quot;/Gmail/[Gmail].Trash&quot;)
+     (user-mail-address  &quot;youremail@gmail.com&quot;)
+     (smtpmail-default-smtp-server &quot;smtp.gmail.com&quot;)
+     (smtpmail-smtp-server &quot;smtp.gmail.com&quot;)
+     (smtpmail-smtp-service 587))
+    (&quot;Cisco&quot;
+     (mu4e-drafts-folder &quot;/Account2/Drafts&quot;)
+     (mu4e-sent-folder   &quot;/Account2/Sent Items&quot;)
+     (mu4e-trash-folder  &quot;/Account2/Trash&quot;)
+     (user-mail-address  &quot;youremail@abc.com&quot;)
+     (smtpmail-default-smtp-server &quot;outgoing.server.com&quot;)
+     (smtpmail-smtp-server &quot;outgoing.server.com&quot;)
+     (smtpmail-smtp-service 25))))
+
+(defun my-mu4e-set-account ()
+  &quot;Set the account for composing a message.&quot;
+  (let* ((account
+    (if mu4e-compose-parent-message
+      (let ((maildir (mu4e-message-field mu4e-compose-parent-message :maildir)))
+        (string-match &quot;/\\(.*?\\)/&quot; maildir)
+        (match-string 1 maildir))
+        (completing-read (format &quot;Compose with account: (%s) &quot;
+          (mapconcat #&#39;(lambda (var) (car var)) my-mu4e-account-alist &quot;/&quot;))
+          (mapcar #&#39;(lambda (var) (car var)) my-mu4e-account-alist)
+          nil t nil nil (caar my-mu4e-account-alist))))
+        (account-vars (cdr (assoc account my-mu4e-account-alist))))
+    (if account-vars
+        (mapc #&#39;(lambda (var)
+                  (set (car var) (cadr var)))
+              account-vars)
+      (error &quot;No email account found&quot;))))
+
+(add-hook &#39;mu4e-compose-pre-hook &#39;my-mu4e-set-account)
+
+(setq mu4e-view-show-images t)
+(when (fboundp &#39;imagemagick-register-types)
+  (imagemagick-register-types))
+(setq mu4e-view-prefer-html t)
+(setq mu4e-html2text-command &quot;html2text -utf8 -width 72&quot;)
+(setq mail-user-agent &#39;mu4e-user-agent)
+</code></pre></div>
+<p>Modify your email address and the outgoing mail server accordingly. You are ready to roll. Reload your emacs config and M-x mu4e to start working with your emails from both accounts. You can extend your emacs init file and .offlineimaprc to include more accounts accordingly.</p>
+
+<p>Any suggestions, queries, improvements are welcome.</p>
+
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2013/08/12/firefox-addon">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2013/09/20/xmonad">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/11/18/linux-tricks-3">Linux command line tools and tricks - Part 3</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/28/dwm">Basic dwm setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/04/11/ncmpcpp">ncmpcpp : ncurses based music player for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/02/19/cli-task">Task Warrior - The best CLI task manager for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/09/19/linux-tricks">Superb Linux command line tools and tricks for Linux geeks</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,699 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | ncmpcpp : ncurses based music player for Linux</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">ncmpcpp : ncurses based music player for Linux</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2013-04-11T00:00:00+05:30">11 April 2013</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+        <a class="tag" href="/tags/apps & softwares/">apps & softwares</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>One of my previous post detailed a program called &quot;task warrior&quot; which has made managing my todo list from the console easier. Now, another CLI program called <strong>ncmpcpp</strong> is satisfying my music needs very well. However, I had a hard time setting it up and getting it to detect any of my music files as the instructions on several forums were outdated. This article will get you up and listening using ncmpcpp in no time. Hope you enjoy using it as much as I do.</p>
+
+<h4>Installation</h4>
+
+<p>On Ubuntu/Debian</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install mpd mpc ncmpcpp
+</code></pre></div>
+<p>On Arch</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo pacman -S mpd mpc ncmpcpp
+</code></pre></div>
+<p><strong>mpd</strong> stands for <strong>music player daemon</strong>. It is a daemon(or server) running in the background and managing your music collection. <strong>ncmpcpp</strong> is a client for mpd.</p>
+
+<h4>Configuring Music Player Daemon (mpd)</h4>
+
+<p>One of the drawbacks of ncmpcpp is that it is a pain to configure and get it running correctly. However, the following instructions should hopefully make it a walk in the park.</p>
+
+<p>Create the following file and directories for mpd</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir -p ~/.mpd/playlists
+$ touch ~/.mpd/{database,log,mpd.conf,pid,state}
+</code></pre></div>
+<p>Now, you will need to populate the mpd.conf (mpd configuration file). Most installations of mpd will provide an example mpd configuration file which you can use/modify according to your needs.</p>
+
+<p>On Ubuntu/Debian, the example mpd configuration file (compressed form) can be found at <strong>/usr/share/doc/mpd/examples/mpd.conf.gz</strong>. You will have to extract the file mpd.conf from mpd.conf.gz.</p>
+
+<p>On Arch, the example configuration file is <strong>/usr/share/doc/mpd/mpdconf.example</strong></p>
+
+<p>Copy this example mpd configuration file to ~/.mpd and rename it to mpd.conf (if it is not already so).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># for Ubuntu/Debian
+$ cp /usr/share/doc/mpd/examples/mpd.conf.gz ~/.mpd/
+$ cd ~/.mpd
+$ gunzip mpd.conf.gz
+
+# for Arch
+$ cp /usr/share/doc/mpd/mpdconf.example ~/.mpd/mpd.conf
+</code></pre></div>
+<p>Now, let us edit ~/.mpd/mpd.conf to suit our needs. Some of the most basic mpd configuration options that need to be enabled(uncomment in mpd.conf) are as below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">music_directory         &quot;~/Music&quot;   # path to your Music directory
+playlist_directory      &quot;~/.mpd/playlists&quot;
+db_file             &quot;~/.mpd/database&quot;
+log_file            &quot;~/.mpd/log&quot;
+pid_file            &quot;~/.mpd/pid&quot;
+state_file          &quot;~/.mpd/state&quot;
+
+audio_output {
+    type        &quot;alsa&quot;
+    name        &quot;any name for your alsa device&quot;
+}
+</code></pre></div>
+<p>You can change &quot;alsa&quot; in the audio_output above to &quot;pulse&quot;, if you are using pulse audio.</p>
+
+<p>You are now done configuring the Music Player Daemon(mpd). You can use mpd to listen to your favorite music from the command line. mpd supports several options to control your music collections (man mpd). If however, you are looking for a ncurses interface via ncmpcpp, read on...</p>
+
+<h4>Configuring ncmpcpp</h4>
+
+<p>Let us now configure ncmpcpp as a mpd client. Create the following files and folders.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir ~/.ncmpcpp
+$ touch ~/.ncmpcpp/config
+</code></pre></div>
+<p>~/.ncmpcpp/config is the ncmpcpp configuration file (the configuration file for the ncurses music player). There are several things that can be configured here that controls the ncmpcpp music player itself, but let&#39;s keep it simple.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &#39;mpd_music_dir = &quot;~/Music&quot;&#39; &gt; ~/.ncmpcpp/config  # path to mpd music dir
+</code></pre></div>
+<p>And, that&#39;s it... You have successfully configured ncmpcpp to work with mpd.    </p>
+
+<p>Now, all that&#39;s left is to make mpd autostart on login. For this, you need to edit your distro specific autostart file.</p>
+
+<h4>Making mpd autostart on login</h4>
+
+<p>On Ubuntu/Debian, create a desktop file in <strong>~/.config/autostart/</strong>. Let us name it <strong>mpd.desktop</strong>. Add the following lines to this file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Music Player Daemon
+Comment=Server for playing audio files
+Exec=mpd
+StartupNotify=false
+Terminal=false
+Hidden=false
+</code></pre></div>
+<p>On ArchBang, edit the file ~/.config/openbox/autostart and append a single line as follows</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &quot;mpd&quot; &gt;&gt; ~/.config/openbox/autostart
+</code></pre></div>
+<p>That&#39;s it!!! The next time you restart your computer, mpd should already be running in the background, and you can launch ncmpcpp from the terminal anytime to listen to your fav music. The first time you launch ncmpcpp, you might not know all the keyboard shortcuts to manage you music collection. You are better of <strong>pressing &#39;1&#39;</strong> to list all the keyboard shortcuts available. However, the following are some shortcuts you might need frequently, to get you rolling quickly.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">q = quit ncmpcpp
+u = update music database
+1-10 = ncmpcpp screens # help, playlist, browse, search, etc
+j,k = move down, move up
+enter = add song to playlist and start playing the song
+space = add song to playlist
+d = delete song from playlist
+c = clear entire playlist
+s = stop playback
+P = pause/continue playback
+&gt; = next track in playlist
+&lt; = previous track in playlist
+f = seek forward currently playing track
+b = seek backward currently playing track
++, - = increase/decrease volume
+r = repeat entire playlist
+y = repeat single track
+z = play random song from playlist
+# = toggle display of bitrate
+/,? = find forward/find backward
+, = find previous
+. = find next
+w = toggle find mode (normal search/wrapped search)
+i/I = show song/artist info
+L = toggle lyrics database
+F = toggle fetching lyrics in the background
+l = toggle display of lyrics
+</code></pre></div>
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2013/03/02/apps-zip">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2013/05/26/emacs-newbie">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/11/18/linux-tricks-3">Linux command line tools and tricks - Part 3</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/28/dwm">Basic dwm setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/19/eom">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/02/19/cli-task">Task Warrior - The best CLI task manager for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/09/19/linux-tricks">Superb Linux command line tools and tricks for Linux geeks</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/27/rockbox">ROCKBOX - Breathe a new lease of life into an old mp3 player</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

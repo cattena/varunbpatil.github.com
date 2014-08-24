@@ -1,0 +1,692 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2013-03-02T00:00:00+05:30">02 March 2013</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+        <a class="tag" href="/tags/android/">android</a> &nbsp;
+    
+        <a class="tag" href="/tags/apps & softwares/">apps & softwares</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p><strong>Updated 02-Mar-2013 : Installing as user app instead of system app</strong> [ <a href="#UPDATE02MAR2013">jump to this</a> ]</p>
+
+<p>If you are one of those who constantly keep switching between custom ROM&#39;s and do not feel the need to pay for apps like Titanium Backup to backup all the android apps you currently have installed on your phone, then this is the article for you. I will show you how to easily create a custom android apps zip file that can be flashed in one go via the CWM(ClockWorkMod) recovery. These apps are upgradable after you flash them.</p>
+
+<p>There is already a free android app available called &quot;App2Zip&quot; which will allow you to do exactly the same thing via a GUI, but if you are thinking, how hard can it be to create a zip file containing your favorite apps, then you are right. It is not hard at all, as I shall now demonstrate.</p>
+
+<p>First, you will need a skeleton zip file, which contains the META-INF folder. This folder basically contains an updater-script which will mount the system partition and copy your apps into it. Go ahead and <a href="http://forum.xda-developers.com/attachment.php?attachmentid=1279288&amp;d=1345792638">download this skeleton zip file from here</a>.</p>
+
+<p>Now, copy the zip file to a convenient location and unzip it.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir -p ~/custom_apps
+$ cp sample.zip ~/custom_apps
+$ cd ~/custom_apps
+$ unzip sample.zip
+$ rm sample.zip
+</code></pre></div>
+<p>At this point, you should see two folders <strong>META-INF/</strong> and <strong>system/</strong>. The system folder follows exactly the same directory structure as the system/ partition on your android device. The META-INF/ folder as mentioned before, contains the updater-script which mounts the system/ partition of your phone and copies your apps into it. If you use ADB(Android Debug Bridge), you can view the contents of the system/ partition on your android device using the command below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb shell ls /system/
+</code></pre></div>
+<p>If you are unfamiliar with ADB, you can start by reading through one of my <a href="http://varunbpatil.github.com/2012/06/18/adb">previous blog post on adb</a> and some of the cool stuff you can do with it.</p>
+
+<p>Of all the directories in the system/ partition, we will concentrate on the <strong>app/</strong> and the <strong>media/</strong> directories in this article.</p>
+
+<p>As you might have guessed, the app folder is where your android apps(your system apps, to be exact) go, and the media/ folder is where you will find ringtones, alarms and notifications.</p>
+
+<p>So, how do you get the android apps from your android device ?</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir ~/my_android_apps
+$ adb pull /data/app/ ~/my_android_apps/
+</code></pre></div>
+<p>All the android apps(.apk files) that you had installed on your android device will now be available in the my<em>android</em>apps/ folder. Basically, all user apps are stored in /data/app/ and all system apps are stored in /system/app on your phone. Some other apps might have been installed at some other location. You might want to enter the following command to find all the .apk files on your device and copy the required ones to the my<em>android</em>apps/ folder before we begin creating the zip file. Be sure to start ADB as root before you enter the following command.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb shell find / -name &quot;*.apk&quot;
+</code></pre></div>
+<p>You can use &quot;adb pull&quot; on the path names returned by the find command above to copy the apk files corresponding to the apps you want to backup. Once, the folder my<em>android</em>apps/ has all the android apps(.apk files) you need, you are ready to start creating your custom flash-able zip file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd ~/custom_apps/
+$ mkdir -p system/app
+$ mkdir -p system/media/audio/ringtones
+$ mkdir -p system/media/audio/notifications
+$ mkdir -p system/media/audio/alarms
+</code></pre></div>
+<p>You now have created a system/ folder that mimics the directory structure of the system/ partition of your android device.
+Now, copy all the apps from my<em>android</em>apps/ folder to the system/app/ folder.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cp ~/my_android_apps/* ~/custom_apps/system/app/
+</code></pre></div>
+<p>Similarly, you can also put any ringtones, notifications and alarms(.ogg files) into the corresponding directories you just created above. You can also put any boot-animation zip file into the custom<em>apps/system/ directory(make sure you rename the boot-animation zip file to whatever name was already present for the boot-animation on your android device). You may also put and new fonts into the custom</em>apps/system/fonts/ directory after creating one. Now, you are ready to create the zip file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ 7z a my_android_apps.zip ~/custom_apps/*
+</code></pre></div>
+<p>Thats it!!!. You now have a zip file of your favorite android apps and media which can be flashed at the CWM recovery just like you flash gapps or any custom ROM. Note that I have used the 7zip utility to create the zip file. You may have to install it first on your Linux box before you run the above command. On Ubuntu, you can install it as:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install p7zip-full
+</code></pre></div>
+<p>Now, all that remains is to transfer the my<em>android</em>apps.zip file to the sdcard, and then boot into recovery and install the zip file all of which can be done using ADB as follows:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb push my_android_apps.zip /sdcard/
+$ adb reboot recovery
+</code></pre></div>
+<p>Now, how hard can that be ? !!!</p>
+
+<p><a id="UPDATE02MAR2013"></a></p>
+
+<p><br /><br /><br /></p>
+
+<p><strong>UPDATE:</strong></p>
+
+<p>The above method installs your apps as system apps(the system/app/ folder). However, if you want your apps to be installed as user apps(just like when you installed them from the play store), you have to put your apk files in another directory <strong>data/app/</strong> parallel to the system/app/ folder as shown below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd ~/custom_apps
+$ mkdir -p data/app
+$ cp ~/my_android_apps/* ~/custom_apps/data/app/
+</code></pre></div>
+<p>This however, is not sufficient. If you take a look at the &quot;updater-script&quot; file inside META-INF/ you will see that only the system partition is mounted. You will have to add a few lines to mount the data partition as well. For my Motorola Defy, I have the following lines in my updater-script.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">run_program(&quot;/sbin/mount&quot;, &quot;/dev/block/mmcblk1p21&quot;, &quot;/system&quot;);
+package_extract_dir(&quot;system&quot;, &quot;/system&quot;);
+run_program(&quot;/sbin/unmount&quot;, &quot;/dev/block/mmcblk1p21&quot;, &quot;/system&quot;);
+
+run_program(&quot;/sbin/mount&quot;, &quot;/dev/block/mmcblk1p25&quot;, &quot;/data&quot;);
+package_extract_dir(&quot;data&quot;, &quot;/data&quot;);
+run_program(&quot;/sbin/unmount&quot;, &quot;/dev/block/mmcblk1p25&quot;, &quot;/data&quot;);
+</code></pre></div>
+<p>The first 3 lines mount the system partition, extract the contents of the system/ directory in the zip file into this partition and unmounts the system partition. The next three lines do the same for the data partition. However, <strong>note that the device file names(mmcblk1p21 for system partition and mmcblk1p25 for data partition) are specific to my Motorola Defy and may not be the same for your android device.</strong> That said, finding out the device file names for the system and data partitions on your android device is not difficult at all. You can use adb to find out as shown below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb shell mount | grep &#39;/system\|/data&#39; -
+</code></pre></div>
+<p>You can also view the contents of <strong>/etc/recovery.fstab</strong> to find out the device file names. Just replace the device file names you see in the output of the above command(first column of the output) instead of the ones I have used above in the updater-script file.</p>
+
+<p>That is all... You can now create the zip file using 7zip and flash it in recovery using the same steps as earlier.</p>
+
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2013/02/19/cli-task">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2013/04/11/ncmpcpp">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/11/18/linux-tricks-3">Linux command line tools and tricks - Part 3</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/28/dwm">Basic dwm setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/19/eom">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/04/11/ncmpcpp">ncmpcpp : ncurses based music player for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/02/19/cli-task">Task Warrior - The best CLI task manager for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/09/19/linux-tricks">Superb Linux command line tools and tricks for Linux geeks</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/08/26/stock-defy">How to go back to stock rom on Motorola Defy</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/27/rockbox">ROCKBOX - Breathe a new lease of life into an old mp3 player</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/18/adb">ADBing into your android phone</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/05/26/last-few-months">Interesting last few months</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/15/miui-motorola-defy">Tested : MIUI rom on Motorola Defy</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

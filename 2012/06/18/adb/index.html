@@ -1,0 +1,632 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | ADBing into your android phone</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">ADBing into your android phone</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2012-06-18T00:00:00+05:30">18 June 2012</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/android/">android</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>I write this article to explain some cool things you can do with your android phone(any android phone) using ADB. ADB(or Android Debugging Bridge) is a tool used to connect and sends commands to your android phone from a computer. In this article I will be explaining with examples what you can accomplish on your android phone using ADB. </p>
+
+<p>The caveat here is that, the ADB examples that I give you here assume that your phone is rooted. Rooting a phone simply means that you are granted superuser priveleges to your phone. It should however be noted that rooting your phone may void warranty. The procedure for rooting varies from phone to phone. The specific procedure for your phone can easily be found on the internet, so I won&#39;t be concentrating on that here. I will assume that your phone is rooted. I will also assume some degree of familiarity with basic linux commands.</p>
+
+<h4>Installing the ADB tool -- Method 1</h4>
+
+<ul>
+<li>ADB is available on the <a href="http://developer.android.com/sdk/index.html">Android Software Development kit</a>. Download the package for your platform and install(.exe on windows) or extract to your favorite location on linux.</li>
+<li>Once installed or extracted, cd to the installation directory and launch <em>SDK Manager</em>.</li>
+<li>Check the platform tools option and uncheck all other options, unless you are developing apps on android.</li>
+<li>The platform tools including adb will be downloaded and installed.</li>
+<li><p>Once installed, the adb tool is available in the <em>platform-tools/</em> directory inside the android SDK directory. Make sure to add this to the PATH on linux or windows. On linux, you can modify your <strong>~/.bashrc</strong> to contain the following line </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">PATH=$PATH:/path/to/android/sdk/platform-tools/ 
+</code></pre></div>
+<p>On windows you can edit the Path system environment variable by searching for &quot;system environment variable&quot; in the windows start menu and appending the corresponding path of platform-tools/ to it.</p></li>
+<li><p>To bring the PATH to immediate effect in linux, run the following command from a terminal(or log-out and log back in).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ source ~/.bashrc
+</code></pre></div></li>
+<li><p>That&#39;s it. You are now ready to run the adb tool !!!.</p></li>
+</ul>
+
+<h4>Installing the ADB tool -- Method 2</h4>
+
+<ul>
+<li>If you are not interested in any android development and do not want anything to do with the Android Software Development kit, you can just download the adb tool as a standalone tool. This ofcourse, is not official.</li>
+<li>Download a <a href="http://dottech.org/downloads/adb_fastboot_and_other_tools.zip">zip file</a> containing some important adb tools.</li>
+<li>Extract the contents to any place you wish. </li>
+<li>Then similar to the Method 1 above, add that directory to which you extracted the contents of the .zip into the PATH environment variable, and you are done!!!.</li>
+</ul>
+
+<p>Once ADB is installed, connect your phone via USB cable to your computer. Make sure, android debugging is enabled on your phone and make sure you have enabled installing of apps from third party sources on your phone.</p>
+
+<h4>Testing adb in linux</h4>
+
+<ul>
+<li><p>Fire up a terminal and type in the following commands in that sequence.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo -s
+$ adb kill-server
+$ adb root
+$ adb devices
+</code></pre></div>
+<p>You should now be able to see your phone listed under the <em>list of devices attached</em>        </p></li>
+<li><p>You can now access your phone&#39;s file system as shown below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb shell
+# ls
+</code></pre></div>
+<p>Notice that when you are inside the adb shell, you have a hash prompt as opposed to a dollar prompt when you are not. You should now be able to see the root directory of your phone. You can now use several standard linux commands to play around with the files on your phone. You can run pretty much every linux file management command when you are at the hash prompt. Once you are done, you can drop out from the ADB shell by pressing CTRL-D on linux. You will be taken back to the dollar prompt.</p></li>
+</ul>
+
+<p>For most of the following examples, you will need your phone&#39;s file system to be in R/W mode. So, do that now:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb remount
+</code></pre></div>
+<p>Now that we have adb tool running, let us look at some cool things you can do with it. At least, this is what I do on my rooted phone using ADB :)</p>
+
+<h4>Using ADB to do <em>cool</em> things</h4>
+
+<h5>Changing the boot animation of your rooted android phone</h5>
+
+<p>Several beautiful boot animations are available <a href="http://forum.xda-developers.com/showthread.php?t=1559132">here</a>. Of course, there are many others available freely on the internet. As a matter of fact, it is not very hard to create one yourself. To put simply, the boot animations consists of several individual image files and another text file that tells in what order to display these images and the delay between them. Thats it!!!.</p>
+
+<p>Once you have downloaded the zip file of the boot animation corresponding to your devices&#39; resolution, make sure you rename it as <em>bootanimation.zip</em></p>
+
+<p>Suppose you have saved the zip as <em>~/bootanimation.zip</em>. Type in the following commands at the terminal to set your new bootanimation.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb push ~/bootanimation.zip /system/media/
+$ adb reboot
+</code></pre></div>
+<p>That&#39;s it!!!. Your phone will now reboot, and you should be able to see the new boot animation in action.</p>
+
+<h5>Push files into or pull files from your android phone(also applies to directories)</h5>
+
+<p>You can pull files from your android phone to your computer using:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb pull &lt;src path on phone&gt; &lt;dst path on computer&gt;
+</code></pre></div>
+<p>Or you can push any file from your computer into your android phone as follows:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb push &lt;src path on computer&gt; &lt;dst path on phone&gt;
+</code></pre></div>
+<p>For example if you want to push ringtones from ~/Ringtones/ on your computer into your android phone, just do:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb push ~/Ringtones/ /system/media/audio/Ringtones/
+</code></pre></div>
+<p>Similarly, you can push Alarms and Notification sounds to /system/media/audio/Alarms/ and /system/media/audio/Notifications/ directories on your phone respectively.        </p>
+
+<p>You may be wondering what is it that ADB can do that many android file manager apps like Astro file manager cannot do. The answer is ADB allows you to modify system files as well(those that reside in /system/).</p>
+
+<p>You can also push(or pull) any files into your sdcard as follows:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb push ~/names.txt /sdcard/
+$ adb pull /sdcard/songs/abc.mp3 ~/Desktop/
+</code></pre></div>
+<h5>Disable the annoying camera shutter sounds</h5>
+
+<p>This feature is not available in the camera app for ICS roms currently, and the only way to accomplishFor this, is to modify a single system sound file, which is as easy as shown below:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb shell
+# cd /system/media/audio/ui
+# mv &lt;shutter_sound_file&gt; &lt;shutter_sound_file&gt;.old
+</code></pre></div>
+<p>By renaming the corresponding file, android can no longer find the sound files for the camera shutter and as a result, won&#39;t play the sound. Press CTRL-D to return to dollar prompt.        </p>
+
+<h5>Install paid android apps for free</h5>
+
+<p>Although this is illegal, I use ADB quite exclusively for this purpose!!!. I have identified two superb sources for downloading paid android apps for free. One is <a href="http://www.4shared.com/">4shared</a> and the other is <a href="http://www.filecrop.com/">Filecrop</a>. Search for the name of the app as present in the android market and then download the latest version of the android app. It is usually a file with the extension <em>.apk</em></p>
+
+<p>Suppose you have downloaded the apk file to ~/Desktop/test.apk you can install it on your phone in one step as follows:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb install test.apk
+</code></pre></div>
+<p>Voila!!!. You have just installed a paid android app for free!!!.        </p>
+
+<p>Similarly you can very easily unistall apps from your android phone using:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ adb uninstall &lt;package name&gt;
+</code></pre></div>
+<p>In short, you can run pretty much every linux command that you use on your computer&#39;s linux file system, to manage files on your android phone which can be very powerful when managing large number of files using regular expressions, which is just not possible on your native android file manager app. If you have any trouble at all using adb with your phone, feel free to leave a comment below. I will try my best to sort things out for you. :)</p>
+
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2012/06/07/duck-duck-go">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2012/06/27/rockbox">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/08/26/stock-defy">How to go back to stock rom on Motorola Defy</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/05/26/last-few-months">Interesting last few months</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/15/miui-motorola-defy">Tested : MIUI rom on Motorola Defy</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

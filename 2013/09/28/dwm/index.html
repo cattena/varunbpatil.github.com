@@ -1,0 +1,716 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | Basic dwm setup in (L)ubuntu</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Basic dwm setup in (L)ubuntu</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2013-09-28T00:00:00+05:30">28 September 2013</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p><strong>Updated 17-Oct-2013 : Getting extra keyboard keys working with DWM</strong> [ <a href="#UPDATE17OCT2013">jump to this</a> ]</p>
+
+<p><strong>Updated 19-Aug-2014 : Getting antialiased fonts</strong> [ <a href="#UPDATE19AUG2014">jump to this</a> ]</p>
+
+<p>Close on the heels of my <a href="http://varunbpatil.github.io/2013/09/20/xmonad">Xmonad setup in (L)ubuntu article</a>, I decided to give <strong>dwm (another tiling window manager, from which xmonad is forked)</strong> a try, and man was I blown away by its super simple configuration and fast setup (since it is written in C, unlike Xmonad which is written in haskell). Since I am not a power user of Xmonad, dwm more than satisfied my requirements and actually made the things that I cared for much more simpler. No more downloading a haskell compiler. dwm&#39;s download, build and install is terribly fast compared to xmonad. Simply loving it so far :) Many of the key-bindings are common between dwm and xmonad, so it&#39;s very easy to make the switch from xmonad to dwm.</p>
+
+<p><img src="/images/dwm.png" width="750px" /></p>
+
+<h4>Installation</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget http://dl.suckless.org/dwm/dwm-6.0.tar.gz
+$ tar xf dwm-6.0.tar.gz &amp;&amp; cd dwm-6.0
+$ make &amp;&amp; sudo make install
+$ sudo apt-get install acpi trayer gtk-chtheme gmrun terminator dmenu #optional
+</code></pre></div>
+<h4>Setup</h4>
+
+<p>Create the file <strong>/usr/share/xsessions/dwm.desktop</strong> with the following contents (root required).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[Desktop Entry]
+Name=dwm
+Comment=Lightweight tiling window manager
+Exec=dwm-personalized
+Type=XSession
+</code></pre></div>
+<p>Give the above file proper permissions.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo chown root:root /usr/share/xsessions/dwm.desktop
+</code></pre></div>
+<p>The above file is required to give you the option to choose dwm as your window manager at the login prompt.</p>
+
+<p>Next, create the file <strong>/usr/local/bin/dwm-personalized</strong> with the following contents (root required). Make the file executable with <strong>sudo chmod +x /usr/local/bin/dwm-personalized</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#!/bin/bash
+#
+
+mpd &amp;&gt;/dev/null &amp;
+dropbox start &amp;&gt;/dev/null &amp;
+redshift -l 12.9667:77.5667 -t 3700:3700 &amp;&gt;/dev/null &amp;
+trayer --edge bottom --align right --SetDockType true \
+--SetPartialStrut true --expand true --widthtype percent \
+--width 100 --height 25 &amp;&gt;/dev/null &amp;
+sudo nm-applet &amp;&gt;/dev/null &amp;
+while true
+do
+    DATE=$(date +&quot;%Y-%m-%d %I:%M&quot;)
+    BAT=$(acpi -b | awk &#39;{ print $4 }&#39; | tr -d &#39;,&#39;)
+    xsetroot -name &quot;$BAT $DATE&quot;
+    sleep 1m
+done &amp;
+exec dwm
+</code></pre></div>
+<p>The above file contains commands to autostart your favourite applications(redshift, dropbox, mpd(ncmpcpp) and the like) as well as get a system tray for some important applets(nm-applet, dropbox and the like) by using trayer (just like in the xmonad post) and display some useful info like battery percentage and date in the top bar of dwm instead of the obvious &quot;dwm-6.0&quot; string displayed by default.</p>
+
+<p>Now, let us try our hand and configuring dwm itself to suit our tastes. Remember that we have already installed dwm with the default configurations above. To re-configure dwm, you will mostly have to modify config.h and/or dwm.c and recompile and re-install dwm as below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd dwm-6.0
+</code></pre></div>
+<p>Now make the necessary configuration changes in config.h and/or dwm.c . <a href="http://pastebin.com/Sv3gASyA">Here is my config.h</a>. The helpful comments make it very easy to understand what each option is for. When you&#39;re done, just recompile and re-install dwm as below</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ make &amp;&amp; sudo make install
+</code></pre></div>
+<p>Finally the most imp thing -- aesthetics. As with the basic xmonad setup, if you use dwm with just the above setup, you will find that gtk applications like Firefox look terribly ugly, but fixing this issue is simple. So, go ahead and do it before you start using dwm.</p>
+
+<p>Launch <strong>gtk-chtheme</strong> and select your preferred gtk-2.0 theme and any font that catches your eye as well. Save your settings. You should now find the file <strong>~/.gtkrc-2.0</strong>.</p>
+
+<p>Now, let us fix some ugly gtk-3.0 apps as well. Create the file <strong>~/.config/gtk-3.0/settings.ini</strong> with the following contents (choose your preferred themes and fonts).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[Settings]
+gtk-theme-name = Lubuntu-default
+gtk-icon-theme-name = Lubuntu
+gtk-font-name = Ubuntu Medium 11
+</code></pre></div>
+<p>That&#39;s it. Logout and log in selecting dwm as your session (instead of the default Lubuntu) at the login prompt. You are greeted with a plain screen. Press <strong>Win+Shift+Ret</strong> to launch the <strong>terminal</strong> or <strong>Win+p</strong> to launch your fav apps via <strong>gmrun</strong>. For more basic key-bindings and usage, checkout the man page of dwm.</p>
+
+<p><a id="UPDATE17OCT2013"></a></p>
+
+<p><br /><br /><br /></p>
+
+<p><strong>UPDATE (17 OCT 2013)</strong></p>
+
+<h4>Getting extra keyboard keys to work with DWM</h4>
+
+<p>Finally got some extra keyboard keys like audio volume control keys and audio mute key working with dwm. Here is how to do it for your keyboard.</p>
+
+<p>First, get the hex value of keycode for the keys you are interested in. For example,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ xmodmap -pk | grep -i audio
+</code></pre></div>
+<p>should give you the hex value of keycode for the audio control keys on your keyboard. For me, the values are as below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">0x1008ff12 (XF86AudioMute)
+0x1008ff11 (XF86AudioLowerVolume)
+0x1008ff13 (XF86AudioRaiseVolume)
+</code></pre></div>
+<p>Next, we need to modify config.h and specify what commands each of these keys will invoke when pressed. So, add the following lines to <strong>~/dwm-6.0/config.h</strong>.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">static const char *mutecmd[] = {&quot;amixer&quot;,&quot;-q&quot;,&quot;sset&quot;,&quot;Master&quot;,&quot;toggle&quot;,NULL};
+static const char *lowervolcmd[] = {&quot;amixer&quot;,&quot;-q&quot;,&quot;sset&quot;,&quot;Master&quot;,&quot;1%-&quot;,NULL};
+static const char *raisevolcmd[] = {&quot;amixer&quot;,&quot;-q&quot;,&quot;sset&quot;,&quot;Master&quot;,&quot;1%+&quot;,NULL};
+
+static Key keys[] = {
+    { 0,              0x1008ff12,spawn,          {.v = mutecmd } },
+    { 0,              0x1008ff11,spawn,          {.v = lowervolcmd } },
+    { 0,              0x1008ff13,spawn,          {.v = raisevolcmd } },
+};
+</code></pre></div>
+<p>Here is the <a href="http://pastebin.com/raw.php?i=RPka6C4H">new version of my entire config.h</a> with the above changes.</p>
+
+<p>Thats it !!!. Recompile and re-install dwm.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd ~/dwm-6.0
+$ make &amp;&amp; sudo make install
+</code></pre></div>
+<p>To test your new settings, hit <strong>Win+Shift+q</strong>. Functionality for other keys can be added similarly.</p>
+
+<p><a id="UPDATE19AUG2014"></a></p>
+
+<p><br /><br /><br /></p>
+
+<p><strong>UPDATE (19 AUG 2014)</strong></p>
+
+<h4>Getting antialiased fonts in dwm</h4>
+
+<p>Somehow, dwm does not automatically get antialiased fonts like when you are running gnome, etc. The following is the config file to enable antialiased and hinted fonts in dwm. Put the following in <strong>~/.fonts.conf</strong>.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;!DOCTYPE fontconfig SYSTEM &quot;fonts.dtd&quot;&gt;
+&lt;fontconfig&gt;
+    &lt;!-- Enable antialiasing for all fonts --&gt;
+    &lt;match target=&quot;font&quot;&gt;
+        &lt;edit mode=&quot;assign&quot; name=&quot;antialias&quot;&gt;&lt;bool&gt;true&lt;/bool&gt;&lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;!-- Enable hinting --&gt;
+    &lt;match target=&quot;font&quot;&gt;
+        &lt;edit name=&quot;hinting&quot; mode=&quot;assign&quot;&gt;&lt;bool&gt;true&lt;/bool&gt;&lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;match target=&quot;font&quot;&gt;
+        &lt;edit name=&quot;hintstyle&quot; mode=&quot;assign&quot;&gt;&lt;const&gt;hintslight&lt;/const&gt;&lt;/edit&gt;
+    &lt;/match&gt;
+    &lt;!-- subpixel rendering --&gt;
+    &lt;match target=&quot;font&quot;&gt;
+        &lt;edit name=&quot;rgba&quot; mode=&quot;assign&quot;&gt;&lt;const&gt;rgb&lt;/const&gt;&lt;/edit&gt;
+    &lt;/match&gt;
+&lt;/fontconfig&gt;
+</code></pre></div>
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2013/09/20/xmonad">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2013/11/18/linux-tricks-3">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/11/18/linux-tricks-3">Linux command line tools and tricks - Part 3</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/19/eom">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/04/11/ncmpcpp">ncmpcpp : ncurses based music player for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/02/19/cli-task">Task Warrior - The best CLI task manager for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/09/19/linux-tricks">Superb Linux command line tools and tricks for Linux geeks</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

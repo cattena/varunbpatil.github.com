@@ -1,0 +1,776 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | Alternatives to Truecrypt on Linux</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Alternatives to Truecrypt on Linux</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2014-06-01T00:00:00+05:30">01 June 2014</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/android/">android</a> &nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>Since Truecrypt has mysteriously shutdown, here are a few alternative encryption tools for Linux.</p>
+
+<h4>dm-crypt (cryptsetup)</h4>
+
+<p>dm-crypt(cryptsetup) is an alternative to Truecrypt for creating encrypted containers. Although dm-crypt doesn&#39;t come with a GUI like Truecrypt does, the following are some very simple steps to help you create your own LUKS encrypted container on Linux.</p>
+
+<p>Download and install the <a href="https://code.google.com/p/cryptsetup/wiki/Downloads?tm=2">latest version of cryptsetup</a>.</p>
+
+<p>First, create a container of the required size (Later on, I will show you how to extend the size of this container when needed). Let us create a 512MB container below.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dd if=/dev/urandom of=crypt_data bs=1M count=512
+</code></pre></div>
+<p>The name of the container we have created above is &#39;crypt_data&#39;.</p>
+
+<p>Next, find out a free loop device that you can use to loop mount the above file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup -f
+</code></pre></div>
+<p>Suppose, the output of the above command is &#39;/dev/loop0&#39;,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup /dev/loop0 /path/to/crypt_data
+</code></pre></div>
+<p>Now, create a LUKS container inside the file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># cryptsetup luksFormat /dev/loop0
+</code></pre></div>
+<p>You will be prompted to enter and verify the passphrase.</p>
+
+<p>Now, for a quick sanity check of the process so far, run</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ file /path/to/crypt_data
+</code></pre></div>
+<p>You should see output like &quot;crypt_data: LUKS encrypted file ...&quot;</p>
+
+<p>Now, map the LUKS container</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># cryptsetup luksOpen /dev/loop0 raw_data
+</code></pre></div>
+<p>After this step, you should see the file &#39;/dev/mapper/raw_data&#39; created.</p>
+
+<p>The LUKS container doesn&#39;t yet contain a file system. So let&#39;s go ahead and format the container as EXT4.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># mkfs.ext4 /dev/mapper/raw_data
+</code></pre></div>
+<p>Now, go ahead and mount the file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir /tmp/raw_data
+
+# mount /dev/mapper/raw_data /tmp/raw_data
+</code></pre></div>
+<p>Done !!!. Dump the files that you want to encrypt into /tmp/raw_data. When you are done, follow the reverse process as below.</p>
+
+<p>Unmount the file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># umount /tmp/raw_data
+</code></pre></div>
+<p>Close the LUKS container</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># cryptsetup luksClose raw_data
+</code></pre></div>
+<p>Free the loop device.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup -d /dev/loop0
+</code></pre></div>
+<p>Done !!!. Your new encrypted container is crypt_data.</p>
+
+<p>The steps above seem to be cumbersome, but they are only needed to create a new encrypted container. Using an existing LUKS encrypted container is as simple as below (assuming /dev/loop0 is a free loop device).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup /dev/loop0 /path/to/crypt_data
+
+# cryptsetup luksOpen /dev/loop0 raw_data
+
+# mount /dev/mapper/raw_data /tmp/raw_data
+</code></pre></div>
+<p>The raw data is now ready to be consumed/modified at /tmp/raw_data. When you are done,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># umount /tmp/raw_data
+
+# cryptsetup luksClose raw_data
+
+# losetup -d /dev/loop0
+</code></pre></div>
+<p>That&#39;s it.</p>
+
+<p>Now, what if the size of the container you created is no longer enough, and you want to extend it. Don&#39;t fret. It&#39;s easy. Most of the process being similar to the above.</p>
+
+<p>Suppose, you want to extend the container&#39;s size by 128MB,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dd if=/dev/urandom bs=1M count=128 | cat - &gt;&gt; /path/to/crypt_data
+
+# losetup /dev/loop0 /path/to/crypt_data
+
+# cryptsetup luksOpen /dev/loop0 raw_data
+</code></pre></div>
+<p>Now, resize the encrypted portion of the container.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># cryptsetup resize raw_data
+</code></pre></div>
+<p>Next, resize the filesystem.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># e2fsck -f /dev/mapper/raw_data
+
+# resize2fs /dev/mapper/raw_data
+</code></pre></div>
+<p>That&#39;s it. Resizing is complete. You can now mount and use the resized container like before.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># mount /dev/mapper/raw_data /tmp/raw_data
+</code></pre></div>
+<h4>tcplay : create and open truecrypt containers</h4>
+
+<p>While the latest versions of cryptsetup allow you to create and open truecrypt containers, there is another utility called tcplay which also allows you to do just that (without installing truecrypt, ofcourse). Again, many of the steps are same as the one&#39;s for dm-crypt(cryptsetup).</p>
+
+<p>Install tcplay in ubuntu.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># apt-get install tcplay
+</code></pre></div>
+<p>First, create a container of the required size (512MB in this case).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dd if=/dev/urandom of=crypt_data bs=1M count=512
+</code></pre></div>
+<p>Find out a free loop device.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup -f
+</code></pre></div>
+<p>Suppose the output is &#39;/dev/loop0&#39;,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup /dev/loop0 /path/to/crypt_data
+</code></pre></div>
+<p>Create the truecrypt container.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># tcplay -c -d /dev/loop0
+</code></pre></div>
+<p>Map the container.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># tcplay -m raw_data -d /dev/loop0
+</code></pre></div>
+<p>You should now see the file &#39;/dev/mapper/raw_data&#39;.</p>
+
+<p>Create a filesystem inside the container.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># mkfs.ext4 /dev/mapper/raw_data
+</code></pre></div>
+<p>Mount the filesystem.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir /tmp/raw_data
+
+# mount /dev/mapper/raw_data /tmp/raw_data
+</code></pre></div>
+<p>Ready !!!. Copy raw files into /tmp/raw_data. When you are done, follow the reverse process.</p>
+
+<p>Unmount the filesystem.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># umount /tmp/raw_data
+</code></pre></div>
+<p>Unmap the file.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># dmsetup remove raw_data
+</code></pre></div>
+<p>Free the loop device.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup -d /dev/loop0
+</code></pre></div>
+<p>Ofcourse, the above steps are only to be followed to create a new truecrypt container. To use an existing truecrypt container (like the one already created with the now abandoned Truecrypt), the following steps suffice.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># losetup /dev/loop0 /path/to/crypt_data
+
+# tcplay -m raw_data -d /dev/loop0
+
+# mount /dev/mapper/raw_data /tmp/raw_data
+</code></pre></div>
+<p>To finish, follow the reverse procedure.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># umount /tmp/raw_data
+
+# dmsetup remove raw_data
+
+# losetup -d /dev/loop0
+</code></pre></div>
+<h4>EncFS : userspace encryption</h4>
+
+<p>With Truecrypt, dm-crypt(cryptsetup) and tcplay you have to create a single file (container) and a filesystem within that to hold your encrypted files. EncFS works on the existing filesystem. Also, no root permissions required.</p>
+
+<p>To create an encrypted directory &#39;crypt_data&#39; with EncFS,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mkdir /tmp/raw_data
+
+$ encfs /absolute/path/to/crypt_data /tmp/raw_data
+</code></pre></div>
+<p>NOTE: encfs requires you to specify absolute paths on the command line.</p>
+
+<p>You will be prompted for a passphrase.</p>
+
+<p>Now, you can copy the raw files (unencrypted) into /tmp/raw_data. When you are done,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ fusermount -u /tmp/raw_data
+</code></pre></div>
+<p>You should see the encrypted files inside &#39;crypt_data&#39;.</p>
+
+<p>That&#39;s very simple !!!.</p>
+
+<h4>BONUS : Using truecrypt and EncFS on Android</h4>
+
+<p><a href="https://code.google.com/p/cryptonite/">Cryptonite</a> is an android app (still in development) that allows you to easily mount (on Cyanogenmod), export, browse EncFS encrypted directories from the GUI. Truecrypt support is only via command line/terminal emulator (at the moment).</p>
+
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2014/06/01/network-command-line">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2014/08/19/t440s-touchpad">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/11/18/linux-tricks-3">Linux command line tools and tricks - Part 3</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/28/dwm">Basic dwm setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/19/eom">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/04/11/ncmpcpp">ncmpcpp : ncurses based music player for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/02/19/cli-task">Task Warrior - The best CLI task manager for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/09/19/linux-tricks">Superb Linux command line tools and tricks for Linux geeks</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/08/26/stock-defy">How to go back to stock rom on Motorola Defy</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/18/adb">ADBing into your android phone</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/05/26/last-few-months">Interesting last few months</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/15/miui-motorola-defy">Tested : MIUI rom on Motorola Defy</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,804 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | Linux command line tools and tricks - Part 3</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Linux command line tools and tricks - Part 3</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2013-11-18T00:00:00+05:30">18 November 2013</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+        <a class="tag" href="/tags/computers/">computers</a> &nbsp;
+    
+        <a class="tag" href="/tags/programming/">programming</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>Here is another sequel to my <a href="http://varunbpatil.github.io/2012/09/19/linux-tricks">Linux command line tools and tricks - Part 1</a> and <a href="http://varunbpatil.github.io/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a> where I collect some of the most interesting command line tools and tricks from around the web. So, let&#39;s get started.</p>
+
+<h4>Using webcam as a mirror</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install mplayer
+$ mplayer -vf mirror -v tv:// -tv device=/dev/video0:driver=v4l2
+</code></pre></div>
+<h4>Download pronunciation of an English word as mp3 file</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ word=&quot;apple&quot;; wget http://ssl.gstatic.com/dictionary/static/sounds/de/0/$word.mp3
+</code></pre></div>
+<h4>Remove duplicate files in a directory(based on md5sum)</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dir=&quot;/path/to/directory&quot;  # set the directory path here
+$ diff \
+  &lt;(find ${dir} -type f -print0 | xargs -0 -n1 md5sum | sort | uniq -w32) \
+  &lt;(find ${dir} -type f -print0 | xargs -0 -n1 md5sum | sort) | \
+  awk -F&#39;  &#39; &#39;/&gt;/ {print $2}&#39; | tr &#39;\n&#39; &#39;\000&#39; | xargs -I{} -0 -n1 rm -vrf {}
+$ find ${dir} -type d -empty -delete  # (bonus)delete any empty sub-directories
+</code></pre></div>
+<p>Command no. 2 above looks very scary. Fact is, it is very easy to understand.</p>
+
+<p>The first &quot;find&quot; command,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;(find ${dir} -type f -print0 | xargs -0 -n1 md5sum | sort | uniq -w32) \
+</code></pre></div>
+<p>basically finds out all the unique md5sums in the directory which is also the files that we would like to keep in the final output directory. Our main aim is to remove all the files that are not in the output of the above find command because they are duplicates of files that are already in the output of the above find command.</p>
+
+<p>The second &quot;find&quot; command,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;(find ${dir} -type f -print0 | xargs -0 -n1 md5sum | sort) | \
+</code></pre></div>
+<p>basically lists all files in the directory sorted by their md5sums.</p>
+
+<p>So, if we subtract the output of the first find command from the output of the second find command, we are left with a list of files that we should remove from the directory to be left with no duplicate files in the end. And that is precisely what the rest of the command is doing.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">diff &lt;(...) &lt;(...)
+</code></pre></div>
+<p>This is basically subtracting the output of the first find command from the output of the second find command. The special notation used here, &lt;(...) is what is known as &quot;process substitution&quot; which basically means that we are treating the output of a process/command as a file, which in this case, we are feeding to the diff command. The output of the above diff command is the list of files we need to remove, so we pipe the output of the diff command to &quot;rm&quot; via xargs after modifying the line endings to be null characters instead of newline using the &quot;tr&quot; command.</p>
+
+<p>Couldn&#39;t be simpler !!!. Ofcourse, this command is perfect candidate for a tiny <a href="http://pastebin.com/raw.php?i=G6qnBXkB">shell script which you can find here</a>.</p>
+
+<h4>Deleting trailing whitespaces in a file</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sed -ri.bak &#39;s/ *$//&#39; &lt;filename&gt;
+</code></pre></div>
+<p>This is basically telling sed to replace any number of consecutive spaces at the end of each line in given file with nothing. The file is edited in-place, but a backup file is created in the same directory with the suffix .bak</p>
+
+<h4>ps command in tree format</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ ps -auxwf
+</code></pre></div>
+<p>Clearly shows parent child relationship.</p>
+
+<h4>Check internet usage this session</h4>
+
+<p>To show the wireless internet usage this session(in MB), run the following command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &quot;scale=1; `cat /sys/class/net/wlan0/statistics/rx_bytes`/1000000&quot; | bc
+</code></pre></div>
+<p>To show the wired internet usage this session(in MB), run the following command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &quot;scale=1; `cat /sys/class/net/eth0/statistics/rx_bytes`/1000000&quot; | bc
+</code></pre></div>
+<h4>Making Firefox faster by caching in RAM instead of on disk</h4>
+
+<p><strong>/dev/shm</strong> is of type tempfs. Its size is usually half of the available RAM. It is mapped to virtual memory i.e, RAM. Any file you create there will not be created on disk. So it is lost on reboot. To make Firefox faster, we simply tell Firefox to put its cache into /dev/shm. This also protects privacy since cache is not written to disk.</p>
+
+<p>Type the URL &quot;<strong>about:config</strong>&quot; in your Firefox URL bar.</p>
+
+<p>Search for &quot;<strong>browser.cache.disk</strong>&quot;</p>
+
+<p>Add a new &quot;<strong>string</strong>&quot; entry: &quot;<strong>browser.cache.disk.parent_directory</strong>&quot; with the value &quot;<strong>/dev/shm</strong>&quot;</p>
+
+<p>Make sure <strong>browser.cache.disk.enable</strong> is True</p>
+
+<p>That&#39;s it. Now, restart Firefox, and you should see a cache file created in /dev/shm.</p>
+
+<h4>Setting wallpaper via command line</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install feh
+$ feh --bg-fill &lt;path to image&gt;
+</code></pre></div>
+<p>Can be used with startup scripts or login scripts. Especially useful in tiling window managers like <a href="http://varunbpatil.github.io/2013/09/28/dwm">DWM</a> and <a href="http://varunbpatil.github.io/2013/09/20/xmonad">Xmonad</a>.</p>
+
+<h4>Faster sshfs</h4>
+
+<p>sshfs can be used to mount a remote directory locally using ssh, and hence comes with the security of ssh as well as the annoying delays in sync :P. So, if you are on an already secure connection, you can speed up sshfs by removing one layer of encryption using socat as below</p>
+
+<p>On the remote server,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install socat
+$ socat TCP4-LISTEN:7777 EXEC:/usr/lib/sftp-server
+</code></pre></div>
+<p>On local machine,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sshfs -o directport=7777 remote_hostname:/remote/dir /local/dir
+</code></pre></div>
+<p>Notice we don&#39;t specify a username for the remote machine in the above command.</p>
+
+<h4>Setting up a static IP via command line</h4>
+
+<p>Especially useful when you are running lightweight window managers like <a href="http://varunbpatil.github.io/2013/09/28/dwm">DWM</a> or <a href="http://varunbpatil.github.io/2013/09/20/xmonad">Xmonad</a> and do not have a tray applet to control network connections.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo ifconfig eth0 10.0.0.1 netmask 255.255.255.0 up
+</code></pre></div>
+<h4>Scanning for networks via command line</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo iwlist wlan0 scan   # scan for wireless networks
+$ sudo iwlist eth0 scan    # scan for wired networks
+$ sudo iwconfig wlan0 essid &quot;actual essid&quot; # select network
+</code></pre></div>
+<p>Again, this is useful if you do not have or do not want a tray applet to control networks (like nm-applet).</p>
+
+<h4>Creating a file that does not grow beyond a set size</h4>
+
+<p>Suppose you want to create a log file whose max size should not become more that 100 MB.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dd if=/dev/zero of=./100mb.img bs=1M count=100  # create a 100 MB file
+$ mkfs.ext2 -t ext2 100mb.img  # create an ext2 filesystem
+$ mkdir /tmp/100mb
+$ sudo mount -t ext2 100mb.img /tmp/100mb/ # mount the filesystem
+$ touch /tmp/100mb/logfile
+</code></pre></div>
+<p>Now, logfile cannot grow beyond 100 MB. However, note that the fixed size you have in mind must be enough to create a filesystem in it.</p>
+
+<h4>Mounting an image file</h4>
+
+<p>You can create a complete backup(mirror image) of an external memory device like so.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo dd if=/dev/sdX of=mem_bkup.img
+</code></pre></div>
+<p>and the reverse process will restore the backup onto your external memory device.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo dd if=mem_bkup.img of=/dev/sdX
+</code></pre></div>
+<p>But what if you wanted to access the contents within mem_bkup.img without restoring it back onto your external memory device ?
+The solution is to mount mem_bkup.img. But this process is not straightforward.</p>
+
+<p>First, run the following command.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo fdisk -l mem_bkup.img
+</code></pre></div>
+<p>Note down the sector size (search for a line which has something like &quot;units = sectors of 1*512 = 512 bytes&quot;). So, the sector size in this case is 512 bytes. Also note down the start sector of the partition that you would like to mount. Let us suppose the start sector of the first partition is &#39;x&#39;.</p>
+
+<p>Multiply the start sector(x) and the sector size(512) to get the offset(y).</p>
+
+<p>y = x * 512</p>
+
+<p>Now, to mount partition 1, run the command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo mount -o loop,offset=y mem_bkup.img &lt;mount_point&gt;
+</code></pre></div>
+<h4>Multiple commands in the background, Important distinction</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ (command1; command2; command3) &amp;
+</code></pre></div>
+<p>Here, commands are executed sequentially but all of them are executed in the background.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ (command1 &amp; command2) &amp;
+</code></pre></div>
+<p>Here, command1 is started in the background followed immediately by command2 i.e, command2 does not wait for command1 to complete. Both the commands are still executed in the background. Note that &amp; also performs the function of ; in that it seperates the two commands. Here, $! returns the pid of the process group and not the pid of either command1 or command2.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ (command1; command2) &amp;
+$ wait $!
+</code></pre></div>
+<p>This is how you wait for the group of background tasks to complete in a script.</p>
+
+<h4>Disconnecting a process from the terminal</h4>
+
+<p>Suppose you start a program like say &quot;vlc&quot; from the terminal, it opens up an new window and you no longer need the terminal to be open. But if you close the terminal, vlc is also terminated, because it is attached to the terminal. To disconnect the two, just do the following.</p>
+
+<p>Press Ctrl-Z to suspend vlc.</p>
+
+<p>Then type the command &quot;<strong>$ jobs</strong>&quot; to note down the job id of the suspended process. Then run the following command to disconnect vlc from the terminal.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ bg  # to start running vlc in background
+$ disown %&lt;job_id&gt;  # disconnect vlc from terminal
+</code></pre></div>
+<p>NOTE: only background processes can be disowned(or disconnected).</p>
+
+<h4>Cron vs. Anacron</h4>
+
+<p>Cron does not run crontab jobs if your computer is powered down and hence is only suitable for servers. For desktop computers however, you have an alternative namely &quot;Anacron&quot; which, if your computer is powered off will run any pending tasks on next boot. To use Anacron on Ubuntu, just place your shell scripts in either <strong>/etc/cron.daily</strong>(for daily tasks) or <strong>/etc/cron.weekly</strong>(for weekly tasks) or <strong>/etc/cron.monthly</strong>(for monthly tasks).</p>
+
+<p>You could also add your entry into <strong>/etc/anacrontab</strong>. The format of the entry is as follows.</p>
+
+<p><strong>1st field - period</strong>  = time period between execution of jobs</p>
+
+<p><strong>2nd field - delay</strong>   = delay after booting at which any pending jobs should run</p>
+
+<p><strong>3rd field - job id</strong>  = any unique string to identify this particular anacron job</p>
+
+<p><strong>4th field - command</strong> = command to run</p>
+
+<h4>Limiting CPU usage of a currently running process</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cpulimit -p &lt;pid&gt; -l &lt;percentage_of_cpu_to_use&gt; -b
+</code></pre></div>
+<p>-b option tells cpulimit to run in the background.</p>
+
+<h4>Quickly listing pid of a process along with process name</h4>
+
+<p>The usual command to run for this purpose is</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ ps ax | grep &lt;process_name&gt;
+</code></pre></div>
+<p>There is however a simpler alternative</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ pgrep -l &lt;process_name&gt;
+</code></pre></div>
+<h4>Selectively turning off processor cores</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo 0 &gt; /sys/devices/system/cpu/cpu1/online  # turn off processor core 1
+</code></pre></div>
+<p>If you have a quad core computer, you can turn off cpu1, cpu2, cpu3 while cpu0 continues to work.</p>
+
+<h4>Making sudo not prompt for password</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo visudo  # opens /etc/sudoers in vi editor
+</code></pre></div>
+<p>Then, append the following line at the end of the file and save.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">username ALL=NOPASSWD: ALL
+</code></pre></div>
+<h4>Mounting an archive like a filesystem</h4>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ archivemount /path/to/archive /mount/point
+</code></pre></div>
+<p>Now you can perform any read/write operation on the contents of the archive. When you are done, just unmount.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ umount /mount/point
+</code></pre></div>
+<p>Any changes you made on the contents of the archive are automatically synced to the archive when you unmount.</p>
+
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2013/09/28/dwm">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2013/12/26/github-contrib">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/28/dwm">Basic dwm setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/19/eom">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/04/11/ncmpcpp">ncmpcpp : ncurses based music player for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/02/19/cli-task">Task Warrior - The best CLI task manager for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/09/19/linux-tricks">Superb Linux command line tools and tricks for Linux geeks</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/06/black-hat-hackers">Black hat Hall Of Fame</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/02/behind-the-scene">Behind the scene</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/04/stuxnet">Stuxnet: the greatest, meanest computer virus ever written</a>
+            </li>
+            
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

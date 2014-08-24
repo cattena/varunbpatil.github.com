@@ -1,0 +1,734 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | Task Warrior - The best CLI task manager for Linux</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Task Warrior - The best CLI task manager for Linux</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2013-02-19T00:00:00+05:30">19 February 2013</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+        <a class="tag" href="/tags/computers/">computers</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>I have used many GUI task managers on Linux before, and gnote was my favorite, because it was simple, easy to use and had all that I needed to keep track of my tasks and nothing more. Now, there is a new favorite on the block. Most importantly, it is controlled via the command line... sweet :)</p>
+
+<p>The app in question is called <a href="http://taskwarrior.org/projects/show/taskwarrior">Task Warrior</a>. It is super simple to use, has tons of features and is just plain beautiful. You can install task warrior in Ubuntu with the following command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install task
+</code></pre></div>
+<p>The following are CLI commands for task warrior for some of the most common usage scenarios. It is recommended that you go through all the examples below even though you would not need to use most of them all the time.</p>
+
+<ul>
+<li><p><strong>List all pending tasks</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task long
+</code></pre></div></li>
+</ul>
+
+<p>The subcommand long gives you a long listing(all attributes) of pending task. You could have used <strong>&quot;ls&quot;</strong> or <strong>&quot;list&quot;</strong> instead of <strong>&quot;long&quot;</strong> to give a more concise report with fewer columns(attributes). These however do not report tasks that have been completed. If you want to see completed tasks along with pending tasks, use <strong>&quot;all&quot;</strong>. If you want to list only the completed tasks, use &quot;task completed&quot;</p>
+
+<ul>
+<li><p><strong>Add a new task</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task add &lt;description&gt;
+</code></pre></div></li>
+</ul>
+
+<p>This is a simple example to add a task. You could specify other attributes for the task while adding it or even later on by modifying an existing task. These attributes will slowly become clear in subsequent examples. You need not quote the description unless the description involves some special characters that may be interpreted by the shell.</p>
+
+<ul>
+<li><p><strong>Mark a task as completed</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task &lt;task_no&gt; done
+</code></pre></div></li>
+</ul>
+
+<p>Completed tasks will no longer show up in the output of &quot;task long&quot;, but can be seen only with &quot;task all&quot;.</p>
+
+<ul>
+<li><p><strong>Delete a task</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task 1,3-5 delete
+</code></pre></div></li>
+</ul>
+
+<p>This example serves to show how you can specify multiple task id&#39;s in the same command. Deleted tasks will never show up in the &quot;task ls&quot; reports.</p>
+
+<ul>
+<li><p><strong>Mark a task as started</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task &lt;task_id&gt; start
+</code></pre></div></li>
+<li><p><strong>Mark a task as stopped</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task &lt;task_id&gt; stop   
+</code></pre></div></li>
+<li><p><strong>Modify an existing task</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task &lt;task_id&gt; modify &lt;modifications&gt;
+</code></pre></div></li>
+</ul>
+
+<p>You can specify a new string to replace the original task description. Or you may add attributes to an existing task. Some of the most important task attributes are listed below.        </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">* __add tags__
+
+        $ task linux modify +work
+
+  This command serves as an example to show that, job_id&#39;s are not the only way to identify tasks. Here the word &quot;linux&quot; is used, so all tasks which contain the word linux in their descriptions will be modified. And the modification in this case is to add the tag &quot;work&quot; to each of these tasks. Tags attached to a task can be seen with the &quot;list long&quot; command. To remove a tag assigned to a task, simply use the same modify command as above except that +work should be replaced by -work.
+
+* __specify priority__
+
+        $ task +work modify pri:H
+
+  Here, we select all tasks which have been tagged as &quot;work&quot; and we are assigning a &quot;High&quot;(pri:H) priority to them. Other priority levels available are M(medium priority) and L(low priority). To remove any assigned priorities, simply use the same modify command with an empty priority like so
+
+        $ task +work modify pri:
+
+* __specify due dates__
+
+        $ task +work pri:H modify due:eom
+
+  Here, we select all tasks with a high priority and which have been tagged as &quot;work&quot; and assign a due date to them as eom(end of month). Note the implicit logical AND between pri:H and +work. You could as well have specified the due date as MM/DD/YYYY or Sunday or eoy(stands for end of year).
+
+* __group tasks into project__
+
+        $ task &#39;(pri:H or +linux)&#39; modify project:work
+
+  This example shows how to use a logical OR instead of the implicit logical AND of the previous example. Here, we select all tasks with either a high priority or tagged as &quot;linux&quot; or both and then, put them all under the same project(or group) called &quot;work&quot;.         
+
+* __add annotations for a task__
+
+        $ task &lt;task_id&gt; annotate &lt;description&gt;
+
+  Annotations are like small notes attached to a task. To remove the annotations, use the command below
+
+        $ task &lt;task_id&gt; denotate &lt;pattern&gt;
+
+  Here, we remove those annotations which satisfy the &quot;pattern&quot;.
+
+* __add dependencies for a task__
+
+        $ task 2 modify depends:6
+
+  Here, we are specifying that task 2 depends on task 6. We can list all tasks that are blocked i.e, which depend on other tasks that are not completed.
+
+        $ task blocked
+
+  We can list all tasks that are unblocked i.e, do not depend on any other pending task with
+
+        $ task unblocked
+
+  You can remove a dependency by using the same modify command with depends:-6 instead of depends:6
+
+        $ task 2 modify depends:-6
+
+* __wait till a date until task is displayed__
+
+  Suppose we have a task whose due date is very far out in the future, and we do not want it to be listed in the output of &quot;task list&quot; until a particular date is reached, we can put the task into &quot;waiting&quot; state as follows
+
+        $ task 11 modify wait:10/01/2013
+
+  Here, we are putting task 11 into a waiting state, which means the task will not show up in the output of &quot;task list&quot; until 1st Oct 2013.
+
+  You can see all tasks that are waiting
+
+        $ task waiting
+</code></pre></div>
+<ul>
+<li><p><strong>Relational operators in filters</strong></p>
+
+<p>We can use relational operators like = != &lt; &gt; &lt;= &gt;= while specifying task filters. As an example, consider</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task &#39;(pri!=H and due&gt;eom)&#39; long
+</code></pre></div>
+<p>This command lists all tasks that do not have a high priority and have a due date after the end of the current month.</p></li>
+<li><p><strong>Syncing tasks between multiple computers running task warrior</strong> </p>
+
+<p>If you have a work and a home computer both running task warrior, you can sync tasks between them and the way I do it is via Dropbox(to store the task data). You could also use ssh to sync task data between local and remote computers.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task push ~/Dropbox/
+</code></pre></div>
+<p>This command pushes the local task data into Dropbox. Now, on the other computer, you can get these tasks by doing</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task pull ~/Dropbox/
+</code></pre></div>
+<p>pull command however destroys all tasks that are local. If you want to retain your local tasks as well as get new tasks from the other computer, you should use</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task merge ~/Dropbox/
+</code></pre></div>
+<p>This way, you get to keep your local tasks as well as get any updated tasks from the other computer. You also have the option of pushing the merged task data to Dropbox as part of the same command.</p></li>
+</ul>
+
+<p>I have only described commands for common use cases, which is more than enough to keep you neatly organized. However there are several other features available in task warrior that may be useful in some scenarios. The best way to get concise help on these features, and refresh your memory should you forget some of the above commands is</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ task help
+</code></pre></div>
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2012/12/27/kernel">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2013/03/02/apps-zip">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/11/18/linux-tricks-3">Linux command line tools and tricks - Part 3</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/28/dwm">Basic dwm setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/19/eom">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/04/11/ncmpcpp">ncmpcpp : ncurses based music player for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/09/19/linux-tricks">Superb Linux command line tools and tricks for Linux geeks</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/06/black-hat-hackers">Black hat Hall Of Fame</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/04/stuxnet">Stuxnet: the greatest, meanest computer virus ever written</a>
+            </li>
+            
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

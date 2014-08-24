@@ -1,0 +1,649 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | GitHub project contribution workflow</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">GitHub project contribution workflow</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2013-12-26T00:00:00+05:30">26 December 2013</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/git/">git</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>I only recently started contributing to other projects on GitHub, and while I am quite comfortable with the normal git workflow, I had never given a thought about how to use git to contribute to other projects (especially on GitHub). Although, I found many articles on the web, most of them were too complex to follow or missed out on some parts. So, I put together the good bits I found around the web and here it is.</p>
+
+<h4>Fork</h4>
+
+<ul>
+<li>Login to your GitHub account.</li>
+<li>Goto the GitHub page of the project you intend to contribute to.</li>
+<li>Click on the <strong>fork</strong> button (top right).</li>
+</ul>
+
+<p>You should now have a new repository on your GitHub page with the words &quot;forked from ____&quot; under the name of your repository.</p>
+
+<h4>Clone</h4>
+
+<ul>
+<li><p>Clone your GitHub repository (<strong>not</strong> the original project repo that you just forked). For example, I did</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git clone git@github.com:varunbpatil/openh264.git
+</code></pre></div></li>
+</ul>
+
+<p>Where the main project GitHub repo that I intended to contribute to was git@github.com:cisco/openh264.git</p>
+
+<ul>
+<li>Set upstream repository.</li>
+</ul>
+
+<p>Your repository is not automatically kept to date with the original project repo. You have to do it manually. So, first set the upstream repo like so.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git remote add upstream git@github.com:cisco/openh264.git
+</code></pre></div>
+<ul>
+<li><p>To update your local repo to match the original project repo (also called upstream), do</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git pull upstream master
+</code></pre></div></li>
+</ul>
+
+<p>This updates your repo&#39;s master branch with the updates from the upstream repo&#39;s (original project repo&#39;s) master branch.</p>
+
+<ul>
+<li><p>Push any master branch updates to your GitHub repo (so that your GitHub repo itself is kept up to date with the main project repo and not just your local clone).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git push origin master
+</code></pre></div></li>
+</ul>
+
+<p>Note that you are not contributing anything by doing this. You are simply keeping the master branch of your repository up to date with the master branch of the upstream repo.</p>
+
+<h4>Contribute</h4>
+
+<ul>
+<li><p>Create a new branch to make a new contribution (a new feature or a bug fix, etc).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git checkout -b my_new_feature_1
+</code></pre></div></li>
+</ul>
+
+<p>You will notice that after the above command you are automatically put on the my_new_feature_1 branch and not the master branch of your repo. Confirm this by typing</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git branch
+</code></pre></div>
+<p>You should see a * (asterisk) next to the branch my_new_feature_1.</p>
+
+<p>It is recommended that you keep the master branch of your repo clean, and do not make any changes (or contributions) on top of your master branch (although it can be done if you intend to make a quick contribution, a one time contribution).</p>
+
+<ul>
+<li><p>Make as many commits as you like on this branch and push to your repository on GitHub.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git push origin my_new_feature_1
+</code></pre></div></li>
+</ul>
+
+<p>This creates the branch my_new_feature_1 on your GitHub repo as well. This branch only existed on your local cloned repo until now.</p>
+
+<ul>
+<li>Now, you can ask the maintainers of the original project to consider your contributions by making a <strong>pull request</strong>.</li>
+</ul>
+
+<p>To do so, goto the GitHub webpage of <strong>your</strong> repo and then change the branch to my_new_feature_1 from the drop down menu just below the repo stats (the default branch shown on the web page is Master branch).</p>
+
+<p>Next, click on the &quot;Pull Request&quot; link which should be on the line below the drop down menu alongside the &quot;Compare&quot; link (<strong>not</strong> the &quot;Pull Requests&quot; tab on the sidebar on the right).</p>
+
+<p>Review the changes that you are going to submit, write a short description explaining your changes and then go ahead and submit the pull request.</p>
+
+<p>Now, goto the web page of the main GitHub project that you forked, click on the &quot;Pull Requests&quot; tab on the right hand sidebar. You should see the pull request that your just made along with possibly other pull requests that others have made.</p>
+
+<ul>
+<li>Wanna make more changes and contributions after a pull request has been submitted ?</li>
+</ul>
+
+<p>Sure, no problem. Continue to make commits to the my_new_feature_1 branch of your repository and push them to your repository.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git push origin my_new_feature_1
+</code></pre></div>
+<p>You <strong>don&#39;t</strong> need to issue another pull request for the new commit. These new commits are automatically added to the pull request you made earlier provided that you committed to the same branch (my_new_feature_1). GitHub&#39;s policy is <strong>one pull request per branch</strong>.</p>
+
+<ul>
+<li><p>Want to add another new feature ? Why not... Just create another branch for your new feature and follow the same steps.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git checkout master
+$ git checkout -b my_new_feature_2
+$ #make some commits in this branch
+$ git push origin my_new_feature_2
+</code></pre></div></li>
+</ul>
+
+<p>Goto the web page of your GitHub repo, select the my_new_feature_2 branch from the drop down menu, click on the &quot;Pull Request&quot; link, review and submit the pull request. Voila !!!</p>
+
+<ul>
+<li>All is well until someone review&#39;s your pull request and suggests that you make some changes for your contributions to be accepted into the original project&#39;s repo. There are two approaches to this.</li>
+</ul>
+
+<p>The first approach is to make more commits on top of the commits you have already submitted addressing any issues. But, I don&#39;t prefer this method, since it creates unnecessary commits, thus dirtying the commit history of the repo.</p>
+
+<p>Since, the project&#39;s maintainers haven&#39;t yet merged your commit&#39;s into the main repo, you are better of rewriting the commit history of your repo. This way your have a cleaner commit history with no unwanted commits and your new commits do exactly the same job as before while considering the suggestions made by the person(s) who reviewed your pull request(s). However, never use this method when several people are contributing to your repo (i.e, when others have cloned your repo, and are making changes on the same branch that you are).</p>
+
+<p>I won&#39;t go into details of the exact git commands that you need to use to rewrite commit history, but the following are probably the ones you are looking for (not in any order).</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git reset --soft # remove commit, but keep changes
+$ git rebase -i # reorder commits, squash commits, split commits
+$ git commit --amend # change commit message
+</code></pre></div>
+<p>Once you are done with the changes, make them visible to the project&#39;s maintainers.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git push origin my_new_feature_1 -f # forcefully change commit history
+</code></pre></div>
+<p>Your pull request will automatically be changed to reflect your newly modified commits. There is <strong>no need</strong> to issue another pull request.</p>
+
+<ul>
+<li>Congratulations... Your contributions have been merged into the original project and your pull request has been closed. What next ?</li>
+</ul>
+
+<p>Delete the branch that the pull request corresponds to on your cloned copy as well as on your GitHub repo.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git checkout master
+$ git branch -d my_new_feature_1 # deletes local branch
+$ git push origin :my_new_feature_1 # deletes remote branch
+</code></pre></div>
+<p>Note that the colon in the last command above is intentional.</p>
+
+<p>Note that you also get a link on the GitHub web page to delete the branch corresponding to the pull request once the pull request has been closed.</p>
+
+<p>Verify that your contributions have indeed been merged into the original project repo.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git pull upstream master
+$ git log # should see your commits here
+$ git push origin master
+</code></pre></div>
+<h4>Miscellaneous</h4>
+
+<ul>
+<li>Closing a pull request prematurely.</li>
+</ul>
+
+<p>Suppose you want to cancel a pull request before it has been merged into the main project repo, goto your pull request on the original project repo&#39;s webpage and click the &quot;close&quot; link and the bottom of the webpage (just below the comment boxes). You may also reopen a pull request at a later point of time from the webpage.</p>
+
+<p><br /><br /><br /><br /><br />
+Any question or suggestions are welcome in the comments below. Happy contributing :)</p>
+
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2013/11/18/linux-tricks-3">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2014/03/21/reverse-tethering">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

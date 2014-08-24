@@ -1,0 +1,1110 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- TO Fancy SEARCH ENGINE -->
+    <title>Varun B Patil | Superb Linux command line tools and tricks for Linux geeks</title>
+    <meta name="description" content="Varun B Patil's blog"/>
+
+    <!-- TO FANCY GOOGLE -->
+    <meta itemprop="name" content="Varun B Patil's blog"/>
+    <meta itemprop="description" content="Varun B Patil blog"/>
+
+    <!-- TO FANCY FACEBOOK -->
+    <meta property="og:title" content="Varun B Patil's blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://varunbpatil.github.com/" />
+    <meta property="og:site_name" content="Varun B Patil's blog" />
+
+    <meta name="keywords" content="Varun B Patil's blog"/>
+    <meta name="robots" content="noodp" />
+
+    <link rel="stylesheet" media="all" href="/style.css"/>
+    <link rel="stylesheet" media="all" href="/style_accordion.css"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32267446-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</head>
+<body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21595372 = new Ya.Metrika({id:21595372,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <div id="wrapper">
+        <div style="width:100%;position:fixed;z-index:99;box-shadow:0px 5px 5px #888888;">
+        <header id="header">
+            <div class="inner">
+                <a href="/"><h1 id="site-name">Varun B Patil</h1></a>
+                <nav id="navigation">
+                <ul class="navigation">
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/index.html" target="">HOME</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/profile/index.html" target="">PROFILE</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                                
+                            
+                        
+                    
+                    <li>
+                    <span class="current">
+                    <a class="current" href="/blog/index.html" target="">BLOG</a>
+                    </span>
+                    </li>
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    <li>
+                    <span class="">
+                    <a class="" href="/tag/index.html" target="">TAGS</a>
+                    </span>
+                    </li>
+                
+                </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+<br />
+<br />
+<br />
+<div id="main">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Superb Linux command line tools and tricks for Linux geeks</h1>
+    </header><!-- post-title -->
+    <div class="post-meta">
+        <time class="date" datetime="2012-09-19T00:00:00+05:30">19 September 2012</time>
+        <cite><em> &nbsp;&nbsp;by</em> Varun B Patil</cite>
+
+    </div><!-- .post-meta -->
+    <p class="postpage"><span style="font-style:italic">tagged under</span>&nbsp;&nbsp;
+    
+        <a class="tag" href="/tags/linux/">linux</a> &nbsp;
+    
+        <a class="tag" href="/tags/computers/">computers</a> &nbsp;
+    
+        <a class="tag" href="/tags/programming/">programming</a> &nbsp;
+    
+    </p>
+    <br />
+    <div class="post">
+      <p>I have gathered some of the best and most widely used linux command line tools and tricks from all over the web and from my recent Linux System Programming training from Cisco conducted by one of the best teachers I have ever had in quite some time, <a href="http://chandrashekar.info/">Mr. Chandrashekar Babu</a>. I use all or most of these commands at work and home frequently. Hope you find it useful and most importantly mind-boggling, fun and interesting, something that will keep you occupied over a long and boring weekend:)</p>
+
+<h4>A faster alternative to the &quot;find&quot; command</h4>
+
+<p>There is a command by the name &quot;locate&quot; in Linux that is much faster the super-useful &quot;find&quot; command, the reason being that &quot;locate&quot; command indexes files before-hand. The disadvantage is that files keep on getting added or removed making &quot;locate&quot; unreliable if the indexing is not done regularly.</p>
+
+<ul>
+<li><p>First index the files on your computer</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo updatedb
+</code></pre></div></li>
+<li><p>Then, search for a file</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ locate -ie &lt;filename&gt;
+</code></pre></div></li>
+</ul>
+
+<h4>Downloading files using &quot;wget&quot;</h4>
+
+<p>&quot;wget&quot; is an extremely powerful command line tool to download files off the internet.</p>
+
+<ul>
+<li><p>Download file from a single url with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget &lt;url&gt;
+</code></pre></div></li>
+<li><p>Download only a certain type of files from an URL(say mp3&#39;s)</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget -r -A.mp3 &lt;url&gt;
+</code></pre></div></li>
+<li><p>You can as well store multiple url&#39;s to download from in a file(one URL in each line) and give the filename as input to wget</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget -i &lt;filename&gt;
+</code></pre></div></li>
+<li><p>The best feature is that you can resume interrupted downloads by simply using the switch -c with any wget command above        </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget -c &lt;url&gt;
+</code></pre></div></li>
+<li><p>You can also mirror an entire website for offline viewing using the following command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget -rpk &lt;url&gt;
+</code></pre></div></li>
+</ul>
+
+<h4>An alternative to &quot;wget&quot; -- &quot;curl&quot;</h4>
+
+<p>&quot;curl&quot; is another powerful tool that works very much similar to &quot;wget&quot;. This package doesn&#39;t come by default. You will have to install it.</p>
+
+<ul>
+<li><p>Download file from a single url with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ curl &lt;url&gt;
+</code></pre></div></li>
+<li><p>Download from multiple URL&#39;s with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ curl -O &lt;URL1&gt; -O &lt;URL2&gt;
+</code></pre></div></li>
+<li><p>Resume an interrupted download</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ curl -C &lt;url&gt;
+</code></pre></div></li>
+<li><p>And lastly, find the definition of a word with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ curl dict://dict.org/d:&lt;word_to_search_for&gt;
+</code></pre></div></li>
+</ul>
+
+<h4>Observing the differences between two files in a very colorful way</h4>
+
+<p>We all know the basic diff command to observe the difference between two files, and we also know how hard it is to interpret the result of running the command. This is where vimdiff comes in. It displays the two files side by side in two vim tabs. The obvious disadvantage is that you should know a few commands to navigate around vim. Most importantly, the output is colored, with different colors meaning different things as below:</p>
+
+<ul>
+<li><p>Same lines in both files do not have a background color.</p></li>
+<li><p>If a line is missing in one file, it is shown as - - - with a blue background.</p></li>
+<li><p>Partial line matches are shown in red background.</p></li>
+</ul>
+
+<h4>Splitting, compressing and encrypting files before transfering to others</h4>
+
+<p>We all at some point have had to deal with transferring large files across computers. The obvious method is to compress it before sending. For extremely large files we can create a multi-part archive using the following commands.</p>
+
+<ul>
+<li><p>First of all, create a zip archive using</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ zip -re &lt;compressed_file_name.zip&gt; &lt;file1&gt; &lt;dir1&gt;
+</code></pre></div></li>
+</ul>
+
+<p>The -r switch allows you to add directories to the archive.</p>
+
+<p>The -e switch allows encryption, where the program asks you to enter a passphrase that needs to be entered by the recepient in order to extract the archive.</p>
+
+<ul>
+<li><p>Now split the archive into multiple parts with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ split --bytes=1K &lt;compressed_file_name.zip&gt; &lt;PREFIX&gt;
+</code></pre></div></li>
+</ul>
+
+<p>Here, - -bytes=1K specifies that we want parts that are at most 1K bytes in size.</p>
+
+<p>PREFIX is any user string... For example, if the PREFIX is given as &quot;split<em>&quot;, then the files that are created will be named split</em>aa, split<em>ab, split</em>ac, etc.</p>
+
+<ul>
+<li><p>On the receiving side, you can extract the multipart zip archive with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cat split_* &gt; my_compressed_file.zip
+</code></pre></div></li>
+</ul>
+
+<p>Where, &quot;split_&quot; was the PREFIX that the person who created the archive specified.</p>
+
+<p>Then, extract the whole zip file as follows.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    $ unzip my_compressed_file.zip
+</code></pre></div>
+<h4>Encrypting a single file using &quot;openssl&quot; for secure local storage</h4>
+
+<ul>
+<li><p>Encrypt a particular input file with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ openssl enc -aes-256-cbc -e -in &lt;plain_text_file_name&gt; \
+  -out &lt;encrypted_file_name&gt;
+</code></pre></div></li>
+</ul>
+
+<p>You will be prompted to enter your password.</p>
+
+<p>Please also do remember to use the same encryption algorithm which in this case is aes-256-cbc( very secure ), when you want to decrypt the file, although there are several other encryption algorithms that openssl provides. i.e, you have to use the same crypto algorithm for both encryption and decryption of a particular file.</p>
+
+<p>The -e switch stands for encryption.</p>
+
+<ul>
+<li><p>To decrypt a file which was encrypted using openssl use</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ openssl enc -aes-256-cbc -d -in &lt;encrypted_file_name&gt; \
+  -out &lt;plain_text_file_name&gt;
+</code></pre></div></li>
+</ul>
+
+<p>The -d switch stands for decryption.        </p>
+
+<h4>Performing spell check on a file from command line using &quot;ispell&quot;</h4>
+
+<p>The program used to perform a very basic spell check from the command line is called &quot;ispell&quot;.</p>
+
+<ul>
+<li><p>Run spell check on a given file with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ ispell &lt;file_name&gt;
+</code></pre></div></li>
+</ul>
+
+<p>Now, you have several actions that you can take on misspelled words in the file</p>
+
+<ul>
+<li><p>Type the number &#39;n&#39; to replace the misspelled word with the word against that number.</p></li>
+<li><p>Type &#39;R&#39; to replace the misspelled word with a word that you wish to type in (i.e, which is not there in the numbered list).</p></li>
+<li><p>Press spacebar to ignore that misspelled word just once.</p></li>
+<li><p>Press &#39;A&#39; to ignore that misspelled word in this entire ispell session.</p></li>
+<li><p>press &#39;Q&#39; to quit the program.</p></li>
+</ul>
+
+<h4>Finding out the public IP of a website</h4>
+
+<p>This is useful in cases where your DNS server is unable to resolve the website name into its public IP. This could happen because your ISP which also provides you with the DNS service has blocked that website. I used this technique recently when all Indian ISP&#39;s where asked to block peer-to-peer sharing sites by the Indian Government. Most of these ISP&#39;s simply configure their DNS server&#39;s so as to not resolve the website names of such websites into public IP&#39;s and thus make them inaccesible, but you can always access such sites using their IP addresses. You could have obtained the IP address of such a site before hand using the following command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ host &lt;site_url&gt;
+</code></pre></div>
+<p>Or, you could even possibly change the DNS server settings manually by setting it to the address of DNS servers provided by google which is 8.8.8.8. Since Google does not block these file sharing websites, you will be able to get the domain resolved successfully, unless your ISP is really intelligent and is blocking all traffic to such sites.        </p>
+
+<h4>How to put a CPU to 100% usage</h4>
+
+<p>This is one of my favorite command line tricks. It allows you to put the CPU to 100% usage. This way you can see how long your laptop battery lasts in the worst case, under heavy load.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cat /dev/urandom &gt; /dev/null
+</code></pre></div>
+<p>There is something very interesting going on here. /dev/urandom is a file which continuously generated random data. And keep in mind this is not just pseudo random data, it is pure random data, because the way /dev/urandom gets these input is from interrupts in the system like mouse movements, key presses on the keyboard, signals sent to the display, packets arriving over the network and a whole lot of other places which are truly unpredictable by any means.</p>
+
+<p>This capability gives rise to an other super-cool feature. You can use this file to generate random passwords that are severely hard to crack as follows:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ egrep -ioam1 &#39;[a-zA-Z0-9!@#$%^&amp;*()_+-=]{8}&#39; /dev/urandom
+</code></pre></div>
+<p>This command generates a random password of 8 characters length. Ofcourse, you can change the number 8 in the regular expression to a larger value to generate longer passwords.        </p>
+
+<p>One thing you will notice that in dual core and quad core CPU&#39;s, only one of the cores is put to 100% usage and the load is automatically balanced between the available cores. So, if you want to put all the cores of your CPU to 100% usage, make sure you run the first command as many times as the number of cores, by launching multiple terminals simultaneously.</p>
+
+<p>You can verify the 100% usage of the CPU by using the &quot;$ top&quot; command which will display all the processes that are running and the amount of resources that they are using. You should see cat command at the top almost all the time and also see 100% cpu usage when you run the command.</p>
+
+<p>But, you should also notice that, even when you put all cores to 100% usage by running the command multiple times simultaneously, you will experience very little or no lag in mouse movement or keypress delay... This is the beauty of Linux, because Linux gives super-high priority to such hardware interrupts. If you were to do something similar on a windows systems, you had better be ready to face robotic mouse and window movements.</p>
+
+<h4>Another way to put your CPU to 100% usage</h4>
+
+<p>Here is another way to use Linux&#39;s super high precision calculator tool &quot;bc&quot; to put your CPU to 100% usage. All you need to do is run the command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &quot;scale=10000;4*a(1)&quot; | bc -l -q
+</code></pre></div>
+<p>All this command is doing is computing the value of PI to 10000 decimal places and dumping it to the standard output. If you don&#39;t want your standard output clobbered with numbers you won&#39;t be using anytime in your life, you can redirect the standard output as follows</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &quot;scale=10000;4*a(1)&quot; | bc -l -q &gt; /dev/null
+</code></pre></div>
+<p>This command gives rise to another very interesting command. You can compare the speeds of your computer and a friends computer and then boast that yours is faster or get a new computer after being humiliated, by running the same command as above, only this time, with the prefix time.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ time echo &quot;scale=10000;4*a(1)&quot; | bc -l -q &gt; /dev/null
+</code></pre></div>
+<p>You can compare how many seconds (CPU time) the two computers took to calculate the value of PI to 10000 decimal places, which I can promise you is a heck of a lot of time even on my quad core second generation i5 laptop.        </p>
+
+<h4>Writing an ISO image file to a CDROM from the command line</h4>
+
+<p>We usually download .iso images of popular linux distros for installation or as live media, but end up using a GUI cd burning tool to create a bootable cdrom. But, if your feeling a bit geeky, you could try doing so from the command line with </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cdrecord -v speed=0 driveopts=burnfree -eject dev=1,0,0 &lt;src_iso_file&gt;
+</code></pre></div>
+<p>speed=0 tells the program to write the disk at the lowest possible drive speed, which is good considering the shitty quality of cdroms that we get in India. But, if you are in a hurry, you can try speed=1 or speed=2. Keep in mind that these are relative speeds.        </p>
+
+<p>-eject switch tells the program to eject the cdrom after the operation is complete.</p>
+
+<p>Now, the most important part... specifying the device id. It is absolutely important that you specify the device id of your cd rom drive correctly or you may end up writing the iso to some other place on disk and corrupting your entire hard disk. To find out the device id of your cd-rom drive, just run this command prior to running the first command:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cdrecord -scanbus
+</code></pre></div>
+<p>Your cd-roms device id should look something like 1,0,0 but need not be exactly the same on your system.        </p>
+
+<p>Also, note that, you cannot create a bootable dvd disk using this command for distros like openSUSE or Fedora or Ubuntu or Slackware which come as dvd iso&#39;s. But, do not be disheartened, there is another more simpler command to burn a bootable dvd</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ growisofs -dvd-compat -speed=0 -Z /dev/dvd=myfile.iso
+</code></pre></div>
+<p>Here, /dev/dvd is the device file that represents your dvd rom. It is quite likely to be the same on your system as well.</p>
+
+<p>Donot use growisofs to burn a cdrom. The beauty of linux is that a single command does a single operation and does it well. So, we will stick to it.</p>
+
+<h4>Creating a bootable USB disk</h4>
+
+<p>Now, that you know how to create a bootable cdrom, you have to admit, it is a bit of a pain to buy and burn a cdrom every time you want to try a new linux distro and then wait forever until the OS is installed from the super-slow cd rom. The solution is to create a bootable usb disk and the procedure to create one, assuming you already have a partitioned and formatted pendrive, couldn&#39;t have been more easier. All you have to do is</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dd if=mylinux.iso of=/dev/sdb bs=20M
+</code></pre></div>
+<p>Here if stands for input file, of for output file and bs for block-size.        </p>
+
+<p>After this, make sure you flush the write buffers to disk by issuing the command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sync
+</code></pre></div>
+<p>Here /dev/sdb is the device file that represents your usb pendrive. It may be different on your system. But it is always something like sdb or sdc. To find out exactly, plug in your usb disk and then run &#39;$ sudo fdisk -l&#39;. You should be able to see a partition table for your pendrive at the bottom and also atleast one partition which would be something like sdb1 or sdc1. However, if you haven&#39;t formatted your pendrive before and want to learn how to do it from the command line, then read the next section.</p>
+
+<p>If you haven&#39;t already realized, you can do amazing things with the dd command. You can create a backup of an entire hard disk partition by</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dd if=/dev/sda1 of=/dev/sda2
+</code></pre></div>
+<p>This command copied the entire partition sda1 on your hard disk to partition sda2. You can restore the partition simply by interchanging the if and of attributes. However, exercise extreme caution while using the dd command as you can completely mess up your hard drive and lose all data if you specify the if and of attributes wrongly.        </p>
+
+<h4>Partitioning and formatting a USB key</h4>
+
+<p>I have to admit partitioning and formatting a USB key from the command line is not as easy as right clicking and selecting format. But, I also have to tell you that the command line tool called &quot;fdisk&quot; provides unprecedented control over the process, and shouldn&#39;t be very difficult to get a hang of. First of all, plug in your pendrive and run</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo fdisk -l
+</code></pre></div>
+<p>Note down the device file for your pendrive. It should be something like /dev/sdb or /dev/sdc. Assuming yours is /dev/sdb, run</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo fdisk /dev/sdb
+</code></pre></div>
+<p>You are now into the fdisk program. You can press &#39;m&#39; to see a list of all possible commands allowed.        </p>
+
+<p>Supposing you already have a partition on your pendrive you can delete them by pressing &#39;d&#39; and then entering the number of the partition.</p>
+
+<p>If you do not have a partition, you have to create one. To create a new partition, simply press &#39;n&#39;. You will be asked whether you want to create a primary or extended partition. Press &#39;p&#39; to create a primary partition. You now have to tell, what type of file system you would like to have on the new partition. To do that, press &#39;t&#39; and then select &#39;c&#39; for a FAT file system. You will be asked whether you want to create a primary or extended partition. Press &#39;p&#39; to create a primary partition.</p>
+
+<p>You now have to tell, what type of file system you would like to have on the new partition. To do that, press &#39;t&#39; and then select &#39;c&#39; for a FAT file system. You will be asked whether you want to create a primary or extended partition. Press &#39;p&#39; to create a primary partition. You now have to tell, what type of file system you would like to have on the new partition. To do that, press &#39;t&#39; and then select &#39;c&#39; for a FAT file system. You will be asked whether you want to create a primary or extended partition. Press &#39;p&#39; to create a primary partition. You now have to tell, what type of file system you would like to have on the new partition. To do that, press &#39;t&#39; and then enter &#39;c&#39; for a FAT file system. There are several other filesystems supported. You can see a list of all those by pressing &#39;l&#39;.</p>
+
+<p>Note that fdisk will not write the partition table to disk until you explicitly tell it to do so. So, go ahead and enter &#39;w&#39; to write the partition table to disk. You can quit the program without saving any changes to disk by pressing &#39;q&#39; before you press &#39;w&#39;. At this point, you have created a raw partition with no filesystem on it. As such, the pendrive is useless. Run</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo eject /dev/sdb
+</code></pre></div>
+<p>Now, unplug the drive and plug it in again. If your linux box supports automounting, you should get an error saying unable to read the disk. This is simply because you have not created any filesystem on the disk. Put in simple words, the disk is not formatted yet. So go ahead and eject the drive using the same command as above.</p>
+
+<p>Now, format the pendrive as FAT using the command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo mkfs.vfat /dev/sdb1
+</code></pre></div>
+<p>Note that the above command takes the specific partition to be formatted like sdb1 or sdc1, so different partitions on the disk may be formatted as different file systems. That&#39;s it, you are now ready to create your bootable USB disk using the commands in the previous section.</p>
+
+<h4>Ripping a CD or DVD for local storage</h4>
+
+<p>Sometimes, you need to return a dvd to a friend and you do not have enough time to burn a copy of the dvd or donot have an extra dvd drive that can do the job. Moreover, your USB drive read is much slower that read from disk. So, why not make an exact copy of the entire cd or dvd to your disk which you can view anytime later or burn it to a dvd later. All you have to do is enter the following command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ dd if=/dev/dvd of=myfile.iso bs=2048
+</code></pre></div>
+<p>Here, if stands for input file. As you already know, every device is a file in Linux. Hence, the dvd drive is represented by /dev/dvd and the cdrom drive most likely by /dev/cdrom. Use the one appropriate for your case.        </p>
+
+<p>As you guessed, of stands for output file which is an exact mirror image of the cd or dvd which you can write to another cd or dvd anytime using the commands in the previous section.</p>
+
+<p>Now, that you have an iso file on your disk, you cannot simply view it anytime you want. To access the contents of the iso file, you will need to mount it at a particular mount point. So, go ahead and create a mount point </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo mkdir /tmp/myfiles
+$ sudo mount -o ro,loop -t iso9660 myfile.iso /tmp/myfiles
+$ cd /tmp/myfiles
+</code></pre></div>
+<p>Thats it... you can now access the files as though you were accessing them from the dvd or cd only much faster. You have to keep in mind that you will not be able to write anything directly into /tmp/myfiles just as you would simply not be able to write into a dvd or cd. Thats the reason, the iso file is mounted as read-only.</p>
+
+<h4>Hiding a file or directory within an image</h4>
+
+<p>This is one severely cool trick which allows you to hide any file or directory within a harmless looking image. When you click on such a file, all you see is the image on your default image viewer. The image is not altered in any way. What you don&#39;t see is the file you have hidden within the image.... Here is precisely how to do it.</p>
+
+<ul>
+<li><p>First you will need a harmless looking .png or .jpg image file... Feel free to download your favorite one from google images.</p></li>
+<li><p>Now, the file or directory you wish to hide has to be compressed into a zip archive.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ zip -r &lt;compressed.zip&gt; &lt;file1&gt; &lt;dir1&gt;
+</code></pre></div></li>
+<li><p>Now, cat the image you downloaded with the compressed file you created above</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cat image.png compressed.zip &gt; secret.png
+</code></pre></div></li>
+</ul>
+
+<p>NOTE: do not change the ordering of the image and the compressed file. The image always has to always come first in the cat command.        </p>
+
+<ul>
+<li>Now, remove the files and directories you wanted to hide and also the compressed.zip file using the rm command.</li>
+</ul>
+
+<p>Thats it... You now have a file by the name &quot;secret.png&quot; which if you open, will display the harmless looking image file. Nobody suspects that the image is hiding something sinister(unless ofcourse they are intelligent enough to do a ls -l and see the size of the image file)</p>
+
+<p>Now, all you have to do to get back your secret files and directories is</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ unzip secret.png
+</code></pre></div>
+<p>Don&#39;t worry if you get some weird warnings or errors when you run the command regarding some invalid content in the header. Thats the whole point you see !!! When we catted the image file at the start of the zip file, we inadvertently modified the header of secret.png, and hence the warnings and errors. Nonetheless, you should now see the compressed.zip file in the directory. Just extract its secret contents with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ unzip compressed.zip
+</code></pre></div>
+<h4>How to completely paralyze any Linux system which is using the bash shell</h4>
+
+<p>Most linux distros that you use today come preloaded with the bash shell as default, so you wouldn&#39;t need to worry much to completely wreck your college linux server box or your best friends laptop in a matter of seconds. Just type in the following command, sit back and relax while the system starts to choke itself.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ :(){ :|:&amp; };:
+</code></pre></div>
+<p>This is one of the most cryptic commands you have probably ever seen and also one of the shortest ones considering the amount of carnage you are about to cause as soon as you press the enter key. But the command is really very simple to understand. So, here is the breakup of the command.</p>
+
+<p>This command is creating a bash function by the name &#39;:&#39; , hence you see :()</p>
+
+<p>The body of this bash function is within the curly braces { }</p>
+
+<p>What we are doing within this function is calling the same function &#39;:&#39; again. Kinda like recursion. And this function call is running in the background. Thats the reason you see the ampersand (&amp;) at the end. In short, this function is telling bash to keep on forking an innumerable number of child processes. But, this is just the function definition, no harm here. The actual fun starts after the semicolon(;) which as you know acts as a seperator between two linux commands. The first command was merely writing the function definition. But the &#39;:&#39; you see after the semicolon is the command that is actually calling the function &#39;:&#39;.</p>
+
+<p>All hell is let loose on the system. Bash starts to fork child processes that grow exponentially. Within a matter of seconds, you will have millions of child processes on your system, and every system can only take so much. The system is in effect, choking itself, and in seconds, your system is completely lifeless.... mouse doesn&#39;t work, keypresses don&#39;t do anything... So you cannot even press Ctrl+C to stop the system from killing itself. All you can do at this point, is to hold down the power button for some time to hard-reboot the system. And the really funny and interesting about this command is that, the more processing power your system has, the faster it will kill-itself because it is creating child processes at a much faster rate that a slow, dim-witted computer where you might even have time to press Ctrl+C after you have realized your mistake. Now, you don&#39;t call this command the &quot;bash fork bomb&quot; for no reason.</p>
+
+<p>This goes without saying that &quot;With great power comes great responsibility&quot; :P</p>
+
+<h4>Some random, super-cool command line fu</h4>
+
+<ul>
+<li><p>A stopwatch on the terminal</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ time read
+</code></pre></div></li>
+</ul>
+
+<p>This will start a stopwatch on your terminal. Simply press Ctrl+D to stop the timer and see the elapsed time.        </p>
+
+<ul>
+<li><p>How to know how many CPU cores are there on the computer ?</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo cat /proc/cpuinfo | grep processor | wc -l
+</code></pre></div></li>
+</ul>
+
+<p>Infact, you can see a lot of info about each of these cores with the command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    $ sudo cat /proc/cpuinfo
+</code></pre></div>
+<ul>
+<li><p>Finding the name of the linux distro running on the computer</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo cat /etc/issue
+</code></pre></div></li>
+<li><p>How to know whether you have a 32bit or 64bit OS running on your computer ?</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo getconf LONG_BIT
+</code></pre></div></li>
+<li><p>Killing a process that has locked a particular file, when you know the file name that is locked, but don&#39;t know which process is locking it.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo fuser -k &lt;file_name&gt;
+</code></pre></div></li>
+</ul>
+
+<p>This is useful when you get an error saying this particular file is locked by another process. This happens many times when you are updating your linux installation and the process got terminated leaving the /var/lib/dpkg/cache file locked. You get an error when you try to re-start the system update again. You can use this command in such situations.</p>
+
+<ul>
+<li><p>Easiest way to re-run the previous command with superuser permissions</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo !!
+</code></pre></div></li>
+</ul>
+
+<p>This saves you from pressing up arrow and then home key and then typing sudo.        </p>
+
+<ul>
+<li><p>Easily doing a reverse search for a command you entered previously. In bash, simply press Ctrl+R and then start typing the part of the comamnd you remember. Hit enter when you find the command you were looking for. This command gives rise to another neat trick. Suppose you use a lengthy command very frequently during the session. The first time you run the long command, run it as follows</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ &lt;command&gt; #my_label
+</code></pre></div></li>
+</ul>
+
+<p>The next time you want to run the same command, all you have to do is press Ctrl+R to start reverse-search and then enter &quot;my_label&quot; followed by enter key... How cool is that !!!.        </p>
+
+<ul>
+<li><p>How to get vi stlye editing commands working in bash</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &quot;set editing-mode vi&quot; &gt; ~/.inputrc
+</code></pre></div></li>
+<li><p>some super useful bash command editing keys</p>
+
+<ul>
+<li>Press Ctrl+W to erase a single word before the current cursor position.</li>
+<li>Press Ctrl+U to erase the entire line before the current cursor position.</li>
+<li>Press Ctrl+K to erase the entire line after the current cursor position.</li>
+<li>Press Ctrl+A to go to the beginning of the command.</li>
+<li>Press Ctrl+E to go the the end of the command.</li>
+</ul></li>
+<li><p>How to display a popup notification when a command completes ( requires libnotify to be installed )</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget &lt;URL&gt; ; notify-send &quot;wget&quot; &quot;your download is complete&quot;
+</code></pre></div></li>
+</ul>
+
+<p>The above command displays a popup notification once wget finishes downloading the file. wget can be replaced by any command actually. The first argument to the notify-send command is the &quot;title&quot; and the second argument is the &quot;body&quot; of the popup notification. You can change it to whatever you like.</p>
+
+<ul>
+<li><p>Turning of the monitor to save power when there is no hardware key available to do so(say, on a laptop)</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ xset dpms force off
+</code></pre></div></li>
+<li><p>How to copy the output of any command directly to the system clipboard</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ &lt;command&gt; | xsel --clipboard
+</code></pre></div></li>
+<li><p>How to open an file from the command line using the default application for that file</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ xdg-open &lt;file_name&gt;
+</code></pre></div></li>
+<li><p>How to save the output of any command as an image file</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ &lt;command&gt; | convert label:@- &lt;image_name.png&gt;
+</code></pre></div></li>
+<li><p>How to convert an entire man page into pdf format for later viewing        </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ man -t &lt;command_name&gt; | ps2pdf - &lt;command_name.pdf&gt;
+</code></pre></div></li>
+<li><p>Installing the same packages and software you already have on a fully configured linux system, on another freshly installed linux system in a single command</p></li>
+</ul>
+
+<p>First, run this command on the fully configured linux box</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    $ sudo dpkg --get-selections &gt; my_linux_software
+</code></pre></div>
+<p>Then, transfer this file to the freshly installed linux box an enter the following command        </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    $ cat may_linux_software|sudo dpkg --set-selections &amp;&amp; sudo dselect install
+</code></pre></div>
+<p>Ofcourse, you will need network connection on your freshly installed linux box, but you will be saved from laboriously selecting all your favorite software from the software management tool.        </p>
+
+<ul>
+<li><p>Deleting a particular line number from a given file without opening it in any editor</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ sed -i 8d &lt;file_name&gt;
+</code></pre></div></li>
+</ul>
+
+<p>This command deletes the 8th line from the specified file.</p>
+
+<ul>
+<li><p>Running a command at a specified time</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ echo &quot;command you want to run | at 01:00
+</code></pre></div></li>
+</ul>
+
+<p>Note that the time is in 24hr format.        </p>
+
+<ul>
+<li><p>How to create a pencil sketch out of any image file  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ convert &lt;input_image&gt; -colorspace gray \( +clone -blur 0x2 \) \
+  +swap -compose divide -composite -linear-stretch 5%x0% &lt;output_image&gt;
+</code></pre></div></li>
+</ul>
+
+<p>You can ofcourse add an alias or better still, a bash function for such long commands in your ~/.bashrc to make your life easier.</p>
+
+<ul>
+<li><p>How to check unread mail from your gmail inbox from the command line</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ curl -u your_email@gmail.com:your_password --silent \
+  &quot;https://mail.google.com/mail/feed/atom&quot; | tr -d &#39;\n&#39; | \
+  awk -F &#39;&lt;entry&gt;&#39; &#39;{for (i=2; i&lt;=NF; i++) {print $i}}&#39; | \
+  sed -n &quot;s/&lt;title&gt;\(.*\)&lt;\/title&gt;&lt;summary&gt;\(.*\)&lt;\/summary.*name&gt;\
+  \(.*\)&lt;\/name&gt;&lt;email&gt;\(.*\)&lt;\/email&gt;.*/\n\3\(\4\) - \1 - \2\n/p&quot;
+</code></pre></div></li>
+</ul>
+
+<p>This command might look like too much to handle, but it is really extremely simple. All it is doing is reading from your gmail account&#39;s atom feed and formatting the output using awk and sed. As before, you are better of creating an alias(or a bash function) in your ~/.bashrc for this command.</p>
+
+<h4>A super-simple chat program that you can run from the command line</h4>
+
+<p>You will need to install &quot;netcat&quot; on your linux box for this to work.</p>
+
+<ul>
+<li><p>Open a terminal on Computer A and type in</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ nc -l 12345
+</code></pre></div></li>
+<li><p>Also note down the IP addr of Computer A by running the &quot;ifconfig&quot; command. Let us say, the IP addr of Computer A is a.b.c.d</p></li>
+<li><p>Now, open a terminal on another Computer B which also has &quot;netcat&quot; installed and type in</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ nc a.b.c.d 12345
+</code></pre></div></li>
+</ul>
+
+<p>Here, 12345 is simply a port number. You can specify anything you want as long as it is not already in use.        </p>
+
+<p>Thats it... You have a chat program running. Type anything and press enter, it will be immediately visible on the other computer. To test this out you might as well run the two commands on two different terminals on the same computer, in which case, you will have to replace the IP addr a.b.c.d by the simple string &quot;localhost&quot;.</p>
+
+<h4>The fastest way to transfer files from Computer A to Computer B over the network from the command line</h4>
+
+<p>You will need &quot;netcat&quot; installed for this to work.</p>
+
+<ul>
+<li><p>On Computer A with ip addr a.b.c.d, run the command</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ tar -cf - /path/to/dir | \
+  pv -s $(du -sb /path/to/dir | awk &#39;{print $1}&#39;) | \
+  nc -l 12345
+</code></pre></div></li>
+<li><p>On computer B, run</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ nc a.b.c.d 12345 | pv | tar -xf -
+</code></pre></div></li>
+</ul>
+
+<p>All we are doing here is tarring the directory we want to transfer and then using netcat to transfer the file over the network. Note that there are actually no intermediate archives that are created either on Computer A or Computer B.</p>
+
+<p>The pv command in the middle is only there to show you a progress bar of how much data is left to be transferred. This can be useful for large files. But you can always competely remove it from both of the above commands and still work correctly. Only thing is you won&#39;t have any feedback until the entire directory is transferred. Note that pv is not available as default on most linux boxes. You will have to install it.</p>
+
+<p>You may be wondering why do we need to perform a tar when we are simply transferring a single file instead of a directory. The answer is you don&#39;t. To transfer a single file:</p>
+
+<ul>
+<li><p>On Computer A you will run</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cat /path/to/file | nc -l 12345
+</code></pre></div></li>
+<li><p>To receive the file on Computer B, you would run,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ nc a.b.c.d 12345 &gt; myfile
+</code></pre></div></li>
+</ul>
+
+<p>As simple as that!!!.        </p>
+
+<p>A word of caution. On some computers with different version of netcat installed, you will need to replace the command &quot;nc -l 12345&quot; with &quot;nc -l -p 12345&quot; for netcat to work correctly. All other commands remain same.</p>
+
+<h4>How to get a progress bar while copying huge files</h4>
+
+<p>Normally cp command does not give you any output while you are copying files. You have no idea how much copying is left to be done. However you can use a slightly different command to copy large with a progress bar shown. As you might have guessed, the solution is to use &quot;pv&quot; command described in the previous section.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cat originalfile.txt | pv &gt; newfile.txt
+</code></pre></div>
+<p><br />
+<br />
+<br />
+<br />
+<br />
+<br /></p>
+
+<p>Wuff... this is one huge article, but one which I enjoyed writing and one I hope you will enjoy executing. I have at some point used all of these commands in my day to day work. It is very likely that you may get errors saying command not found while executing some of these commands, because you don&#39;t have the necessary packages installed. You can always install them and continue playing or you can leave a comment below and I will help you get it working. Enjoy Linux :) :) and stay tuned for more comprehensive articles on specific Linux tools like vim, ssh, scp, rsync, git version control system and more in the future.</p>
+
+<p>Once again I sincerely thank <a href="http://chandrashekar.info/">Mr. Chandrashekar Babu</a> for his superb linux training classes at Cisco and for enlightening us about some of the above Linux command line tricks.</p>
+
+      <br />
+      
+        <a class="prev_next" style="float: left;" href="/2012/08/26/stock-defy">&laquo;&nbsp;older posts</a>
+      
+      
+        <a class="prev_next" style="float: right;" href="/2012/10/01/linux-tricks-2">newer posts&nbsp;&raquo;</a>
+      
+      <br /><br /><br /><br />
+      <b>other articles you might like</b><br />
+      
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/08/19/t440s-touchpad">Configuring Lenovo T440s touchpad in Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/truecrypt-alt">Alternatives to Truecrypt on Linux</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/06/01/network-command-line">Connecting to wired/wireless networks via command line</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2014/03/21/reverse-tethering">Android reverse USB tethering</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/11/18/linux-tricks-3">Linux command line tools and tricks - Part 3</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/28/dwm">Basic dwm setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/09/20/xmonad">Basic Xmonad setup in (L)ubuntu</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/19/eom">EOM a.k.a End of Mail a.k.a Emacs + offlineimap + mu4e</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/12/firefox-addon">First attempt at developing a Firefox addon</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/08/05/ncp">Bash script to perform super-fast file transfer using netcat and tar</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/07/06/jekyll-build-fail">Jekyll : Handling Github page build failure and Jekyll plugins on Github</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/05/26/emacs-newbie">Emacs newbie cheat sheet -- from a vim convert</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/04/11/ncmpcpp">ncmpcpp : ncurses based music player for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/03/02/apps-zip">How to create a custom CWM recovery flash-able android apps zip file in Linux via command line</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2013/02/19/cli-task">Task Warrior - The best CLI task manager for Linux</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/12/27/kernel">Custom kernel in Ubuntu (also generate .deb package)</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/10/01/linux-tricks-2">Linux command line tools and tricks - Part 2</a>
+            </li>
+            
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/06/black-hat-hackers">Black hat Hall Of Fame</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/06/02/behind-the-scene">Behind the scene</a>
+            </li>
+            
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/10/rsa-tcl">RSA encryption using Tcl</a>
+            </li>
+            
+        
+    
+        
+    
+
+    
+    
+        
+    
+        
+            <li style="list-style:none;font-size:16px;margin-bottom:-3px;">
+                <a href="/2012/01/04/stuxnet">Stuxnet: the greatest, meanest computer virus ever written</a>
+            </li>
+            
+        
+    
+
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+<p style="float: left; margin-top: 4px;">Share this post &rArr;&nbsp;&nbsp;</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a style="border-bottom:0" class="addthis_button_preferred_1"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_2"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_3"></a>
+<a style="border-bottom:0" class="addthis_button_preferred_4"></a>
+<a style="border-bottom:0" class="addthis_button_compact"></a>
+<a style="border-bottom:0" class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd1e13840ac7423"></script>
+<!-- AddThis Button END -->
+
+
+<br />
+<br />
+<br />
+<br />
+
+</article><!-- .post -->
+</div>
+
+<div class="fb_comments">
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'varunbpatil'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+</div>
+
+<br />
+<br />
+<br />
+<footer id="footer" style="clear: both">
+    <div class="inner">
+
+        <p class="social" style="margin-top: -10px;">Contact me &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="facebook" class="social" href="http://www.facebook.com/varunbpatil" target="_blank"><img src="/PNGs/facebook.png" width="32px" /></a>
+                <a title="twitter" class="social" href="http://twitter.com/#!/varunbpatil" target="_blank"><img src="/PNGs/twitter.png" width="32px" /></a>
+                <a title="linkedin" class="social" href="https://www.linkedin.com/in/varunbpatil/" target="_blank"><img src="/PNGs/linkedin.png" width="32px" /></a>
+                <a title="google+" class="social" href="https://plus.google.com/112161568047512619329/posts" target="_blank"><img src="/PNGs/googleplus.png" width="32px" /></a>
+                <a title="github" class="social" href="https://github.com/varunbpatil/" target="_blank"><img src="/PNGs/github.png" width="32px" /></a>
+                <a title="gmail" class="social" href="mailto:varun.basavaraj.patil@gmail.com" target="_blank"><img src="/PNGs/gmail.png" width="32px" /></a>
+        </p>
+
+
+
+        <p class="social" style="margin-bottom: 23px;">Subscribe to my posts &nbsp;&rarr;&nbsp;&nbsp;
+                <a title="subscribe via RSS" class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="/PNGs/rss.png" width="36px" /></a>
+                <a title="subscribe via e-mail" class="social" href="http://feedburner.google.com/fb/a/mailverify?uri=varunbpatil&amp;loc=en_US" target="_blank"><img src="/PNGs/mail.png" width="36px" /></a>
+                <a class="social" href="http://feeds.feedburner.com/varunbpatil" target="_blank"><img src="http://feeds.feedburner.com/~fc/varunbpatil?bg=BDBDBD&amp;fg=000000&amp;anim=0" height="29" width="88" style="border:0" alt="" /></a>
+        </p>
+
+
+
+
+        <p class="social">powered by &nbsp;&rarr;&nbsp;&nbsp;
+        <a class="social" href="https://github.com/mojombo/jekyll"><span>jekyll</span></a>
+        <a class="social" href="https://github.com/Shopify/liquid"><span>liquid</span></a>
+        <a class="social" href="https://github.com/"><span>github</span></a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+

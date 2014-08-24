@@ -1,0 +1,13 @@
+# www.robotstxt.org/
+# http://code.google.com/web/controlcrawlindex/
+
+User-agent: *
+
+allow: /
+
+disallow: /*.txt
+disallow: /*.ico
+disallow: /*.png
+disallow: /*.jpg
+disallow: /*.pdf
+Sitemap: http://varunbpatil.github.com/sitemap.xml
